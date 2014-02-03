@@ -1,2130 +1,461 @@
-
-
-
-
-
-<!DOCTYPE html>
-<html>
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>edav/projects/popgraph/citypop.csv at uspop · andrewyuan/edav</title>
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
-    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
-    <meta property="fb:app_id" content="1401488693436528"/>
-
-      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="andrewyuan/edav" name="twitter:title" /><meta content="edav - W4701 Exploratory Data Analysis and Visualization" name="twitter:description" /><meta content="https://0.gravatar.com/avatar/d93fe8038d777aaecb623a094f2e1035?d=https%3A%2F%2Fidenticons.github.com%2F2d15b989c5c4a14b5e7bb4298dcc9d9f.png&amp;r=x&amp;s=400" name="twitter:image:src" />
-<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://0.gravatar.com/avatar/d93fe8038d777aaecb623a094f2e1035?d=https%3A%2F%2Fidenticons.github.com%2F2d15b989c5c4a14b5e7bb4298dcc9d9f.png&amp;r=x&amp;s=400" property="og:image" /><meta content="andrewyuan/edav" property="og:title" /><meta content="https://github.com/andrewyuan/edav" property="og:url" /><meta content="edav - W4701 Exploratory Data Analysis and Visualization" property="og:description" />
-
-    <meta name="hostname" content="github-fe130-cp1-prd.iad.github.net">
-    <meta name="ruby" content="ruby 2.1.0p0-github-tcmalloc (87d8860372) [x86_64-linux]">
-    <link rel="assets" href="https://github.global.ssl.fastly.net/">
-    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
-    <link rel="xhr-socket" href="/_sockets" />
-    
-
-
-    <meta name="msapplication-TileImage" content="/windows-tile.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="selected-link" value="repo_source" data-pjax-transient />
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="6C365256:55B9:36CC9B6:52EC0283" name="octolytics-dimension-request_id" /><meta content="6483298" name="octolytics-actor-id" /><meta content="andrewyuan" name="octolytics-actor-login" /><meta content="a786438f22a07262016fb91463a518dc7be5fb6ca40bea2f90aa07ac5de85868" name="octolytics-actor-hash" />
-    
-
-    
-    
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-    <meta content="authenticity_token" name="csrf-param" />
-<meta content="SaNuWrDEPpG1MXospwgUNzsTyQmicAUdU/mrE7ALn7o=" name="csrf-token" />
-
-    <link href="https://github.global.ssl.fastly.net/assets/github-b4cefd115535acdd2560c36100dc32e7e36c5285.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="https://github.global.ssl.fastly.net/assets/github2-30183b339e66541cb1d07ebfcc86ac8ac84245f3.css" media="all" rel="stylesheet" type="text/css" />
-    
-
-
-      <script src="https://github.global.ssl.fastly.net/assets/frameworks-02ee5d6f13ffacca6207d163a3c10aba4fb80b16.js" type="text/javascript"></script>
-      <script async="async" defer="defer" src="https://github.global.ssl.fastly.net/assets/github-36bf0d079059e24dc78aad9cf9eb6077da1d34bd.js" type="text/javascript"></script>
-      
-      <meta http-equiv="x-pjax-version" content="9f040bffe1d2aeb9f51e2079b67f242a">
-
-        <link data-pjax-transient rel='permalink' href='/andrewyuan/edav/blob/8a3eb76a96f2e7441ab210d2c844fe21543b5cc4/projects/popgraph/citypop.csv'>
-
-  <meta name="description" content="edav - W4701 Exploratory Data Analysis and Visualization" />
-
-  <meta content="6483298" name="octolytics-dimension-user_id" /><meta content="andrewyuan" name="octolytics-dimension-user_login" /><meta content="16415321" name="octolytics-dimension-repository_id" /><meta content="andrewyuan/edav" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="true" name="octolytics-dimension-repository_is_fork" /><meta content="14698468" name="octolytics-dimension-repository_parent_id" /><meta content="malecki/edav" name="octolytics-dimension-repository_parent_nwo" /><meta content="14698468" name="octolytics-dimension-repository_network_root_id" /><meta content="malecki/edav" name="octolytics-dimension-repository_network_root_nwo" />
-  <link href="https://github.com/andrewyuan/edav/commits/uspop.atom" rel="alternate" title="Recent Commits to edav:uspop" type="application/atom+xml" />
-
-  </head>
-
-
-  <body class="logged_in  env-production windows vis-public fork page-blob">
-    <div class="wrapper">
-      
-      
-      
-      
-
-
-      <div class="header header-logged-in true">
-  <div class="container clearfix">
-
-    <a class="header-logo-invertocat" href="https://github.com/">
-  <span class="mega-octicon octicon-mark-github"></span>
-</a>
-
-    
-    <a href="/notifications" class="notification-indicator tooltipped downwards" data-gotokey="n" title="You have no unread notifications">
-        <span class="mail-status all-read"></span>
-</a>
-
-      <div class="command-bar js-command-bar  in-repository">
-          <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
-
-<input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
-    
-    data-username="andrewyuan"
-      data-repo="andrewyuan/edav"
-      data-branch="uspop"
-      data-sha="17a916edd1ed29f1a1d18ebeba212b0ca4ee0556"
-  >
-
-    <input type="hidden" name="nwo" value="andrewyuan/edav" />
-
-    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
-      <span class="minibutton select-menu-button js-menu-target">
-        <span class="js-select-button">This repository</span>
-      </span>
-
-      <div class="select-menu-modal-holder js-menu-content js-navigation-container">
-        <div class="select-menu-modal">
-
-          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
-            <span class="select-menu-item-icon octicon octicon-check"></span>
-            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
-            <div class="select-menu-item-text js-select-button-text">This repository</div>
-          </div> <!-- /.select-menu-item -->
-
-          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
-            <span class="select-menu-item-icon octicon octicon-check"></span>
-            <input type="radio" name="search_target" value="global" />
-            <div class="select-menu-item-text js-select-button-text">All repositories</div>
-          </div> <!-- /.select-menu-item -->
-
-        </div>
-      </div>
-    </div>
-
-  <span class="octicon help tooltipped downwards" title="Show command bar help">
-    <span class="octicon octicon-question"></span>
-  </span>
-
-
-  <input type="hidden" name="ref" value="cmdform">
-
-</form>
-        <ul class="top-nav">
-          <li class="explore"><a href="/explore">Explore</a></li>
-            <li><a href="https://gist.github.com">Gist</a></li>
-            <li><a href="/blog">Blog</a></li>
-          <li><a href="https://help.github.com">Help</a></li>
-        </ul>
-      </div>
-
-    
-
-
-  <ul id="user-links">
-    <li>
-      <a href="/andrewyuan" class="name">
-        <img alt="andrewyuan" height="20" src="https://0.gravatar.com/avatar/d93fe8038d777aaecb623a094f2e1035?d=https%3A%2F%2Fidenticons.github.com%2F2d15b989c5c4a14b5e7bb4298dcc9d9f.png&amp;r=x&amp;s=140" width="20" /> andrewyuan
-      </a>
-    </li>
-
-    <li class="new-menu dropdown-toggle js-menu-container">
-      <a href="#" class="js-menu-target tooltipped downwards" title="Create new..." aria-label="Create new...">
-        <span class="octicon octicon-plus"></span>
-        <span class="dropdown-arrow"></span>
-      </a>
-
-      <div class="js-menu-content">
-      </div>
-    </li>
-
-    <li>
-      <a href="/settings/profile" id="account_settings"
-        class="tooltipped downwards"
-        aria-label="Account settings "
-        title="Account settings ">
-        <span class="octicon octicon-tools"></span>
-      </a>
-    </li>
-    <li>
-      <a class="tooltipped downwards" href="/logout" data-method="post" id="logout" title="Sign out" aria-label="Sign out">
-        <span class="octicon octicon-log-out"></span>
-      </a>
-    </li>
-
-  </ul>
-
-<div class="js-new-dropdown-contents hidden">
-  
-
-<ul class="dropdown-menu">
-  <li>
-    <a href="/new"><span class="octicon octicon-repo-create"></span> New repository</a>
-  </li>
-  <li>
-    <a href="/organizations/new"><span class="octicon octicon-organization"></span> New organization</a>
-  </li>
-
-
-    <li class="section-title">
-      <span title="andrewyuan/edav">This repository</span>
-    </li>
-      <li>
-        <a href="/andrewyuan/edav/settings/collaboration"><span class="octicon octicon-person-add"></span> New collaborator</a>
-      </li>
-</ul>
-
-</div>
-
-
-    
-  </div>
-</div>
-
-      
-
-      
-
-
-
-
-          <div class="site" itemscope itemtype="http://schema.org/WebPage">
-    
-    <div class="pagehead repohead instapaper_ignore readability-menu">
-      <div class="container">
-        
-
-<ul class="pagehead-actions">
-
-    <li class="subscription">
-      <form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="SaNuWrDEPpG1MXospwgUNzsTyQmicAUdU/mrE7ALn7o=" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="16415321" />
-
-    <div class="select-menu js-menu-container js-select-menu">
-      <a class="social-count js-social-count" href="/andrewyuan/edav/watchers">
-        1
-      </a>
-      <span class="minibutton select-menu-button with-count js-menu-target" role="button" tabindex="0">
-        <span class="js-select-button">
-          <span class="octicon octicon-eye-unwatch"></span>
-          Unwatch
-        </span>
-      </span>
-
-      <div class="select-menu-modal-holder">
-        <div class="select-menu-modal subscription-menu-modal js-menu-content">
-          <div class="select-menu-header">
-            <span class="select-menu-title">Notification status</span>
-            <span class="octicon octicon-remove-close js-menu-close"></span>
-          </div> <!-- /.select-menu-header -->
-
-          <div class="select-menu-list js-navigation-container" role="menu">
-
-            <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <div class="select-menu-item-text">
-                <input id="do_included" name="do" type="radio" value="included" />
-                <h4>Not watching</h4>
-                <span class="description">You only receive notifications for conversations in which you participate or are @mentioned.</span>
-                <span class="js-select-button-text hidden-select-button-text">
-                  <span class="octicon octicon-eye-watch"></span>
-                  Watch
-                </span>
-              </div>
-            </div> <!-- /.select-menu-item -->
-
-            <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
-              <span class="select-menu-item-icon octicon octicon octicon-check"></span>
-              <div class="select-menu-item-text">
-                <input checked="checked" id="do_subscribed" name="do" type="radio" value="subscribed" />
-                <h4>Watching</h4>
-                <span class="description">You receive notifications for all conversations in this repository.</span>
-                <span class="js-select-button-text hidden-select-button-text">
-                  <span class="octicon octicon-eye-unwatch"></span>
-                  Unwatch
-                </span>
-              </div>
-            </div> <!-- /.select-menu-item -->
-
-            <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <div class="select-menu-item-text">
-                <input id="do_ignore" name="do" type="radio" value="ignore" />
-                <h4>Ignoring</h4>
-                <span class="description">You do not receive any notifications for conversations in this repository.</span>
-                <span class="js-select-button-text hidden-select-button-text">
-                  <span class="octicon octicon-mute"></span>
-                  Stop ignoring
-                </span>
-              </div>
-            </div> <!-- /.select-menu-item -->
-
-          </div> <!-- /.select-menu-list -->
-
-        </div> <!-- /.select-menu-modal -->
-      </div> <!-- /.select-menu-modal-holder -->
-    </div> <!-- /.select-menu -->
-
-</form>
-    </li>
-
-  <li>
-  
-
-  <div class="js-toggler-container js-social-container starring-container ">
-    <a href="/andrewyuan/edav/unstar"
-      class="minibutton with-count js-toggler-target star-button starred upwards"
-      title="Unstar this repository" data-remote="true" data-method="post" rel="nofollow">
-      <span class="octicon octicon-star-delete"></span><span class="text">Unstar</span>
-    </a>
-
-    <a href="/andrewyuan/edav/star"
-      class="minibutton with-count js-toggler-target star-button unstarred upwards"
-      title="Star this repository" data-remote="true" data-method="post" rel="nofollow">
-      <span class="octicon octicon-star"></span><span class="text">Star</span>
-    </a>
-
-      <a class="social-count js-social-count" href="/andrewyuan/edav/stargazers">
-        0
-      </a>
-  </div>
-
-  </li>
-
-
-        <li>
-          <a href="/andrewyuan/edav/fork" class="minibutton with-count js-toggler-target fork-button lighter upwards" title="Fork this repo" rel="nofollow" data-method="post">
-            <span class="octicon octicon-git-branch-create"></span><span class="text">Fork</span>
-          </a>
-          <a href="/andrewyuan/edav/network" class="social-count">36</a>
-        </li>
-
-
-</ul>
-
-        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
-          <span class="repo-label"><span>public</span></span>
-          <span class="mega-octicon octicon-repo-forked"></span>
-          <span class="author">
-            <a href="/andrewyuan" class="url fn" itemprop="url" rel="author"><span itemprop="title">andrewyuan</span></a>
-          </span>
-          <span class="repohead-name-divider">/</span>
-          <strong><a href="/andrewyuan/edav" class="js-current-repository js-repo-home-link">edav</a></strong>
-
-          <span class="page-context-loader">
-            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
-          </span>
-
-            <span class="fork-flag">
-              <span class="text">forked from <a href="/malecki/edav">malecki/edav</a></span>
-            </span>
-        </h1>
-      </div><!-- /.container -->
-    </div><!-- /.repohead -->
-
-    <div class="container">
-      
-
-      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline  ">
-        <div class="repository-sidebar">
-            
-
-<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
-  <div class="sunken-menu-contents">
-    <ul class="sunken-menu-group">
-      <li class="tooltipped leftwards" title="Code">
-        <a href="/andrewyuan/edav/tree/uspop" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /andrewyuan/edav/tree/uspop">
-          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
-          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-
-
-      <li class="tooltipped leftwards" title="Pull Requests">
-        <a href="/andrewyuan/edav/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /andrewyuan/edav/pulls">
-            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
-            <span class='counter'>0</span>
-            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-
-
-        <li class="tooltipped leftwards" title="Wiki">
-          <a href="/andrewyuan/edav/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_wiki /andrewyuan/edav/wiki">
-            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
-            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>        </li>
-    </ul>
-    <div class="sunken-menu-separator"></div>
-    <ul class="sunken-menu-group">
-
-      <li class="tooltipped leftwards" title="Pulse">
-        <a href="/andrewyuan/edav/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /andrewyuan/edav/pulse">
-          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
-          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-
-      <li class="tooltipped leftwards" title="Graphs">
-        <a href="/andrewyuan/edav/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /andrewyuan/edav/graphs">
-          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
-          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-
-      <li class="tooltipped leftwards" title="Network">
-        <a href="/andrewyuan/edav/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /andrewyuan/edav/network">
-          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
-          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
-</a>      </li>
-    </ul>
-
-
-      <div class="sunken-menu-separator"></div>
-      <ul class="sunken-menu-group">
-        <li class="tooltipped leftwards" title="Settings">
-          <a href="/andrewyuan/edav/settings"
-            class="sunken-menu-item" data-pjax aria-label="Settings">
-            <span class="octicon octicon-tools"></span> <span class="full-word">Settings</span>
-            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
-          </a>
-        </li>
-      </ul>
-  </div>
-</div>
-
-              <div class="only-with-full-nav">
-                
-
-  
-
-<div class="clone-url open"
-  data-protocol-type="http"
-  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=push">
-  <h3><strong>HTTPS</strong> clone URL</h3>
-  <div class="clone-url-box">
-    <input type="text" class="clone js-url-field"
-           value="https://github.com/andrewyuan/edav.git" readonly="readonly">
-
-    <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/andrewyuan/edav.git" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
-  </div>
-</div>
-
-  
-
-<div class="clone-url "
-  data-protocol-type="ssh"
-  data-url="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=push">
-  <h3><strong>SSH</strong> clone URL</h3>
-  <div class="clone-url-box">
-    <input type="text" class="clone js-url-field"
-           value="git@github.com:andrewyuan/edav.git" readonly="readonly">
-
-    <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="git@github.com:andrewyuan/edav.git" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
-  </div>
-</div>
-
-  
-
-<div class="clone-url "
-  data-protocol-type="subversion"
-  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=push">
-  <h3><strong>Subversion</strong> checkout URL</h3>
-  <div class="clone-url-box">
-    <input type="text" class="clone js-url-field"
-           value="https://github.com/andrewyuan/edav" readonly="readonly">
-
-    <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/andrewyuan/edav" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
-  </div>
-</div>
-
-
-<p class="clone-options">You can clone with
-      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>,
-      <a href="#" class="js-clone-selector" data-protocol="ssh">SSH</a>,
-      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
-  <span class="octicon help tooltipped upwards" title="Get help on which URL is right for you.">
-    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
-    <span class="octicon octicon-question"></span>
-    </a>
-  </span>
-</p>
-
-
-  <a href="github-windows://openRepo/https://github.com/andrewyuan/edav" class="minibutton sidebar-button">
-    <span class="octicon octicon-device-desktop"></span>
-    Clone in Desktop
-  </a>
-
-                <a href="/andrewyuan/edav/archive/uspop.zip"
-                   class="minibutton sidebar-button"
-                   title="Download this repository as a zip file"
-                   rel="nofollow">
-                  <span class="octicon octicon-cloud-download"></span>
-                  Download ZIP
-                </a>
-              </div>
-        </div><!-- /.repository-sidebar -->
-
-        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
-          
-
-
-<!-- blob contrib key: blob_contributors:v21:b263ee847cd88a2f0f362b524d35fa44 -->
-
-<p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
-
-<a href="/andrewyuan/edav/find/uspop" data-pjax data-hotkey="t" class="js-show-file-finder" style="display:none">Show File Finder</a>
-
-<div class="file-navigation">
-  
-
-<div class="select-menu js-menu-container js-select-menu" >
-  <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
-    data-master-branch="gh-pages"
-    data-ref="uspop"
-    role="button" aria-label="Switch branches or tags" tabindex="0">
-    <span class="octicon octicon-git-branch"></span>
-    <i>branch:</i>
-    <span class="js-select-button">uspop</span>
-  </span>
-
-  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
-
-    <div class="select-menu-modal">
-      <div class="select-menu-header">
-        <span class="select-menu-title">Switch branches/tags</span>
-        <span class="octicon octicon-remove-close js-menu-close"></span>
-      </div> <!-- /.select-menu-header -->
-
-      <div class="select-menu-filters">
-        <div class="select-menu-text-filter">
-          <input type="text" aria-label="Find or create a branch…" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Find or create a branch…">
-        </div>
-        <div class="select-menu-tabs">
-          <ul>
-            <li class="select-menu-tab">
-              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
-            </li>
-            <li class="select-menu-tab">
-              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
-            </li>
-          </ul>
-        </div><!-- /.select-menu-tabs -->
-      </div><!-- /.select-menu-filters -->
-
-      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
-
-        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
-
-
-            <div class="select-menu-item js-navigation-item ">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/andrewyuan/edav/blob/gh-pages/projects/popgraph/citypop.csv"
-                 data-name="gh-pages"
-                 data-skip-pjax="true"
-                 rel="nofollow"
-                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
-                 title="gh-pages">gh-pages</a>
-            </div> <!-- /.select-menu-item -->
-            <div class="select-menu-item js-navigation-item ">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/andrewyuan/edav/blob/master/projects/popgraph/citypop.csv"
-                 data-name="master"
-                 data-skip-pjax="true"
-                 rel="nofollow"
-                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
-                 title="master">master</a>
-            </div> <!-- /.select-menu-item -->
-            <div class="select-menu-item js-navigation-item ">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/andrewyuan/edav/blob/my-blogpost/projects/popgraph/citypop.csv"
-                 data-name="my-blogpost"
-                 data-skip-pjax="true"
-                 rel="nofollow"
-                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
-                 title="my-blogpost">my-blogpost</a>
-            </div> <!-- /.select-menu-item -->
-            <div class="select-menu-item js-navigation-item selected">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/andrewyuan/edav/blob/uspop/projects/popgraph/citypop.csv"
-                 data-name="uspop"
-                 data-skip-pjax="true"
-                 rel="nofollow"
-                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
-                 title="uspop">uspop</a>
-            </div> <!-- /.select-menu-item -->
-        </div>
-
-          <form accept-charset="UTF-8" action="/andrewyuan/edav/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="SaNuWrDEPpG1MXospwgUNzsTyQmicAUdU/mrE7ALn7o=" /></div>
-            <span class="octicon octicon-git-branch-create select-menu-item-icon"></span>
-            <div class="select-menu-item-text">
-              <h4>Create branch: <span class="js-new-item-name"></span></h4>
-              <span class="description">from ‘uspop’</span>
-            </div>
-            <input type="hidden" name="name" id="name" class="js-new-item-value">
-            <input type="hidden" name="branch" id="branch" value="uspop" />
-            <input type="hidden" name="path" id="path" value="projects/popgraph/citypop.csv" />
-          </form> <!-- /.select-menu-item -->
-
-      </div> <!-- /.select-menu-list -->
-
-      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
-        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
-
-
-            <div class="select-menu-item js-navigation-item ">
-              <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/andrewyuan/edav/tree/v1.0/projects/popgraph/citypop.csv"
-                 data-name="v1.0"
-                 data-skip-pjax="true"
-                 rel="nofollow"
-                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
-                 title="v1.0">v1.0</a>
-            </div> <!-- /.select-menu-item -->
-        </div>
-
-        <div class="select-menu-no-results">Nothing to show</div>
-      </div> <!-- /.select-menu-list -->
-
-    </div> <!-- /.select-menu-modal -->
-  </div> <!-- /.select-menu-modal-holder -->
-</div> <!-- /.select-menu -->
-
-  <div class="breadcrumb">
-    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/andrewyuan/edav/tree/uspop" data-branch="uspop" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">edav</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/andrewyuan/edav/tree/uspop/projects" data-branch="uspop" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">projects</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/andrewyuan/edav/tree/uspop/projects/popgraph" data-branch="uspop" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">popgraph</span></a></span><span class="separator"> / </span><strong class="final-path">citypop.csv</strong> <span class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="projects/popgraph/citypop.csv" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
-  </div>
-</div>
-
-  <div class="commit commit-loader file-history-tease js-deferred-content" data-url="/andrewyuan/edav/contributors/uspop/projects/popgraph/citypop.csv">
-    Fetching contributors…
-
-    <div class="participation">
-      <p class="loader-loading"><img alt="Octocat-spinner-32-eaf2f5" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" /></p>
-      <p class="loader-error">Cannot retrieve contributors at this time</p>
-    </div>
-  </div>
-
-<div id="files" class="bubble">
-  <div class="file">
-    <div class="meta">
-      <div class="info">
-        <span class="icon"><b class="octicon octicon-file-text"></b></span>
-        <span class="mode" title="File Mode">file</span>
-          <span>1390 lines (1389 sloc)</span>
-        <span>33.053 kb</span>
-      </div>
-      <div class="actions">
-        <div class="button-group">
-            <a class="minibutton tooltipped leftwards"
-               href="github-windows://openRepo/https://github.com/andrewyuan/edav?branch=uspop&amp;filepath=projects%2Fpopgraph%2Fcitypop.csv" title="Open this file in GitHub for Windows">
-                <span class="octicon octicon-device-desktop"></span> Open
-            </a>
-                <a class="minibutton js-update-url-with-hash"
-                   href="/andrewyuan/edav/edit/uspop/projects/popgraph/citypop.csv"
-                   data-method="post" rel="nofollow" data-hotkey="e">Edit</a>
-          <a href="/andrewyuan/edav/raw/uspop/projects/popgraph/citypop.csv" class="button minibutton " id="raw-url">Raw</a>
-            <a href="/andrewyuan/edav/blame/uspop/projects/popgraph/citypop.csv" class="button minibutton js-update-url-with-hash">Blame</a>
-          <a href="/andrewyuan/edav/commits/uspop/projects/popgraph/citypop.csv" class="button minibutton " rel="nofollow">History</a>
-        </div><!-- /.button-group -->
-          <a class="minibutton danger empty-icon tooltipped downwards"
-             href="/andrewyuan/edav/delete/uspop/projects/popgraph/citypop.csv"
-             title=""
-             data-method="post" data-test-id="delete-blob-file" rel="nofollow">
-          Delete
-        </a>
-      </div><!-- /.actions -->
-    </div>
-        <div class="blob-wrapper data type-text js-blob-data">
-        <table class="file-code file-diff tab-size-8">
-          <tr class="render-notice"><td colspan="2">Hey, did you know this file could be <a href='https://help.github.com/articles/rendering-csv-and-tsv-data'>beautiful and searchable</a> if this error is corrected? It looks like row 3 should actually have 1 column, instead of 4.</td></tr>
-          <tr class="file-code-line">
-            <td class="blob-line-nums">
-              <span id="L1" rel="#L1">1</span>
-<span id="L2" rel="#L2">2</span>
-<span id="L3" rel="#L3">3</span>
-<span id="L4" rel="#L4">4</span>
-<span id="L5" rel="#L5">5</span>
-<span id="L6" rel="#L6">6</span>
-<span id="L7" rel="#L7">7</span>
-<span id="L8" rel="#L8">8</span>
-<span id="L9" rel="#L9">9</span>
-<span id="L10" rel="#L10">10</span>
-<span id="L11" rel="#L11">11</span>
-<span id="L12" rel="#L12">12</span>
-<span id="L13" rel="#L13">13</span>
-<span id="L14" rel="#L14">14</span>
-<span id="L15" rel="#L15">15</span>
-<span id="L16" rel="#L16">16</span>
-<span id="L17" rel="#L17">17</span>
-<span id="L18" rel="#L18">18</span>
-<span id="L19" rel="#L19">19</span>
-<span id="L20" rel="#L20">20</span>
-<span id="L21" rel="#L21">21</span>
-<span id="L22" rel="#L22">22</span>
-<span id="L23" rel="#L23">23</span>
-<span id="L24" rel="#L24">24</span>
-<span id="L25" rel="#L25">25</span>
-<span id="L26" rel="#L26">26</span>
-<span id="L27" rel="#L27">27</span>
-<span id="L28" rel="#L28">28</span>
-<span id="L29" rel="#L29">29</span>
-<span id="L30" rel="#L30">30</span>
-<span id="L31" rel="#L31">31</span>
-<span id="L32" rel="#L32">32</span>
-<span id="L33" rel="#L33">33</span>
-<span id="L34" rel="#L34">34</span>
-<span id="L35" rel="#L35">35</span>
-<span id="L36" rel="#L36">36</span>
-<span id="L37" rel="#L37">37</span>
-<span id="L38" rel="#L38">38</span>
-<span id="L39" rel="#L39">39</span>
-<span id="L40" rel="#L40">40</span>
-<span id="L41" rel="#L41">41</span>
-<span id="L42" rel="#L42">42</span>
-<span id="L43" rel="#L43">43</span>
-<span id="L44" rel="#L44">44</span>
-<span id="L45" rel="#L45">45</span>
-<span id="L46" rel="#L46">46</span>
-<span id="L47" rel="#L47">47</span>
-<span id="L48" rel="#L48">48</span>
-<span id="L49" rel="#L49">49</span>
-<span id="L50" rel="#L50">50</span>
-<span id="L51" rel="#L51">51</span>
-<span id="L52" rel="#L52">52</span>
-<span id="L53" rel="#L53">53</span>
-<span id="L54" rel="#L54">54</span>
-<span id="L55" rel="#L55">55</span>
-<span id="L56" rel="#L56">56</span>
-<span id="L57" rel="#L57">57</span>
-<span id="L58" rel="#L58">58</span>
-<span id="L59" rel="#L59">59</span>
-<span id="L60" rel="#L60">60</span>
-<span id="L61" rel="#L61">61</span>
-<span id="L62" rel="#L62">62</span>
-<span id="L63" rel="#L63">63</span>
-<span id="L64" rel="#L64">64</span>
-<span id="L65" rel="#L65">65</span>
-<span id="L66" rel="#L66">66</span>
-<span id="L67" rel="#L67">67</span>
-<span id="L68" rel="#L68">68</span>
-<span id="L69" rel="#L69">69</span>
-<span id="L70" rel="#L70">70</span>
-<span id="L71" rel="#L71">71</span>
-<span id="L72" rel="#L72">72</span>
-<span id="L73" rel="#L73">73</span>
-<span id="L74" rel="#L74">74</span>
-<span id="L75" rel="#L75">75</span>
-<span id="L76" rel="#L76">76</span>
-<span id="L77" rel="#L77">77</span>
-<span id="L78" rel="#L78">78</span>
-<span id="L79" rel="#L79">79</span>
-<span id="L80" rel="#L80">80</span>
-<span id="L81" rel="#L81">81</span>
-<span id="L82" rel="#L82">82</span>
-<span id="L83" rel="#L83">83</span>
-<span id="L84" rel="#L84">84</span>
-<span id="L85" rel="#L85">85</span>
-<span id="L86" rel="#L86">86</span>
-<span id="L87" rel="#L87">87</span>
-<span id="L88" rel="#L88">88</span>
-<span id="L89" rel="#L89">89</span>
-<span id="L90" rel="#L90">90</span>
-<span id="L91" rel="#L91">91</span>
-<span id="L92" rel="#L92">92</span>
-<span id="L93" rel="#L93">93</span>
-<span id="L94" rel="#L94">94</span>
-<span id="L95" rel="#L95">95</span>
-<span id="L96" rel="#L96">96</span>
-<span id="L97" rel="#L97">97</span>
-<span id="L98" rel="#L98">98</span>
-<span id="L99" rel="#L99">99</span>
-<span id="L100" rel="#L100">100</span>
-<span id="L101" rel="#L101">101</span>
-<span id="L102" rel="#L102">102</span>
-<span id="L103" rel="#L103">103</span>
-<span id="L104" rel="#L104">104</span>
-<span id="L105" rel="#L105">105</span>
-<span id="L106" rel="#L106">106</span>
-<span id="L107" rel="#L107">107</span>
-<span id="L108" rel="#L108">108</span>
-<span id="L109" rel="#L109">109</span>
-<span id="L110" rel="#L110">110</span>
-<span id="L111" rel="#L111">111</span>
-<span id="L112" rel="#L112">112</span>
-<span id="L113" rel="#L113">113</span>
-<span id="L114" rel="#L114">114</span>
-<span id="L115" rel="#L115">115</span>
-<span id="L116" rel="#L116">116</span>
-<span id="L117" rel="#L117">117</span>
-<span id="L118" rel="#L118">118</span>
-<span id="L119" rel="#L119">119</span>
-<span id="L120" rel="#L120">120</span>
-<span id="L121" rel="#L121">121</span>
-<span id="L122" rel="#L122">122</span>
-<span id="L123" rel="#L123">123</span>
-<span id="L124" rel="#L124">124</span>
-<span id="L125" rel="#L125">125</span>
-<span id="L126" rel="#L126">126</span>
-<span id="L127" rel="#L127">127</span>
-<span id="L128" rel="#L128">128</span>
-<span id="L129" rel="#L129">129</span>
-<span id="L130" rel="#L130">130</span>
-<span id="L131" rel="#L131">131</span>
-<span id="L132" rel="#L132">132</span>
-<span id="L133" rel="#L133">133</span>
-<span id="L134" rel="#L134">134</span>
-<span id="L135" rel="#L135">135</span>
-<span id="L136" rel="#L136">136</span>
-<span id="L137" rel="#L137">137</span>
-<span id="L138" rel="#L138">138</span>
-<span id="L139" rel="#L139">139</span>
-<span id="L140" rel="#L140">140</span>
-<span id="L141" rel="#L141">141</span>
-<span id="L142" rel="#L142">142</span>
-<span id="L143" rel="#L143">143</span>
-<span id="L144" rel="#L144">144</span>
-<span id="L145" rel="#L145">145</span>
-<span id="L146" rel="#L146">146</span>
-<span id="L147" rel="#L147">147</span>
-<span id="L148" rel="#L148">148</span>
-<span id="L149" rel="#L149">149</span>
-<span id="L150" rel="#L150">150</span>
-<span id="L151" rel="#L151">151</span>
-<span id="L152" rel="#L152">152</span>
-<span id="L153" rel="#L153">153</span>
-<span id="L154" rel="#L154">154</span>
-<span id="L155" rel="#L155">155</span>
-<span id="L156" rel="#L156">156</span>
-<span id="L157" rel="#L157">157</span>
-<span id="L158" rel="#L158">158</span>
-<span id="L159" rel="#L159">159</span>
-<span id="L160" rel="#L160">160</span>
-<span id="L161" rel="#L161">161</span>
-<span id="L162" rel="#L162">162</span>
-<span id="L163" rel="#L163">163</span>
-<span id="L164" rel="#L164">164</span>
-<span id="L165" rel="#L165">165</span>
-<span id="L166" rel="#L166">166</span>
-<span id="L167" rel="#L167">167</span>
-<span id="L168" rel="#L168">168</span>
-<span id="L169" rel="#L169">169</span>
-<span id="L170" rel="#L170">170</span>
-<span id="L171" rel="#L171">171</span>
-<span id="L172" rel="#L172">172</span>
-<span id="L173" rel="#L173">173</span>
-<span id="L174" rel="#L174">174</span>
-<span id="L175" rel="#L175">175</span>
-<span id="L176" rel="#L176">176</span>
-<span id="L177" rel="#L177">177</span>
-<span id="L178" rel="#L178">178</span>
-<span id="L179" rel="#L179">179</span>
-<span id="L180" rel="#L180">180</span>
-<span id="L181" rel="#L181">181</span>
-<span id="L182" rel="#L182">182</span>
-<span id="L183" rel="#L183">183</span>
-<span id="L184" rel="#L184">184</span>
-<span id="L185" rel="#L185">185</span>
-<span id="L186" rel="#L186">186</span>
-<span id="L187" rel="#L187">187</span>
-<span id="L188" rel="#L188">188</span>
-<span id="L189" rel="#L189">189</span>
-<span id="L190" rel="#L190">190</span>
-<span id="L191" rel="#L191">191</span>
-<span id="L192" rel="#L192">192</span>
-<span id="L193" rel="#L193">193</span>
-<span id="L194" rel="#L194">194</span>
-<span id="L195" rel="#L195">195</span>
-<span id="L196" rel="#L196">196</span>
-<span id="L197" rel="#L197">197</span>
-<span id="L198" rel="#L198">198</span>
-<span id="L199" rel="#L199">199</span>
-<span id="L200" rel="#L200">200</span>
-<span id="L201" rel="#L201">201</span>
-<span id="L202" rel="#L202">202</span>
-<span id="L203" rel="#L203">203</span>
-<span id="L204" rel="#L204">204</span>
-<span id="L205" rel="#L205">205</span>
-<span id="L206" rel="#L206">206</span>
-<span id="L207" rel="#L207">207</span>
-<span id="L208" rel="#L208">208</span>
-<span id="L209" rel="#L209">209</span>
-<span id="L210" rel="#L210">210</span>
-<span id="L211" rel="#L211">211</span>
-<span id="L212" rel="#L212">212</span>
-<span id="L213" rel="#L213">213</span>
-<span id="L214" rel="#L214">214</span>
-<span id="L215" rel="#L215">215</span>
-<span id="L216" rel="#L216">216</span>
-<span id="L217" rel="#L217">217</span>
-<span id="L218" rel="#L218">218</span>
-<span id="L219" rel="#L219">219</span>
-<span id="L220" rel="#L220">220</span>
-<span id="L221" rel="#L221">221</span>
-<span id="L222" rel="#L222">222</span>
-<span id="L223" rel="#L223">223</span>
-<span id="L224" rel="#L224">224</span>
-<span id="L225" rel="#L225">225</span>
-<span id="L226" rel="#L226">226</span>
-<span id="L227" rel="#L227">227</span>
-<span id="L228" rel="#L228">228</span>
-<span id="L229" rel="#L229">229</span>
-<span id="L230" rel="#L230">230</span>
-<span id="L231" rel="#L231">231</span>
-<span id="L232" rel="#L232">232</span>
-<span id="L233" rel="#L233">233</span>
-<span id="L234" rel="#L234">234</span>
-<span id="L235" rel="#L235">235</span>
-<span id="L236" rel="#L236">236</span>
-<span id="L237" rel="#L237">237</span>
-<span id="L238" rel="#L238">238</span>
-<span id="L239" rel="#L239">239</span>
-<span id="L240" rel="#L240">240</span>
-<span id="L241" rel="#L241">241</span>
-<span id="L242" rel="#L242">242</span>
-<span id="L243" rel="#L243">243</span>
-<span id="L244" rel="#L244">244</span>
-<span id="L245" rel="#L245">245</span>
-<span id="L246" rel="#L246">246</span>
-<span id="L247" rel="#L247">247</span>
-<span id="L248" rel="#L248">248</span>
-<span id="L249" rel="#L249">249</span>
-<span id="L250" rel="#L250">250</span>
-<span id="L251" rel="#L251">251</span>
-<span id="L252" rel="#L252">252</span>
-<span id="L253" rel="#L253">253</span>
-<span id="L254" rel="#L254">254</span>
-<span id="L255" rel="#L255">255</span>
-<span id="L256" rel="#L256">256</span>
-<span id="L257" rel="#L257">257</span>
-<span id="L258" rel="#L258">258</span>
-<span id="L259" rel="#L259">259</span>
-<span id="L260" rel="#L260">260</span>
-<span id="L261" rel="#L261">261</span>
-<span id="L262" rel="#L262">262</span>
-<span id="L263" rel="#L263">263</span>
-<span id="L264" rel="#L264">264</span>
-<span id="L265" rel="#L265">265</span>
-<span id="L266" rel="#L266">266</span>
-<span id="L267" rel="#L267">267</span>
-<span id="L268" rel="#L268">268</span>
-<span id="L269" rel="#L269">269</span>
-<span id="L270" rel="#L270">270</span>
-<span id="L271" rel="#L271">271</span>
-<span id="L272" rel="#L272">272</span>
-<span id="L273" rel="#L273">273</span>
-<span id="L274" rel="#L274">274</span>
-<span id="L275" rel="#L275">275</span>
-<span id="L276" rel="#L276">276</span>
-<span id="L277" rel="#L277">277</span>
-<span id="L278" rel="#L278">278</span>
-<span id="L279" rel="#L279">279</span>
-<span id="L280" rel="#L280">280</span>
-<span id="L281" rel="#L281">281</span>
-<span id="L282" rel="#L282">282</span>
-<span id="L283" rel="#L283">283</span>
-<span id="L284" rel="#L284">284</span>
-<span id="L285" rel="#L285">285</span>
-<span id="L286" rel="#L286">286</span>
-<span id="L287" rel="#L287">287</span>
-<span id="L288" rel="#L288">288</span>
-<span id="L289" rel="#L289">289</span>
-<span id="L290" rel="#L290">290</span>
-<span id="L291" rel="#L291">291</span>
-<span id="L292" rel="#L292">292</span>
-<span id="L293" rel="#L293">293</span>
-<span id="L294" rel="#L294">294</span>
-<span id="L295" rel="#L295">295</span>
-<span id="L296" rel="#L296">296</span>
-<span id="L297" rel="#L297">297</span>
-<span id="L298" rel="#L298">298</span>
-<span id="L299" rel="#L299">299</span>
-<span id="L300" rel="#L300">300</span>
-<span id="L301" rel="#L301">301</span>
-<span id="L302" rel="#L302">302</span>
-<span id="L303" rel="#L303">303</span>
-<span id="L304" rel="#L304">304</span>
-<span id="L305" rel="#L305">305</span>
-<span id="L306" rel="#L306">306</span>
-<span id="L307" rel="#L307">307</span>
-<span id="L308" rel="#L308">308</span>
-<span id="L309" rel="#L309">309</span>
-<span id="L310" rel="#L310">310</span>
-<span id="L311" rel="#L311">311</span>
-<span id="L312" rel="#L312">312</span>
-<span id="L313" rel="#L313">313</span>
-<span id="L314" rel="#L314">314</span>
-<span id="L315" rel="#L315">315</span>
-<span id="L316" rel="#L316">316</span>
-<span id="L317" rel="#L317">317</span>
-<span id="L318" rel="#L318">318</span>
-<span id="L319" rel="#L319">319</span>
-<span id="L320" rel="#L320">320</span>
-<span id="L321" rel="#L321">321</span>
-<span id="L322" rel="#L322">322</span>
-<span id="L323" rel="#L323">323</span>
-<span id="L324" rel="#L324">324</span>
-<span id="L325" rel="#L325">325</span>
-<span id="L326" rel="#L326">326</span>
-<span id="L327" rel="#L327">327</span>
-<span id="L328" rel="#L328">328</span>
-<span id="L329" rel="#L329">329</span>
-<span id="L330" rel="#L330">330</span>
-<span id="L331" rel="#L331">331</span>
-<span id="L332" rel="#L332">332</span>
-<span id="L333" rel="#L333">333</span>
-<span id="L334" rel="#L334">334</span>
-<span id="L335" rel="#L335">335</span>
-<span id="L336" rel="#L336">336</span>
-<span id="L337" rel="#L337">337</span>
-<span id="L338" rel="#L338">338</span>
-<span id="L339" rel="#L339">339</span>
-<span id="L340" rel="#L340">340</span>
-<span id="L341" rel="#L341">341</span>
-<span id="L342" rel="#L342">342</span>
-<span id="L343" rel="#L343">343</span>
-<span id="L344" rel="#L344">344</span>
-<span id="L345" rel="#L345">345</span>
-<span id="L346" rel="#L346">346</span>
-<span id="L347" rel="#L347">347</span>
-<span id="L348" rel="#L348">348</span>
-<span id="L349" rel="#L349">349</span>
-<span id="L350" rel="#L350">350</span>
-<span id="L351" rel="#L351">351</span>
-<span id="L352" rel="#L352">352</span>
-<span id="L353" rel="#L353">353</span>
-<span id="L354" rel="#L354">354</span>
-<span id="L355" rel="#L355">355</span>
-<span id="L356" rel="#L356">356</span>
-<span id="L357" rel="#L357">357</span>
-<span id="L358" rel="#L358">358</span>
-<span id="L359" rel="#L359">359</span>
-<span id="L360" rel="#L360">360</span>
-<span id="L361" rel="#L361">361</span>
-<span id="L362" rel="#L362">362</span>
-<span id="L363" rel="#L363">363</span>
-<span id="L364" rel="#L364">364</span>
-<span id="L365" rel="#L365">365</span>
-<span id="L366" rel="#L366">366</span>
-<span id="L367" rel="#L367">367</span>
-<span id="L368" rel="#L368">368</span>
-<span id="L369" rel="#L369">369</span>
-<span id="L370" rel="#L370">370</span>
-<span id="L371" rel="#L371">371</span>
-<span id="L372" rel="#L372">372</span>
-<span id="L373" rel="#L373">373</span>
-<span id="L374" rel="#L374">374</span>
-<span id="L375" rel="#L375">375</span>
-<span id="L376" rel="#L376">376</span>
-<span id="L377" rel="#L377">377</span>
-<span id="L378" rel="#L378">378</span>
-<span id="L379" rel="#L379">379</span>
-<span id="L380" rel="#L380">380</span>
-<span id="L381" rel="#L381">381</span>
-<span id="L382" rel="#L382">382</span>
-<span id="L383" rel="#L383">383</span>
-<span id="L384" rel="#L384">384</span>
-<span id="L385" rel="#L385">385</span>
-<span id="L386" rel="#L386">386</span>
-<span id="L387" rel="#L387">387</span>
-<span id="L388" rel="#L388">388</span>
-<span id="L389" rel="#L389">389</span>
-<span id="L390" rel="#L390">390</span>
-<span id="L391" rel="#L391">391</span>
-<span id="L392" rel="#L392">392</span>
-<span id="L393" rel="#L393">393</span>
-<span id="L394" rel="#L394">394</span>
-<span id="L395" rel="#L395">395</span>
-<span id="L396" rel="#L396">396</span>
-<span id="L397" rel="#L397">397</span>
-<span id="L398" rel="#L398">398</span>
-<span id="L399" rel="#L399">399</span>
-<span id="L400" rel="#L400">400</span>
-<span id="L401" rel="#L401">401</span>
-<span id="L402" rel="#L402">402</span>
-<span id="L403" rel="#L403">403</span>
-<span id="L404" rel="#L404">404</span>
-<span id="L405" rel="#L405">405</span>
-<span id="L406" rel="#L406">406</span>
-<span id="L407" rel="#L407">407</span>
-<span id="L408" rel="#L408">408</span>
-<span id="L409" rel="#L409">409</span>
-<span id="L410" rel="#L410">410</span>
-<span id="L411" rel="#L411">411</span>
-<span id="L412" rel="#L412">412</span>
-<span id="L413" rel="#L413">413</span>
-<span id="L414" rel="#L414">414</span>
-<span id="L415" rel="#L415">415</span>
-<span id="L416" rel="#L416">416</span>
-<span id="L417" rel="#L417">417</span>
-<span id="L418" rel="#L418">418</span>
-<span id="L419" rel="#L419">419</span>
-<span id="L420" rel="#L420">420</span>
-<span id="L421" rel="#L421">421</span>
-<span id="L422" rel="#L422">422</span>
-<span id="L423" rel="#L423">423</span>
-<span id="L424" rel="#L424">424</span>
-<span id="L425" rel="#L425">425</span>
-<span id="L426" rel="#L426">426</span>
-<span id="L427" rel="#L427">427</span>
-<span id="L428" rel="#L428">428</span>
-<span id="L429" rel="#L429">429</span>
-<span id="L430" rel="#L430">430</span>
-<span id="L431" rel="#L431">431</span>
-<span id="L432" rel="#L432">432</span>
-<span id="L433" rel="#L433">433</span>
-<span id="L434" rel="#L434">434</span>
-<span id="L435" rel="#L435">435</span>
-<span id="L436" rel="#L436">436</span>
-<span id="L437" rel="#L437">437</span>
-<span id="L438" rel="#L438">438</span>
-<span id="L439" rel="#L439">439</span>
-<span id="L440" rel="#L440">440</span>
-<span id="L441" rel="#L441">441</span>
-<span id="L442" rel="#L442">442</span>
-<span id="L443" rel="#L443">443</span>
-<span id="L444" rel="#L444">444</span>
-<span id="L445" rel="#L445">445</span>
-<span id="L446" rel="#L446">446</span>
-<span id="L447" rel="#L447">447</span>
-<span id="L448" rel="#L448">448</span>
-<span id="L449" rel="#L449">449</span>
-<span id="L450" rel="#L450">450</span>
-<span id="L451" rel="#L451">451</span>
-<span id="L452" rel="#L452">452</span>
-<span id="L453" rel="#L453">453</span>
-<span id="L454" rel="#L454">454</span>
-<span id="L455" rel="#L455">455</span>
-<span id="L456" rel="#L456">456</span>
-<span id="L457" rel="#L457">457</span>
-<span id="L458" rel="#L458">458</span>
-<span id="L459" rel="#L459">459</span>
-<span id="L460" rel="#L460">460</span>
-<span id="L461" rel="#L461">461</span>
-<span id="L462" rel="#L462">462</span>
-<span id="L463" rel="#L463">463</span>
-<span id="L464" rel="#L464">464</span>
-<span id="L465" rel="#L465">465</span>
-<span id="L466" rel="#L466">466</span>
-<span id="L467" rel="#L467">467</span>
-<span id="L468" rel="#L468">468</span>
-<span id="L469" rel="#L469">469</span>
-<span id="L470" rel="#L470">470</span>
-<span id="L471" rel="#L471">471</span>
-<span id="L472" rel="#L472">472</span>
-<span id="L473" rel="#L473">473</span>
-<span id="L474" rel="#L474">474</span>
-<span id="L475" rel="#L475">475</span>
-<span id="L476" rel="#L476">476</span>
-<span id="L477" rel="#L477">477</span>
-<span id="L478" rel="#L478">478</span>
-<span id="L479" rel="#L479">479</span>
-<span id="L480" rel="#L480">480</span>
-<span id="L481" rel="#L481">481</span>
-<span id="L482" rel="#L482">482</span>
-<span id="L483" rel="#L483">483</span>
-<span id="L484" rel="#L484">484</span>
-<span id="L485" rel="#L485">485</span>
-<span id="L486" rel="#L486">486</span>
-<span id="L487" rel="#L487">487</span>
-<span id="L488" rel="#L488">488</span>
-<span id="L489" rel="#L489">489</span>
-<span id="L490" rel="#L490">490</span>
-<span id="L491" rel="#L491">491</span>
-<span id="L492" rel="#L492">492</span>
-<span id="L493" rel="#L493">493</span>
-<span id="L494" rel="#L494">494</span>
-<span id="L495" rel="#L495">495</span>
-<span id="L496" rel="#L496">496</span>
-<span id="L497" rel="#L497">497</span>
-<span id="L498" rel="#L498">498</span>
-<span id="L499" rel="#L499">499</span>
-<span id="L500" rel="#L500">500</span>
-<span id="L501" rel="#L501">501</span>
-<span id="L502" rel="#L502">502</span>
-<span id="L503" rel="#L503">503</span>
-<span id="L504" rel="#L504">504</span>
-<span id="L505" rel="#L505">505</span>
-<span id="L506" rel="#L506">506</span>
-<span id="L507" rel="#L507">507</span>
-<span id="L508" rel="#L508">508</span>
-<span id="L509" rel="#L509">509</span>
-<span id="L510" rel="#L510">510</span>
-<span id="L511" rel="#L511">511</span>
-<span id="L512" rel="#L512">512</span>
-<span id="L513" rel="#L513">513</span>
-<span id="L514" rel="#L514">514</span>
-<span id="L515" rel="#L515">515</span>
-<span id="L516" rel="#L516">516</span>
-<span id="L517" rel="#L517">517</span>
-<span id="L518" rel="#L518">518</span>
-<span id="L519" rel="#L519">519</span>
-<span id="L520" rel="#L520">520</span>
-<span id="L521" rel="#L521">521</span>
-<span id="L522" rel="#L522">522</span>
-<span id="L523" rel="#L523">523</span>
-<span id="L524" rel="#L524">524</span>
-<span id="L525" rel="#L525">525</span>
-<span id="L526" rel="#L526">526</span>
-<span id="L527" rel="#L527">527</span>
-<span id="L528" rel="#L528">528</span>
-<span id="L529" rel="#L529">529</span>
-<span id="L530" rel="#L530">530</span>
-<span id="L531" rel="#L531">531</span>
-<span id="L532" rel="#L532">532</span>
-<span id="L533" rel="#L533">533</span>
-<span id="L534" rel="#L534">534</span>
-<span id="L535" rel="#L535">535</span>
-<span id="L536" rel="#L536">536</span>
-<span id="L537" rel="#L537">537</span>
-<span id="L538" rel="#L538">538</span>
-<span id="L539" rel="#L539">539</span>
-<span id="L540" rel="#L540">540</span>
-<span id="L541" rel="#L541">541</span>
-<span id="L542" rel="#L542">542</span>
-<span id="L543" rel="#L543">543</span>
-<span id="L544" rel="#L544">544</span>
-<span id="L545" rel="#L545">545</span>
-<span id="L546" rel="#L546">546</span>
-<span id="L547" rel="#L547">547</span>
-<span id="L548" rel="#L548">548</span>
-<span id="L549" rel="#L549">549</span>
-<span id="L550" rel="#L550">550</span>
-<span id="L551" rel="#L551">551</span>
-<span id="L552" rel="#L552">552</span>
-<span id="L553" rel="#L553">553</span>
-<span id="L554" rel="#L554">554</span>
-<span id="L555" rel="#L555">555</span>
-<span id="L556" rel="#L556">556</span>
-<span id="L557" rel="#L557">557</span>
-<span id="L558" rel="#L558">558</span>
-<span id="L559" rel="#L559">559</span>
-<span id="L560" rel="#L560">560</span>
-<span id="L561" rel="#L561">561</span>
-<span id="L562" rel="#L562">562</span>
-<span id="L563" rel="#L563">563</span>
-<span id="L564" rel="#L564">564</span>
-<span id="L565" rel="#L565">565</span>
-<span id="L566" rel="#L566">566</span>
-<span id="L567" rel="#L567">567</span>
-<span id="L568" rel="#L568">568</span>
-<span id="L569" rel="#L569">569</span>
-<span id="L570" rel="#L570">570</span>
-<span id="L571" rel="#L571">571</span>
-<span id="L572" rel="#L572">572</span>
-<span id="L573" rel="#L573">573</span>
-<span id="L574" rel="#L574">574</span>
-<span id="L575" rel="#L575">575</span>
-<span id="L576" rel="#L576">576</span>
-<span id="L577" rel="#L577">577</span>
-<span id="L578" rel="#L578">578</span>
-<span id="L579" rel="#L579">579</span>
-<span id="L580" rel="#L580">580</span>
-<span id="L581" rel="#L581">581</span>
-<span id="L582" rel="#L582">582</span>
-<span id="L583" rel="#L583">583</span>
-<span id="L584" rel="#L584">584</span>
-<span id="L585" rel="#L585">585</span>
-<span id="L586" rel="#L586">586</span>
-<span id="L587" rel="#L587">587</span>
-<span id="L588" rel="#L588">588</span>
-<span id="L589" rel="#L589">589</span>
-<span id="L590" rel="#L590">590</span>
-<span id="L591" rel="#L591">591</span>
-<span id="L592" rel="#L592">592</span>
-<span id="L593" rel="#L593">593</span>
-<span id="L594" rel="#L594">594</span>
-<span id="L595" rel="#L595">595</span>
-<span id="L596" rel="#L596">596</span>
-<span id="L597" rel="#L597">597</span>
-<span id="L598" rel="#L598">598</span>
-<span id="L599" rel="#L599">599</span>
-<span id="L600" rel="#L600">600</span>
-<span id="L601" rel="#L601">601</span>
-<span id="L602" rel="#L602">602</span>
-<span id="L603" rel="#L603">603</span>
-<span id="L604" rel="#L604">604</span>
-<span id="L605" rel="#L605">605</span>
-<span id="L606" rel="#L606">606</span>
-<span id="L607" rel="#L607">607</span>
-<span id="L608" rel="#L608">608</span>
-<span id="L609" rel="#L609">609</span>
-<span id="L610" rel="#L610">610</span>
-<span id="L611" rel="#L611">611</span>
-<span id="L612" rel="#L612">612</span>
-<span id="L613" rel="#L613">613</span>
-<span id="L614" rel="#L614">614</span>
-<span id="L615" rel="#L615">615</span>
-<span id="L616" rel="#L616">616</span>
-<span id="L617" rel="#L617">617</span>
-<span id="L618" rel="#L618">618</span>
-<span id="L619" rel="#L619">619</span>
-<span id="L620" rel="#L620">620</span>
-<span id="L621" rel="#L621">621</span>
-<span id="L622" rel="#L622">622</span>
-<span id="L623" rel="#L623">623</span>
-<span id="L624" rel="#L624">624</span>
-<span id="L625" rel="#L625">625</span>
-<span id="L626" rel="#L626">626</span>
-<span id="L627" rel="#L627">627</span>
-<span id="L628" rel="#L628">628</span>
-<span id="L629" rel="#L629">629</span>
-<span id="L630" rel="#L630">630</span>
-<span id="L631" rel="#L631">631</span>
-<span id="L632" rel="#L632">632</span>
-<span id="L633" rel="#L633">633</span>
-<span id="L634" rel="#L634">634</span>
-<span id="L635" rel="#L635">635</span>
-<span id="L636" rel="#L636">636</span>
-<span id="L637" rel="#L637">637</span>
-<span id="L638" rel="#L638">638</span>
-<span id="L639" rel="#L639">639</span>
-<span id="L640" rel="#L640">640</span>
-<span id="L641" rel="#L641">641</span>
-<span id="L642" rel="#L642">642</span>
-<span id="L643" rel="#L643">643</span>
-<span id="L644" rel="#L644">644</span>
-<span id="L645" rel="#L645">645</span>
-<span id="L646" rel="#L646">646</span>
-<span id="L647" rel="#L647">647</span>
-<span id="L648" rel="#L648">648</span>
-<span id="L649" rel="#L649">649</span>
-<span id="L650" rel="#L650">650</span>
-<span id="L651" rel="#L651">651</span>
-<span id="L652" rel="#L652">652</span>
-<span id="L653" rel="#L653">653</span>
-<span id="L654" rel="#L654">654</span>
-<span id="L655" rel="#L655">655</span>
-<span id="L656" rel="#L656">656</span>
-<span id="L657" rel="#L657">657</span>
-<span id="L658" rel="#L658">658</span>
-<span id="L659" rel="#L659">659</span>
-<span id="L660" rel="#L660">660</span>
-<span id="L661" rel="#L661">661</span>
-<span id="L662" rel="#L662">662</span>
-<span id="L663" rel="#L663">663</span>
-<span id="L664" rel="#L664">664</span>
-<span id="L665" rel="#L665">665</span>
-<span id="L666" rel="#L666">666</span>
-<span id="L667" rel="#L667">667</span>
-<span id="L668" rel="#L668">668</span>
-<span id="L669" rel="#L669">669</span>
-<span id="L670" rel="#L670">670</span>
-<span id="L671" rel="#L671">671</span>
-<span id="L672" rel="#L672">672</span>
-<span id="L673" rel="#L673">673</span>
-<span id="L674" rel="#L674">674</span>
-<span id="L675" rel="#L675">675</span>
-<span id="L676" rel="#L676">676</span>
-<span id="L677" rel="#L677">677</span>
-<span id="L678" rel="#L678">678</span>
-<span id="L679" rel="#L679">679</span>
-<span id="L680" rel="#L680">680</span>
-<span id="L681" rel="#L681">681</span>
-<span id="L682" rel="#L682">682</span>
-<span id="L683" rel="#L683">683</span>
-<span id="L684" rel="#L684">684</span>
-<span id="L685" rel="#L685">685</span>
-<span id="L686" rel="#L686">686</span>
-<span id="L687" rel="#L687">687</span>
-<span id="L688" rel="#L688">688</span>
-<span id="L689" rel="#L689">689</span>
-<span id="L690" rel="#L690">690</span>
-<span id="L691" rel="#L691">691</span>
-<span id="L692" rel="#L692">692</span>
-<span id="L693" rel="#L693">693</span>
-<span id="L694" rel="#L694">694</span>
-<span id="L695" rel="#L695">695</span>
-<span id="L696" rel="#L696">696</span>
-<span id="L697" rel="#L697">697</span>
-<span id="L698" rel="#L698">698</span>
-<span id="L699" rel="#L699">699</span>
-<span id="L700" rel="#L700">700</span>
-<span id="L701" rel="#L701">701</span>
-<span id="L702" rel="#L702">702</span>
-<span id="L703" rel="#L703">703</span>
-<span id="L704" rel="#L704">704</span>
-<span id="L705" rel="#L705">705</span>
-<span id="L706" rel="#L706">706</span>
-<span id="L707" rel="#L707">707</span>
-<span id="L708" rel="#L708">708</span>
-<span id="L709" rel="#L709">709</span>
-<span id="L710" rel="#L710">710</span>
-<span id="L711" rel="#L711">711</span>
-<span id="L712" rel="#L712">712</span>
-<span id="L713" rel="#L713">713</span>
-<span id="L714" rel="#L714">714</span>
-<span id="L715" rel="#L715">715</span>
-<span id="L716" rel="#L716">716</span>
-<span id="L717" rel="#L717">717</span>
-<span id="L718" rel="#L718">718</span>
-<span id="L719" rel="#L719">719</span>
-<span id="L720" rel="#L720">720</span>
-<span id="L721" rel="#L721">721</span>
-<span id="L722" rel="#L722">722</span>
-<span id="L723" rel="#L723">723</span>
-<span id="L724" rel="#L724">724</span>
-<span id="L725" rel="#L725">725</span>
-<span id="L726" rel="#L726">726</span>
-<span id="L727" rel="#L727">727</span>
-<span id="L728" rel="#L728">728</span>
-<span id="L729" rel="#L729">729</span>
-<span id="L730" rel="#L730">730</span>
-<span id="L731" rel="#L731">731</span>
-<span id="L732" rel="#L732">732</span>
-<span id="L733" rel="#L733">733</span>
-<span id="L734" rel="#L734">734</span>
-<span id="L735" rel="#L735">735</span>
-<span id="L736" rel="#L736">736</span>
-<span id="L737" rel="#L737">737</span>
-<span id="L738" rel="#L738">738</span>
-<span id="L739" rel="#L739">739</span>
-<span id="L740" rel="#L740">740</span>
-<span id="L741" rel="#L741">741</span>
-<span id="L742" rel="#L742">742</span>
-<span id="L743" rel="#L743">743</span>
-<span id="L744" rel="#L744">744</span>
-<span id="L745" rel="#L745">745</span>
-<span id="L746" rel="#L746">746</span>
-<span id="L747" rel="#L747">747</span>
-<span id="L748" rel="#L748">748</span>
-<span id="L749" rel="#L749">749</span>
-<span id="L750" rel="#L750">750</span>
-<span id="L751" rel="#L751">751</span>
-<span id="L752" rel="#L752">752</span>
-<span id="L753" rel="#L753">753</span>
-<span id="L754" rel="#L754">754</span>
-<span id="L755" rel="#L755">755</span>
-<span id="L756" rel="#L756">756</span>
-<span id="L757" rel="#L757">757</span>
-<span id="L758" rel="#L758">758</span>
-<span id="L759" rel="#L759">759</span>
-<span id="L760" rel="#L760">760</span>
-<span id="L761" rel="#L761">761</span>
-<span id="L762" rel="#L762">762</span>
-<span id="L763" rel="#L763">763</span>
-<span id="L764" rel="#L764">764</span>
-<span id="L765" rel="#L765">765</span>
-<span id="L766" rel="#L766">766</span>
-<span id="L767" rel="#L767">767</span>
-<span id="L768" rel="#L768">768</span>
-<span id="L769" rel="#L769">769</span>
-<span id="L770" rel="#L770">770</span>
-<span id="L771" rel="#L771">771</span>
-<span id="L772" rel="#L772">772</span>
-<span id="L773" rel="#L773">773</span>
-<span id="L774" rel="#L774">774</span>
-<span id="L775" rel="#L775">775</span>
-<span id="L776" rel="#L776">776</span>
-<span id="L777" rel="#L777">777</span>
-<span id="L778" rel="#L778">778</span>
-<span id="L779" rel="#L779">779</span>
-<span id="L780" rel="#L780">780</span>
-<span id="L781" rel="#L781">781</span>
-<span id="L782" rel="#L782">782</span>
-<span id="L783" rel="#L783">783</span>
-<span id="L784" rel="#L784">784</span>
-<span id="L785" rel="#L785">785</span>
-<span id="L786" rel="#L786">786</span>
-<span id="L787" rel="#L787">787</span>
-<span id="L788" rel="#L788">788</span>
-<span id="L789" rel="#L789">789</span>
-<span id="L790" rel="#L790">790</span>
-<span id="L791" rel="#L791">791</span>
-<span id="L792" rel="#L792">792</span>
-<span id="L793" rel="#L793">793</span>
-<span id="L794" rel="#L794">794</span>
-<span id="L795" rel="#L795">795</span>
-<span id="L796" rel="#L796">796</span>
-<span id="L797" rel="#L797">797</span>
-<span id="L798" rel="#L798">798</span>
-<span id="L799" rel="#L799">799</span>
-<span id="L800" rel="#L800">800</span>
-<span id="L801" rel="#L801">801</span>
-<span id="L802" rel="#L802">802</span>
-<span id="L803" rel="#L803">803</span>
-<span id="L804" rel="#L804">804</span>
-<span id="L805" rel="#L805">805</span>
-<span id="L806" rel="#L806">806</span>
-<span id="L807" rel="#L807">807</span>
-<span id="L808" rel="#L808">808</span>
-<span id="L809" rel="#L809">809</span>
-<span id="L810" rel="#L810">810</span>
-<span id="L811" rel="#L811">811</span>
-<span id="L812" rel="#L812">812</span>
-<span id="L813" rel="#L813">813</span>
-<span id="L814" rel="#L814">814</span>
-<span id="L815" rel="#L815">815</span>
-<span id="L816" rel="#L816">816</span>
-<span id="L817" rel="#L817">817</span>
-<span id="L818" rel="#L818">818</span>
-<span id="L819" rel="#L819">819</span>
-<span id="L820" rel="#L820">820</span>
-<span id="L821" rel="#L821">821</span>
-<span id="L822" rel="#L822">822</span>
-<span id="L823" rel="#L823">823</span>
-<span id="L824" rel="#L824">824</span>
-<span id="L825" rel="#L825">825</span>
-<span id="L826" rel="#L826">826</span>
-<span id="L827" rel="#L827">827</span>
-<span id="L828" rel="#L828">828</span>
-<span id="L829" rel="#L829">829</span>
-<span id="L830" rel="#L830">830</span>
-<span id="L831" rel="#L831">831</span>
-<span id="L832" rel="#L832">832</span>
-<span id="L833" rel="#L833">833</span>
-<span id="L834" rel="#L834">834</span>
-<span id="L835" rel="#L835">835</span>
-<span id="L836" rel="#L836">836</span>
-<span id="L837" rel="#L837">837</span>
-<span id="L838" rel="#L838">838</span>
-<span id="L839" rel="#L839">839</span>
-<span id="L840" rel="#L840">840</span>
-<span id="L841" rel="#L841">841</span>
-<span id="L842" rel="#L842">842</span>
-<span id="L843" rel="#L843">843</span>
-<span id="L844" rel="#L844">844</span>
-<span id="L845" rel="#L845">845</span>
-<span id="L846" rel="#L846">846</span>
-<span id="L847" rel="#L847">847</span>
-<span id="L848" rel="#L848">848</span>
-<span id="L849" rel="#L849">849</span>
-<span id="L850" rel="#L850">850</span>
-<span id="L851" rel="#L851">851</span>
-<span id="L852" rel="#L852">852</span>
-<span id="L853" rel="#L853">853</span>
-<span id="L854" rel="#L854">854</span>
-<span id="L855" rel="#L855">855</span>
-<span id="L856" rel="#L856">856</span>
-<span id="L857" rel="#L857">857</span>
-<span id="L858" rel="#L858">858</span>
-<span id="L859" rel="#L859">859</span>
-<span id="L860" rel="#L860">860</span>
-<span id="L861" rel="#L861">861</span>
-<span id="L862" rel="#L862">862</span>
-<span id="L863" rel="#L863">863</span>
-<span id="L864" rel="#L864">864</span>
-<span id="L865" rel="#L865">865</span>
-<span id="L866" rel="#L866">866</span>
-<span id="L867" rel="#L867">867</span>
-<span id="L868" rel="#L868">868</span>
-<span id="L869" rel="#L869">869</span>
-<span id="L870" rel="#L870">870</span>
-<span id="L871" rel="#L871">871</span>
-<span id="L872" rel="#L872">872</span>
-<span id="L873" rel="#L873">873</span>
-<span id="L874" rel="#L874">874</span>
-<span id="L875" rel="#L875">875</span>
-<span id="L876" rel="#L876">876</span>
-<span id="L877" rel="#L877">877</span>
-<span id="L878" rel="#L878">878</span>
-<span id="L879" rel="#L879">879</span>
-<span id="L880" rel="#L880">880</span>
-<span id="L881" rel="#L881">881</span>
-<span id="L882" rel="#L882">882</span>
-<span id="L883" rel="#L883">883</span>
-<span id="L884" rel="#L884">884</span>
-<span id="L885" rel="#L885">885</span>
-<span id="L886" rel="#L886">886</span>
-<span id="L887" rel="#L887">887</span>
-<span id="L888" rel="#L888">888</span>
-<span id="L889" rel="#L889">889</span>
-<span id="L890" rel="#L890">890</span>
-<span id="L891" rel="#L891">891</span>
-<span id="L892" rel="#L892">892</span>
-<span id="L893" rel="#L893">893</span>
-<span id="L894" rel="#L894">894</span>
-<span id="L895" rel="#L895">895</span>
-<span id="L896" rel="#L896">896</span>
-<span id="L897" rel="#L897">897</span>
-<span id="L898" rel="#L898">898</span>
-<span id="L899" rel="#L899">899</span>
-<span id="L900" rel="#L900">900</span>
-<span id="L901" rel="#L901">901</span>
-<span id="L902" rel="#L902">902</span>
-<span id="L903" rel="#L903">903</span>
-<span id="L904" rel="#L904">904</span>
-<span id="L905" rel="#L905">905</span>
-<span id="L906" rel="#L906">906</span>
-<span id="L907" rel="#L907">907</span>
-<span id="L908" rel="#L908">908</span>
-<span id="L909" rel="#L909">909</span>
-<span id="L910" rel="#L910">910</span>
-<span id="L911" rel="#L911">911</span>
-<span id="L912" rel="#L912">912</span>
-<span id="L913" rel="#L913">913</span>
-<span id="L914" rel="#L914">914</span>
-<span id="L915" rel="#L915">915</span>
-<span id="L916" rel="#L916">916</span>
-<span id="L917" rel="#L917">917</span>
-<span id="L918" rel="#L918">918</span>
-<span id="L919" rel="#L919">919</span>
-<span id="L920" rel="#L920">920</span>
-<span id="L921" rel="#L921">921</span>
-<span id="L922" rel="#L922">922</span>
-<span id="L923" rel="#L923">923</span>
-<span id="L924" rel="#L924">924</span>
-<span id="L925" rel="#L925">925</span>
-<span id="L926" rel="#L926">926</span>
-<span id="L927" rel="#L927">927</span>
-<span id="L928" rel="#L928">928</span>
-<span id="L929" rel="#L929">929</span>
-<span id="L930" rel="#L930">930</span>
-<span id="L931" rel="#L931">931</span>
-<span id="L932" rel="#L932">932</span>
-<span id="L933" rel="#L933">933</span>
-<span id="L934" rel="#L934">934</span>
-<span id="L935" rel="#L935">935</span>
-<span id="L936" rel="#L936">936</span>
-<span id="L937" rel="#L937">937</span>
-<span id="L938" rel="#L938">938</span>
-<span id="L939" rel="#L939">939</span>
-<span id="L940" rel="#L940">940</span>
-<span id="L941" rel="#L941">941</span>
-<span id="L942" rel="#L942">942</span>
-<span id="L943" rel="#L943">943</span>
-<span id="L944" rel="#L944">944</span>
-<span id="L945" rel="#L945">945</span>
-<span id="L946" rel="#L946">946</span>
-<span id="L947" rel="#L947">947</span>
-<span id="L948" rel="#L948">948</span>
-<span id="L949" rel="#L949">949</span>
-<span id="L950" rel="#L950">950</span>
-<span id="L951" rel="#L951">951</span>
-<span id="L952" rel="#L952">952</span>
-<span id="L953" rel="#L953">953</span>
-<span id="L954" rel="#L954">954</span>
-<span id="L955" rel="#L955">955</span>
-<span id="L956" rel="#L956">956</span>
-<span id="L957" rel="#L957">957</span>
-<span id="L958" rel="#L958">958</span>
-<span id="L959" rel="#L959">959</span>
-<span id="L960" rel="#L960">960</span>
-<span id="L961" rel="#L961">961</span>
-<span id="L962" rel="#L962">962</span>
-<span id="L963" rel="#L963">963</span>
-<span id="L964" rel="#L964">964</span>
-<span id="L965" rel="#L965">965</span>
-<span id="L966" rel="#L966">966</span>
-<span id="L967" rel="#L967">967</span>
-<span id="L968" rel="#L968">968</span>
-<span id="L969" rel="#L969">969</span>
-<span id="L970" rel="#L970">970</span>
-<span id="L971" rel="#L971">971</span>
-<span id="L972" rel="#L972">972</span>
-<span id="L973" rel="#L973">973</span>
-<span id="L974" rel="#L974">974</span>
-<span id="L975" rel="#L975">975</span>
-<span id="L976" rel="#L976">976</span>
-<span id="L977" rel="#L977">977</span>
-<span id="L978" rel="#L978">978</span>
-<span id="L979" rel="#L979">979</span>
-<span id="L980" rel="#L980">980</span>
-<span id="L981" rel="#L981">981</span>
-<span id="L982" rel="#L982">982</span>
-<span id="L983" rel="#L983">983</span>
-<span id="L984" rel="#L984">984</span>
-<span id="L985" rel="#L985">985</span>
-<span id="L986" rel="#L986">986</span>
-<span id="L987" rel="#L987">987</span>
-<span id="L988" rel="#L988">988</span>
-<span id="L989" rel="#L989">989</span>
-<span id="L990" rel="#L990">990</span>
-<span id="L991" rel="#L991">991</span>
-<span id="L992" rel="#L992">992</span>
-<span id="L993" rel="#L993">993</span>
-<span id="L994" rel="#L994">994</span>
-<span id="L995" rel="#L995">995</span>
-<span id="L996" rel="#L996">996</span>
-<span id="L997" rel="#L997">997</span>
-<span id="L998" rel="#L998">998</span>
-<span id="L999" rel="#L999">999</span>
-<span id="L1000" rel="#L1000">1000</span>
-<span id="L1001" rel="#L1001">1001</span>
-<span id="L1002" rel="#L1002">1002</span>
-<span id="L1003" rel="#L1003">1003</span>
-<span id="L1004" rel="#L1004">1004</span>
-<span id="L1005" rel="#L1005">1005</span>
-<span id="L1006" rel="#L1006">1006</span>
-<span id="L1007" rel="#L1007">1007</span>
-<span id="L1008" rel="#L1008">1008</span>
-<span id="L1009" rel="#L1009">1009</span>
-<span id="L1010" rel="#L1010">1010</span>
-<span id="L1011" rel="#L1011">1011</span>
-<span id="L1012" rel="#L1012">1012</span>
-<span id="L1013" rel="#L1013">1013</span>
-<span id="L1014" rel="#L1014">1014</span>
-<span id="L1015" rel="#L1015">1015</span>
-<span id="L1016" rel="#L1016">1016</span>
-<span id="L1017" rel="#L1017">1017</span>
-<span id="L1018" rel="#L1018">1018</span>
-<span id="L1019" rel="#L1019">1019</span>
-<span id="L1020" rel="#L1020">1020</span>
-<span id="L1021" rel="#L1021">1021</span>
-<span id="L1022" rel="#L1022">1022</span>
-<span id="L1023" rel="#L1023">1023</span>
-<span id="L1024" rel="#L1024">1024</span>
-<span id="L1025" rel="#L1025">1025</span>
-<span id="L1026" rel="#L1026">1026</span>
-<span id="L1027" rel="#L1027">1027</span>
-<span id="L1028" rel="#L1028">1028</span>
-<span id="L1029" rel="#L1029">1029</span>
-<span id="L1030" rel="#L1030">1030</span>
-<span id="L1031" rel="#L1031">1031</span>
-<span id="L1032" rel="#L1032">1032</span>
-<span id="L1033" rel="#L1033">1033</span>
-<span id="L1034" rel="#L1034">1034</span>
-<span id="L1035" rel="#L1035">1035</span>
-<span id="L1036" rel="#L1036">1036</span>
-<span id="L1037" rel="#L1037">1037</span>
-<span id="L1038" rel="#L1038">1038</span>
-<span id="L1039" rel="#L1039">1039</span>
-<span id="L1040" rel="#L1040">1040</span>
-<span id="L1041" rel="#L1041">1041</span>
-<span id="L1042" rel="#L1042">1042</span>
-<span id="L1043" rel="#L1043">1043</span>
-<span id="L1044" rel="#L1044">1044</span>
-<span id="L1045" rel="#L1045">1045</span>
-<span id="L1046" rel="#L1046">1046</span>
-<span id="L1047" rel="#L1047">1047</span>
-<span id="L1048" rel="#L1048">1048</span>
-<span id="L1049" rel="#L1049">1049</span>
-<span id="L1050" rel="#L1050">1050</span>
-<span id="L1051" rel="#L1051">1051</span>
-<span id="L1052" rel="#L1052">1052</span>
-<span id="L1053" rel="#L1053">1053</span>
-<span id="L1054" rel="#L1054">1054</span>
-<span id="L1055" rel="#L1055">1055</span>
-<span id="L1056" rel="#L1056">1056</span>
-<span id="L1057" rel="#L1057">1057</span>
-<span id="L1058" rel="#L1058">1058</span>
-<span id="L1059" rel="#L1059">1059</span>
-<span id="L1060" rel="#L1060">1060</span>
-<span id="L1061" rel="#L1061">1061</span>
-<span id="L1062" rel="#L1062">1062</span>
-<span id="L1063" rel="#L1063">1063</span>
-<span id="L1064" rel="#L1064">1064</span>
-<span id="L1065" rel="#L1065">1065</span>
-<span id="L1066" rel="#L1066">1066</span>
-<span id="L1067" rel="#L1067">1067</span>
-<span id="L1068" rel="#L1068">1068</span>
-<span id="L1069" rel="#L1069">1069</span>
-<span id="L1070" rel="#L1070">1070</span>
-<span id="L1071" rel="#L1071">1071</span>
-<span id="L1072" rel="#L1072">1072</span>
-<span id="L1073" rel="#L1073">1073</span>
-<span id="L1074" rel="#L1074">1074</span>
-<span id="L1075" rel="#L1075">1075</span>
-<span id="L1076" rel="#L1076">1076</span>
-<span id="L1077" rel="#L1077">1077</span>
-<span id="L1078" rel="#L1078">1078</span>
-<span id="L1079" rel="#L1079">1079</span>
-<span id="L1080" rel="#L1080">1080</span>
-<span id="L1081" rel="#L1081">1081</span>
-<span id="L1082" rel="#L1082">1082</span>
-<span id="L1083" rel="#L1083">1083</span>
-<span id="L1084" rel="#L1084">1084</span>
-<span id="L1085" rel="#L1085">1085</span>
-<span id="L1086" rel="#L1086">1086</span>
-<span id="L1087" rel="#L1087">1087</span>
-<span id="L1088" rel="#L1088">1088</span>
-<span id="L1089" rel="#L1089">1089</span>
-<span id="L1090" rel="#L1090">1090</span>
-<span id="L1091" rel="#L1091">1091</span>
-<span id="L1092" rel="#L1092">1092</span>
-<span id="L1093" rel="#L1093">1093</span>
-<span id="L1094" rel="#L1094">1094</span>
-<span id="L1095" rel="#L1095">1095</span>
-<span id="L1096" rel="#L1096">1096</span>
-<span id="L1097" rel="#L1097">1097</span>
-<span id="L1098" rel="#L1098">1098</span>
-<span id="L1099" rel="#L1099">1099</span>
-<span id="L1100" rel="#L1100">1100</span>
-<span id="L1101" rel="#L1101">1101</span>
-<span id="L1102" rel="#L1102">1102</span>
-<span id="L1103" rel="#L1103">1103</span>
-<span id="L1104" rel="#L1104">1104</span>
-<span id="L1105" rel="#L1105">1105</span>
-<span id="L1106" rel="#L1106">1106</span>
-<span id="L1107" rel="#L1107">1107</span>
-<span id="L1108" rel="#L1108">1108</span>
-<span id="L1109" rel="#L1109">1109</span>
-<span id="L1110" rel="#L1110">1110</span>
-<span id="L1111" rel="#L1111">1111</span>
-<span id="L1112" rel="#L1112">1112</span>
-<span id="L1113" rel="#L1113">1113</span>
-<span id="L1114" rel="#L1114">1114</span>
-<span id="L1115" rel="#L1115">1115</span>
-<span id="L1116" rel="#L1116">1116</span>
-<span id="L1117" rel="#L1117">1117</span>
-<span id="L1118" rel="#L1118">1118</span>
-<span id="L1119" rel="#L1119">1119</span>
-<span id="L1120" rel="#L1120">1120</span>
-<span id="L1121" rel="#L1121">1121</span>
-<span id="L1122" rel="#L1122">1122</span>
-<span id="L1123" rel="#L1123">1123</span>
-<span id="L1124" rel="#L1124">1124</span>
-<span id="L1125" rel="#L1125">1125</span>
-<span id="L1126" rel="#L1126">1126</span>
-<span id="L1127" rel="#L1127">1127</span>
-<span id="L1128" rel="#L1128">1128</span>
-<span id="L1129" rel="#L1129">1129</span>
-<span id="L1130" rel="#L1130">1130</span>
-<span id="L1131" rel="#L1131">1131</span>
-<span id="L1132" rel="#L1132">1132</span>
-<span id="L1133" rel="#L1133">1133</span>
-<span id="L1134" rel="#L1134">1134</span>
-<span id="L1135" rel="#L1135">1135</span>
-<span id="L1136" rel="#L1136">1136</span>
-<span id="L1137" rel="#L1137">1137</span>
-<span id="L1138" rel="#L1138">1138</span>
-<span id="L1139" rel="#L1139">1139</span>
-<span id="L1140" rel="#L1140">1140</span>
-<span id="L1141" rel="#L1141">1141</span>
-<span id="L1142" rel="#L1142">1142</span>
-<span id="L1143" rel="#L1143">1143</span>
-<span id="L1144" rel="#L1144">1144</span>
-<span id="L1145" rel="#L1145">1145</span>
-<span id="L1146" rel="#L1146">1146</span>
-<span id="L1147" rel="#L1147">1147</span>
-<span id="L1148" rel="#L1148">1148</span>
-<span id="L1149" rel="#L1149">1149</span>
-<span id="L1150" rel="#L1150">1150</span>
-<span id="L1151" rel="#L1151">1151</span>
-<span id="L1152" rel="#L1152">1152</span>
-<span id="L1153" rel="#L1153">1153</span>
-<span id="L1154" rel="#L1154">1154</span>
-<span id="L1155" rel="#L1155">1155</span>
-<span id="L1156" rel="#L1156">1156</span>
-<span id="L1157" rel="#L1157">1157</span>
-<span id="L1158" rel="#L1158">1158</span>
-<span id="L1159" rel="#L1159">1159</span>
-<span id="L1160" rel="#L1160">1160</span>
-<span id="L1161" rel="#L1161">1161</span>
-<span id="L1162" rel="#L1162">1162</span>
-<span id="L1163" rel="#L1163">1163</span>
-<span id="L1164" rel="#L1164">1164</span>
-<span id="L1165" rel="#L1165">1165</span>
-<span id="L1166" rel="#L1166">1166</span>
-<span id="L1167" rel="#L1167">1167</span>
-<span id="L1168" rel="#L1168">1168</span>
-<span id="L1169" rel="#L1169">1169</span>
-<span id="L1170" rel="#L1170">1170</span>
-<span id="L1171" rel="#L1171">1171</span>
-<span id="L1172" rel="#L1172">1172</span>
-<span id="L1173" rel="#L1173">1173</span>
-<span id="L1174" rel="#L1174">1174</span>
-<span id="L1175" rel="#L1175">1175</span>
-<span id="L1176" rel="#L1176">1176</span>
-<span id="L1177" rel="#L1177">1177</span>
-<span id="L1178" rel="#L1178">1178</span>
-<span id="L1179" rel="#L1179">1179</span>
-<span id="L1180" rel="#L1180">1180</span>
-<span id="L1181" rel="#L1181">1181</span>
-<span id="L1182" rel="#L1182">1182</span>
-<span id="L1183" rel="#L1183">1183</span>
-<span id="L1184" rel="#L1184">1184</span>
-<span id="L1185" rel="#L1185">1185</span>
-<span id="L1186" rel="#L1186">1186</span>
-<span id="L1187" rel="#L1187">1187</span>
-<span id="L1188" rel="#L1188">1188</span>
-<span id="L1189" rel="#L1189">1189</span>
-<span id="L1190" rel="#L1190">1190</span>
-<span id="L1191" rel="#L1191">1191</span>
-<span id="L1192" rel="#L1192">1192</span>
-<span id="L1193" rel="#L1193">1193</span>
-<span id="L1194" rel="#L1194">1194</span>
-<span id="L1195" rel="#L1195">1195</span>
-<span id="L1196" rel="#L1196">1196</span>
-<span id="L1197" rel="#L1197">1197</span>
-<span id="L1198" rel="#L1198">1198</span>
-<span id="L1199" rel="#L1199">1199</span>
-<span id="L1200" rel="#L1200">1200</span>
-<span id="L1201" rel="#L1201">1201</span>
-<span id="L1202" rel="#L1202">1202</span>
-<span id="L1203" rel="#L1203">1203</span>
-<span id="L1204" rel="#L1204">1204</span>
-<span id="L1205" rel="#L1205">1205</span>
-<span id="L1206" rel="#L1206">1206</span>
-<span id="L1207" rel="#L1207">1207</span>
-<span id="L1208" rel="#L1208">1208</span>
-<span id="L1209" rel="#L1209">1209</span>
-<span id="L1210" rel="#L1210">1210</span>
-<span id="L1211" rel="#L1211">1211</span>
-<span id="L1212" rel="#L1212">1212</span>
-<span id="L1213" rel="#L1213">1213</span>
-<span id="L1214" rel="#L1214">1214</span>
-<span id="L1215" rel="#L1215">1215</span>
-<span id="L1216" rel="#L1216">1216</span>
-<span id="L1217" rel="#L1217">1217</span>
-<span id="L1218" rel="#L1218">1218</span>
-<span id="L1219" rel="#L1219">1219</span>
-<span id="L1220" rel="#L1220">1220</span>
-<span id="L1221" rel="#L1221">1221</span>
-<span id="L1222" rel="#L1222">1222</span>
-<span id="L1223" rel="#L1223">1223</span>
-<span id="L1224" rel="#L1224">1224</span>
-<span id="L1225" rel="#L1225">1225</span>
-<span id="L1226" rel="#L1226">1226</span>
-<span id="L1227" rel="#L1227">1227</span>
-<span id="L1228" rel="#L1228">1228</span>
-<span id="L1229" rel="#L1229">1229</span>
-<span id="L1230" rel="#L1230">1230</span>
-<span id="L1231" rel="#L1231">1231</span>
-<span id="L1232" rel="#L1232">1232</span>
-<span id="L1233" rel="#L1233">1233</span>
-<span id="L1234" rel="#L1234">1234</span>
-<span id="L1235" rel="#L1235">1235</span>
-<span id="L1236" rel="#L1236">1236</span>
-<span id="L1237" rel="#L1237">1237</span>
-<span id="L1238" rel="#L1238">1238</span>
-<span id="L1239" rel="#L1239">1239</span>
-<span id="L1240" rel="#L1240">1240</span>
-<span id="L1241" rel="#L1241">1241</span>
-<span id="L1242" rel="#L1242">1242</span>
-<span id="L1243" rel="#L1243">1243</span>
-<span id="L1244" rel="#L1244">1244</span>
-<span id="L1245" rel="#L1245">1245</span>
-<span id="L1246" rel="#L1246">1246</span>
-<span id="L1247" rel="#L1247">1247</span>
-<span id="L1248" rel="#L1248">1248</span>
-<span id="L1249" rel="#L1249">1249</span>
-<span id="L1250" rel="#L1250">1250</span>
-<span id="L1251" rel="#L1251">1251</span>
-<span id="L1252" rel="#L1252">1252</span>
-<span id="L1253" rel="#L1253">1253</span>
-<span id="L1254" rel="#L1254">1254</span>
-<span id="L1255" rel="#L1255">1255</span>
-<span id="L1256" rel="#L1256">1256</span>
-<span id="L1257" rel="#L1257">1257</span>
-<span id="L1258" rel="#L1258">1258</span>
-<span id="L1259" rel="#L1259">1259</span>
-<span id="L1260" rel="#L1260">1260</span>
-<span id="L1261" rel="#L1261">1261</span>
-<span id="L1262" rel="#L1262">1262</span>
-<span id="L1263" rel="#L1263">1263</span>
-<span id="L1264" rel="#L1264">1264</span>
-<span id="L1265" rel="#L1265">1265</span>
-<span id="L1266" rel="#L1266">1266</span>
-<span id="L1267" rel="#L1267">1267</span>
-<span id="L1268" rel="#L1268">1268</span>
-<span id="L1269" rel="#L1269">1269</span>
-<span id="L1270" rel="#L1270">1270</span>
-<span id="L1271" rel="#L1271">1271</span>
-<span id="L1272" rel="#L1272">1272</span>
-<span id="L1273" rel="#L1273">1273</span>
-<span id="L1274" rel="#L1274">1274</span>
-<span id="L1275" rel="#L1275">1275</span>
-<span id="L1276" rel="#L1276">1276</span>
-<span id="L1277" rel="#L1277">1277</span>
-<span id="L1278" rel="#L1278">1278</span>
-<span id="L1279" rel="#L1279">1279</span>
-<span id="L1280" rel="#L1280">1280</span>
-<span id="L1281" rel="#L1281">1281</span>
-<span id="L1282" rel="#L1282">1282</span>
-<span id="L1283" rel="#L1283">1283</span>
-<span id="L1284" rel="#L1284">1284</span>
-<span id="L1285" rel="#L1285">1285</span>
-<span id="L1286" rel="#L1286">1286</span>
-<span id="L1287" rel="#L1287">1287</span>
-<span id="L1288" rel="#L1288">1288</span>
-<span id="L1289" rel="#L1289">1289</span>
-<span id="L1290" rel="#L1290">1290</span>
-<span id="L1291" rel="#L1291">1291</span>
-<span id="L1292" rel="#L1292">1292</span>
-<span id="L1293" rel="#L1293">1293</span>
-<span id="L1294" rel="#L1294">1294</span>
-<span id="L1295" rel="#L1295">1295</span>
-<span id="L1296" rel="#L1296">1296</span>
-<span id="L1297" rel="#L1297">1297</span>
-<span id="L1298" rel="#L1298">1298</span>
-<span id="L1299" rel="#L1299">1299</span>
-<span id="L1300" rel="#L1300">1300</span>
-<span id="L1301" rel="#L1301">1301</span>
-<span id="L1302" rel="#L1302">1302</span>
-<span id="L1303" rel="#L1303">1303</span>
-<span id="L1304" rel="#L1304">1304</span>
-<span id="L1305" rel="#L1305">1305</span>
-<span id="L1306" rel="#L1306">1306</span>
-<span id="L1307" rel="#L1307">1307</span>
-<span id="L1308" rel="#L1308">1308</span>
-<span id="L1309" rel="#L1309">1309</span>
-<span id="L1310" rel="#L1310">1310</span>
-<span id="L1311" rel="#L1311">1311</span>
-<span id="L1312" rel="#L1312">1312</span>
-<span id="L1313" rel="#L1313">1313</span>
-<span id="L1314" rel="#L1314">1314</span>
-<span id="L1315" rel="#L1315">1315</span>
-<span id="L1316" rel="#L1316">1316</span>
-<span id="L1317" rel="#L1317">1317</span>
-<span id="L1318" rel="#L1318">1318</span>
-<span id="L1319" rel="#L1319">1319</span>
-<span id="L1320" rel="#L1320">1320</span>
-<span id="L1321" rel="#L1321">1321</span>
-<span id="L1322" rel="#L1322">1322</span>
-<span id="L1323" rel="#L1323">1323</span>
-<span id="L1324" rel="#L1324">1324</span>
-<span id="L1325" rel="#L1325">1325</span>
-<span id="L1326" rel="#L1326">1326</span>
-<span id="L1327" rel="#L1327">1327</span>
-<span id="L1328" rel="#L1328">1328</span>
-<span id="L1329" rel="#L1329">1329</span>
-<span id="L1330" rel="#L1330">1330</span>
-<span id="L1331" rel="#L1331">1331</span>
-<span id="L1332" rel="#L1332">1332</span>
-<span id="L1333" rel="#L1333">1333</span>
-<span id="L1334" rel="#L1334">1334</span>
-<span id="L1335" rel="#L1335">1335</span>
-<span id="L1336" rel="#L1336">1336</span>
-<span id="L1337" rel="#L1337">1337</span>
-<span id="L1338" rel="#L1338">1338</span>
-<span id="L1339" rel="#L1339">1339</span>
-<span id="L1340" rel="#L1340">1340</span>
-<span id="L1341" rel="#L1341">1341</span>
-<span id="L1342" rel="#L1342">1342</span>
-<span id="L1343" rel="#L1343">1343</span>
-<span id="L1344" rel="#L1344">1344</span>
-<span id="L1345" rel="#L1345">1345</span>
-<span id="L1346" rel="#L1346">1346</span>
-<span id="L1347" rel="#L1347">1347</span>
-<span id="L1348" rel="#L1348">1348</span>
-<span id="L1349" rel="#L1349">1349</span>
-<span id="L1350" rel="#L1350">1350</span>
-<span id="L1351" rel="#L1351">1351</span>
-<span id="L1352" rel="#L1352">1352</span>
-<span id="L1353" rel="#L1353">1353</span>
-<span id="L1354" rel="#L1354">1354</span>
-<span id="L1355" rel="#L1355">1355</span>
-<span id="L1356" rel="#L1356">1356</span>
-<span id="L1357" rel="#L1357">1357</span>
-<span id="L1358" rel="#L1358">1358</span>
-<span id="L1359" rel="#L1359">1359</span>
-<span id="L1360" rel="#L1360">1360</span>
-<span id="L1361" rel="#L1361">1361</span>
-<span id="L1362" rel="#L1362">1362</span>
-<span id="L1363" rel="#L1363">1363</span>
-<span id="L1364" rel="#L1364">1364</span>
-<span id="L1365" rel="#L1365">1365</span>
-<span id="L1366" rel="#L1366">1366</span>
-<span id="L1367" rel="#L1367">1367</span>
-<span id="L1368" rel="#L1368">1368</span>
-<span id="L1369" rel="#L1369">1369</span>
-<span id="L1370" rel="#L1370">1370</span>
-<span id="L1371" rel="#L1371">1371</span>
-<span id="L1372" rel="#L1372">1372</span>
-<span id="L1373" rel="#L1373">1373</span>
-<span id="L1374" rel="#L1374">1374</span>
-<span id="L1375" rel="#L1375">1375</span>
-<span id="L1376" rel="#L1376">1376</span>
-<span id="L1377" rel="#L1377">1377</span>
-<span id="L1378" rel="#L1378">1378</span>
-<span id="L1379" rel="#L1379">1379</span>
-<span id="L1380" rel="#L1380">1380</span>
-<span id="L1381" rel="#L1381">1381</span>
-<span id="L1382" rel="#L1382">1382</span>
-<span id="L1383" rel="#L1383">1383</span>
-<span id="L1384" rel="#L1384">1384</span>
-<span id="L1385" rel="#L1385">1385</span>
-<span id="L1386" rel="#L1386">1386</span>
-<span id="L1387" rel="#L1387">1387</span>
-<span id="L1388" rel="#L1388">1388</span>
-<span id="L1389" rel="#L1389">1389</span>
-
-            </td>
-            <td class="blob-line-code"><div class="code-body highlight"><pre><div class='line' id='LC1'>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</div><div class='line' id='LC2'>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</div><div class='line' id='LC3'>year,rank,city,pop</div><div class='line' id='LC4'>1790,1,Philadelphia,44.1</div><div class='line' id='LC5'>1790,2,New York,33.1</div><div class='line' id='LC6'>1790,3,Boston,18.3</div><div class='line' id='LC7'>1790,4,Charleston,16.4</div><div class='line' id='LC8'>1790,5,&quot;Salem, MA&quot;,13.6</div><div class='line' id='LC9'>1790,6,Baltimore,13.5</div><div class='line' id='LC10'>1790,7,&quot;Newport, RI&quot;,6.7</div><div class='line' id='LC11'>1790,8,Providence,6.4</div><div class='line' id='LC12'>1790,9,&quot;Gloucester, MA&quot;,5.3</div><div class='line' id='LC13'>1790,10,&quot;Newburyport, MA&quot;,4.8</div><div class='line' id='LC14'>1790,11,&quot;Portsmouth, NH&quot;,4.7</div><div class='line' id='LC15'>1790,12,Nantucket,4.6</div><div class='line' id='LC16'>1790,13,&quot;Middleborough, MA&quot;,4.5</div><div class='line' id='LC17'>1790,14,New Haven,4.5</div><div class='line' id='LC18'>1790,15,Richmond,3.8</div><div class='line' id='LC19'>1790,16,Albany,3.5</div><div class='line' id='LC20'>1790,17,Norfolk,3.0</div><div class='line' id='LC21'>1790,18,&quot;Petersburg, VA&quot;,2.8</div><div class='line' id='LC22'>1790,19,&quot;Alexandria, VA&quot;,2.8</div><div class='line' id='LC23'>1790,20,Hartford,2.7</div><div class='line' id='LC24'>1800,1,Philadelphia,61.6</div><div class='line' id='LC25'>1800,2,New York,60.5</div><div class='line' id='LC26'>1800,3,Baltimore,26.5</div><div class='line' id='LC27'>1800,4,Boston,24.9</div><div class='line' id='LC28'>1800,5,Charleston,18.8</div><div class='line' id='LC29'>1800,6,&quot;Salem, MA&quot;,14.7</div><div class='line' id='LC30'>1800,7,Washington,11.2</div><div class='line' id='LC31'>1800,8,Providence,7.6</div><div class='line' id='LC32'>1800,9,Norfolk,6.9</div><div class='line' id='LC33'>1800,10,&quot;Newport, RI&quot;,6.7</div><div class='line' id='LC34'>1800,11,&quot;Newburyport, MA&quot;,6.0</div><div class='line' id='LC35'>1800,12,Richmond,5.7</div><div class='line' id='LC36'>1800,13,Nantucket,5.6</div><div class='line' id='LC37'>1800,14,&quot;Portsmouth, NH&quot;,5.3</div><div class='line' id='LC38'>1800,15,&quot;Gloucester, MA&quot;,5.3</div><div class='line' id='LC39'>1800,16,&quot;Schenectady, NY&quot;,5.3</div><div class='line' id='LC40'>1800,17,Albany,5.3</div><div class='line' id='LC41'>1800,18,&quot;New London, CT&quot;,5.2</div><div class='line' id='LC42'>1800,19,Savannah,5.2</div><div class='line' id='LC43'>1800,20,&quot;Middleborough, MA&quot;,4.5</div><div class='line' id='LC44'>1810,1,New York,101.0</div><div class='line' id='LC45'>1810,2,Philadelphia,87.3</div><div class='line' id='LC46'>1810,3,Baltimore,46.6</div><div class='line' id='LC47'>1810,4,Boston,38.7</div><div class='line' id='LC48'>1810,5,Charleston,24.7</div><div class='line' id='LC49'>1810,6,&quot;Salem, MA&quot;,23.1</div><div class='line' id='LC50'>1810,7,Washington,20.4</div><div class='line' id='LC51'>1810,8,New Orleans,17.2</div><div class='line' id='LC52'>1810,9,Albany,10.8</div><div class='line' id='LC53'>1810,10,Providence,10.1</div><div class='line' id='LC54'>1810,11,Richmond,9.7</div><div class='line' id='LC55'>1810,12,Norfolk,9.2</div><div class='line' id='LC56'>1810,13,&quot;Newport, RI&quot;,7.9</div><div class='line' id='LC57'>1810,14,&quot;Newburyport, MA&quot;,7.6</div><div class='line' id='LC58'>1810,15,&quot;Portland, ME&quot;,7.2</div><div class='line' id='LC59'>1810,16,&quot;Portsmouth, NH&quot;,6.9</div><div class='line' id='LC60'>1810,17,Nantucket,6.8</div><div class='line' id='LC61'>1810,18,&quot;Gloucester, MA&quot;,5.9</div><div class='line' id='LC62'>1810,19,&quot;Schenectady, NY&quot;,5.9</div><div class='line' id='LC63'>1810,20,New Haven,5.8</div><div class='line' id='LC64'>1820,1,New York,131.0</div><div class='line' id='LC65'>1820,2,Philadelphia,109.0</div><div class='line' id='LC66'>1820,3,Baltimore,62.7</div><div class='line' id='LC67'>1820,4,Boston,54.0</div><div class='line' id='LC68'>1820,5,Washington,28.8</div><div class='line' id='LC69'>1820,6,New Orleans,27.2</div><div class='line' id='LC70'>1820,7,Charleston,24.8</div><div class='line' id='LC71'>1820,8,&quot;Salem, MA&quot;,22.6</div><div class='line' id='LC72'>1820,9,Albany,17.9</div><div class='line' id='LC73'>1820,10,Richmond,12.1</div><div class='line' id='LC74'>1820,11,Providence,11.8</div><div class='line' id='LC75'>1820,12,Cincinnati,9.6</div><div class='line' id='LC76'>1820,13,&quot;Portland, ME&quot;,8.6</div><div class='line' id='LC77'>1820,14,Norfolk,8.5</div><div class='line' id='LC78'>1820,15,Savannah,7.5</div><div class='line' id='LC79'>1820,16,&quot;Portsmouth, NH&quot;,7.3</div><div class='line' id='LC80'>1820,17,&quot;Newport, RI&quot;,7.3</div><div class='line' id='LC81'>1820,18,Nantucket,7.3</div><div class='line' id='LC82'>1820,19,Pittsburgh,7.3</div><div class='line' id='LC83'>1820,20,New Haven,7.2</div><div class='line' id='LC84'>1830,1,New York,215.0</div><div class='line' id='LC85'>1830,2,Philadelphia,161.0</div><div class='line' id='LC86'>1830,3,Boston,85.6</div><div class='line' id='LC87'>1830,4,Baltimore,80.6</div><div class='line' id='LC88'>1830,5,New Orleans,46.1</div><div class='line' id='LC89'>1830,6,Albany,35.8</div><div class='line' id='LC90'>1830,7,Washington,35.5</div><div class='line' id='LC91'>1830,8,Charleston,30.3</div><div class='line' id='LC92'>1830,9,&quot;Salem, MA&quot;,27.3</div><div class='line' id='LC93'>1830,10,Cincinnati,24.8</div><div class='line' id='LC94'>1830,11,Providence,22.4</div><div class='line' id='LC95'>1830,12,Richmond,16.1</div><div class='line' id='LC96'>1830,13,Pittsburgh,15.4</div><div class='line' id='LC97'>1830,14,Newark,14.4</div><div class='line' id='LC98'>1830,15,&quot;Portland, ME&quot;,12.6</div><div class='line' id='LC99'>1830,16,Louisville,10.3</div><div class='line' id='LC100'>1830,17,New Haven,10.2</div><div class='line' id='LC101'>1830,18,Norfolk,9.8</div><div class='line' id='LC102'>1830,19,Rochester,9.2</div><div class='line' id='LC103'>1830,20,Buffalo,8.7</div><div class='line' id='LC104'>1840,1,New York,374.0</div><div class='line' id='LC105'>1840,2,Philadelphia,259.0</div><div class='line' id='LC106'>1840,3,Boston,183.0</div><div class='line' id='LC107'>1840,4,Baltimore,110.0</div><div class='line' id='LC108'>1840,5,New Orleans,105.0</div><div class='line' id='LC109'>1840,6,Albany,72.0</div><div class='line' id='LC110'>1840,7,Cincinnati,54.8</div><div class='line' id='LC111'>1840,8,Washington,50.2</div><div class='line' id='LC112'>1840,9,Pittsburgh,43.7</div><div class='line' id='LC113'>1840,10,Charleston,42.6</div><div class='line' id='LC114'>1840,11,Providence,40.9</div><div class='line' id='LC115'>1840,12,Louisville,34.2</div><div class='line' id='LC116'>1840,13,Rochester,31.4</div><div class='line' id='LC117'>1840,14,Newark,29.8</div><div class='line' id='LC118'>1840,15,Buffalo,29.3</div><div class='line' id='LC119'>1840,16,&quot;Portland, ME&quot;,28.6</div><div class='line' id='LC120'>1840,17,St. Louis,28.4</div><div class='line' id='LC121'>1840,18,New Bedford,24.1</div><div class='line' id='LC122'>1840,19,New Haven,21.9</div><div class='line' id='LC123'>1840,20,Detroit,21.2</div><div class='line' id='LC124'>1850,1,New York,650.0</div><div class='line' id='LC125'>1850,2,Philadelphia,405.0</div><div class='line' id='LC126'>1850,3,Boston,308.0</div><div class='line' id='LC127'>1850,4,Baltimore,179.0</div><div class='line' id='LC128'>1850,5,Cincinnati,133.0</div><div class='line' id='LC129'>1850,6,New Orleans,123.0</div><div class='line' id='LC130'>1850,7,Albany,107.0</div><div class='line' id='LC131'>1850,8,St. Louis,95.0</div><div class='line' id='LC132'>1850,9,Pittsburgh,86.0</div><div class='line' id='LC133'>1850,10,Buffalo,80.0</div><div class='line' id='LC134'>1850,11,Washington,67.0</div><div class='line' id='LC135'>1850,12,Providence,65.0</div><div class='line' id='LC136'>1850,13,Louisville,61.0</div><div class='line' id='LC137'>1850,14,Newark,57.0</div><div class='line' id='LC138'>1850,15,Charleston,50.0</div><div class='line' id='LC139'>1850,16,Rochester,49.0</div><div class='line' id='LC140'>1850,17,Chicago,40.0</div><div class='line' id='LC141'>1850,18,Syracuse,38.0</div><div class='line' id='LC142'>1850,19,Detroit,38.0</div><div class='line' id='LC143'>1850,20,&quot;Portland, ME&quot;,36.0</div><div class='line' id='LC144'>1860,1,New York,1143.0</div><div class='line' id='LC145'>1860,2,Philadelphia,608.0</div><div class='line' id='LC146'>1860,3,Boston,374.0</div><div class='line' id='LC147'>1860,4,Baltimore,221.0</div><div class='line' id='LC148'>1860,5,Cincinnati,192.0</div><div class='line' id='LC149'>1860,6,St. Louis,176.0</div><div class='line' id='LC150'>1860,7,New Orleans,172.0</div><div class='line' id='LC151'>1860,8,Chicago,123.0</div><div class='line' id='LC152'>1860,9,Albany,116.0</div><div class='line' id='LC153'>1860,10,Newark,103.0</div><div class='line' id='LC154'>1860,11,Pittsburgh,93.0</div><div class='line' id='LC155'>1860,12,Buffalo,90.0</div><div class='line' id='LC156'>1860,13,Louisville,88.0</div><div class='line' id='LC157'>1860,14,Washington,80.0</div><div class='line' id='LC158'>1860,15,Providence,69.0</div><div class='line' id='LC159'>1860,16,Detroit,59.0</div><div class='line' id='LC160'>1860,17,San Francisco,57.0</div><div class='line' id='LC161'>1860,18,Rochester,56.0</div><div class='line' id='LC162'>1860,19,Cleveland,49.0</div><div class='line' id='LC163'>1860,20,Milwaukee,48.0</div><div class='line' id='LC164'>1870,1,New York,1687.0</div><div class='line' id='LC165'>1870,2,Philadelphia,747.0</div><div class='line' id='LC166'>1870,3,Boston,501.0</div><div class='line' id='LC167'>1870,4,St. Louis,345.0</div><div class='line' id='LC168'>1870,5,Chicago,324.0</div><div class='line' id='LC169'>1870,6,Baltimore,283.0</div><div class='line' id='LC170'>1870,7,Cincinnati,257.0</div><div class='line' id='LC171'>1870,8,New Orleans,196.0</div><div class='line' id='LC172'>1870,9,Pittsburgh,170.0</div><div class='line' id='LC173'>1870,10,Albany,157.0</div><div class='line' id='LC174'>1870,11,San Francisco,151.0</div><div class='line' id='LC175'>1870,12,Buffalo,133.0</div><div class='line' id='LC176'>1870,13,Louisville,129.0</div><div class='line' id='LC177'>1870,14,Washington,123.0</div><div class='line' id='LC178'>1870,15,Providence,101.0</div><div class='line' id='LC179'>1870,16,Detroit,101.0</div><div class='line' id='LC180'>1870,17,Cleveland,101.0</div><div class='line' id='LC181'>1870,18,Milwaukee,75.0</div><div class='line' id='LC182'>1870,19,Rochester,73.0</div><div class='line' id='LC183'>1870,20,New Haven,65.0</div><div class='line' id='LC184'>1880,1,New York,2234.0</div><div class='line' id='LC185'>1880,2,Philadelphia,949.0</div><div class='line' id='LC186'>1880,3,Boston,658.0</div><div class='line' id='LC187'>1880,4,Chicago,543.0</div><div class='line' id='LC188'>1880,5,St. Louis,386.0</div><div class='line' id='LC189'>1880,6,Baltimore,353.0</div><div class='line' id='LC190'>1880,7,Cincinnati,307.0</div><div class='line' id='LC191'>1880,8,Pittsburgh,265.0</div><div class='line' id='LC192'>1880,9,San Francisco,236.0</div><div class='line' id='LC193'>1880,10,New Orleans,219.0</div><div class='line' id='LC194'>1880,11,Albany,178.0</div><div class='line' id='LC195'>1880,12,Buffalo,171.0</div><div class='line' id='LC196'>1880,13,Cleveland,169.0</div><div class='line' id='LC197'>1880,14,Washington,164.0</div><div class='line' id='LC198'>1880,15,Detroit,147.0</div><div class='line' id='LC199'>1880,16,Louisville,143.0</div><div class='line' id='LC200'>1880,17,Providence,128.0</div><div class='line' id='LC201'>1880,18,Milwaukee,121.0</div><div class='line' id='LC202'>1880,19,Rochester,103.0</div><div class='line' id='LC203'>1880,20,Minneapolis,94.0</div><div class='line' id='LC204'>1890,1,New York,2977.0</div><div class='line' id='LC205'>1890,2,Philadelphia,1180.0</div><div class='line' id='LC206'>1890,3,Chicago,1141.0</div><div class='line' id='LC207'>1890,4,Boston,818.0</div><div class='line' id='LC208'>1890,5,St. Louis,490.0</div><div class='line' id='LC209'>1890,6,Baltimore,453.0</div><div class='line' id='LC210'>1890,7,Pittsburgh,396.0</div><div class='line' id='LC211'>1890,8,Cincinnati,344.0</div><div class='line' id='LC212'>1890,9,Minneapolis,305.0</div><div class='line' id='LC213'>1890,10,San Francisco,302.0</div><div class='line' id='LC214'>1890,11,Cleveland,274.0</div><div class='line' id='LC215'>1890,12,Buffalo,272.0</div><div class='line' id='LC216'>1890,13,Washington,253.0</div><div class='line' id='LC217'>1890,14,New Orleans,245.0</div><div class='line' id='LC218'>1890,15,Detroit,237.0</div><div class='line' id='LC219'>1890,16,Milwaukee,212.0</div><div class='line' id='LC220'>1890,17,Albany,189.0</div><div class='line' id='LC221'>1890,18,Louisville,183.0</div><div class='line' id='LC222'>1890,19,Kansas City,165.0</div><div class='line' id='LC223'>1890,20,Providence,163.0</div><div class='line' id='LC224'>1900,1,New York,4266.0</div><div class='line' id='LC225'>1900,2,Chicago,1759.0</div><div class='line' id='LC226'>1900,3,Philadelphia,1454.0</div><div class='line' id='LC227'>1900,4,Boston,1009.0</div><div class='line' id='LC228'>1900,5,St. Louis,626.0</div><div class='line' id='LC229'>1900,6,Pittsburgh,532.0</div><div class='line' id='LC230'>1900,7,Baltimore,532.0</div><div class='line' id='LC231'>1900,8,Cleveland,396.0</div><div class='line' id='LC232'>1900,9,Cincinnati,379.0</div><div class='line' id='LC233'>1900,10,San Francisco,375.0</div><div class='line' id='LC234'>1900,11,Minneapolis,374.0</div><div class='line' id='LC235'>1900,12,Buffalo,373.0</div><div class='line' id='LC236'>1900,13,Detroit,321.0</div><div class='line' id='LC237'>1900,14,Washington,302.0</div><div class='line' id='LC238'>1900,15,Milwaukee,296.0</div><div class='line' id='LC239'>1900,16,New Orleans,291.0</div><div class='line' id='LC240'>1900,17,Providence,243.0</div><div class='line' id='LC241'>1900,18,Kansas City,242.0</div><div class='line' id='LC242'>1900,19,Louisville,227.0</div><div class='line' id='LC243'>1900,20,Albany,188.0</div><div class='line' id='LC244'>1910,1,New York,6021.0</div><div class='line' id='LC245'>1910,2,Chicago,2283.0</div><div class='line' id='LC246'>1910,3,Philadelphia,1746.0</div><div class='line' id='LC247'>1910,4,Boston,1213.0</div><div class='line' id='LC248'>1910,5,St. Louis,760.0</div><div class='line' id='LC249'>1910,6,Pittsburgh,655.0</div><div class='line' id='LC250'>1910,7,San Francisco,604.0</div><div class='line' id='LC251'>1910,8,Baltimore,589.0</div><div class='line' id='LC252'>1910,9,Cleveland,580.0</div><div class='line' id='LC253'>1910,10,Minneapolis,526.0</div><div class='line' id='LC254'>1910,11,Detroit,503.0</div><div class='line' id='LC255'>1910,12,Cincinnati,425.0</div><div class='line' id='LC256'>1910,13,Buffalo,420.0</div><div class='line' id='LC257'>1910,14,Milwaukee,389.0</div><div class='line' id='LC258'>1910,15,Los Angeles,374.0</div><div class='line' id='LC259'>1910,16,Kansas City,357.0</div><div class='line' id='LC260'>1910,17,Washington,357.0</div><div class='line' id='LC261'>1910,18,New Orleans,344.0</div><div class='line' id='LC262'>1910,19,Albany,283.0</div><div class='line' id='LC263'>1910,20,Providence,274.0</div><div class='line' id='LC264'>1920,1,New York,7041.0</div><div class='line' id='LC265'>1920,2,Chicago,2859.0</div><div class='line' id='LC266'>1920,3,Philadelphia,2072.0</div><div class='line' id='LC267'>1920,4,Boston,1366.0</div><div class='line' id='LC268'>1920,5,Detroit,1071.0</div><div class='line' id='LC269'>1920,6,St. Louis,859.0</div><div class='line' id='LC270'>1920,7,Cleveland,834.0</div><div class='line' id='LC271'>1920,8,Pittsburgh,775.0</div><div class='line' id='LC272'>1920,9,San Francisco,771.0</div><div class='line' id='LC273'>1920,10,Baltimore,753.0</div><div class='line' id='LC274'>1920,11,Los Angeles,682.0</div><div class='line' id='LC275'>1920,12,Minneapolis,626.0</div><div class='line' id='LC276'>1920,13,Buffalo,539.0</div><div class='line' id='LC277'>1920,14,Milwaukee,478.0</div><div class='line' id='LC278'>1920,15,Cincinnati,470.0</div><div class='line' id='LC279'>1920,16,Washington,467.0</div><div class='line' id='LC280'>1920,17,Kansas City,455.0</div><div class='line' id='LC281'>1920,18,New Orleans,393.0</div><div class='line' id='LC282'>1920,19,Seattle,334.0</div><div class='line' id='LC283'>1920,20,Indianapolis,323.0</div><div class='line' id='LC284'>1930,1,New York,8667.0</div><div class='line' id='LC285'>1930,2,Chicago,3718.0</div><div class='line' id='LC286'>1930,3,Philadelphia,2264.0</div><div class='line' id='LC287'>1930,4,Detroit,1721.0</div><div class='line' id='LC288'>1930,5,Los Angeles,1617.0</div><div class='line' id='LC289'>1930,6,Boston,1479.0</div><div class='line' id='LC290'>1930,7,San Francisco,996.0</div><div class='line' id='LC291'>1930,8,Cleveland,976.0</div><div class='line' id='LC292'>1930,9,Pittsburgh,960.0</div><div class='line' id='LC293'>1930,10,St. Louis,950.0</div><div class='line' id='LC294'>1930,11,Baltimore,836.0</div><div class='line' id='LC295'>1930,12,Minneapolis,753.0</div><div class='line' id='LC296'>1930,13,Buffalo,620.0</div><div class='line' id='LC297'>1930,14,Milwaukee,615.0</div><div class='line' id='LC298'>1930,15,Cincinnati,580.0</div><div class='line' id='LC299'>1930,16,Kansas City,561.0</div><div class='line' id='LC300'>1930,17,Washington,527.0</div><div class='line' id='LC301'>1930,18,New Orleans,469.0</div><div class='line' id='LC302'>1930,19,Seattle,390.0</div><div class='line' id='LC303'>1930,20,Indianapolis,379.0</div><div class='line' id='LC304'>1940,1,New York,10135.0</div><div class='line' id='LC305'>1940,2,Chicago,4210.0</div><div class='line' id='LC306'>1940,3,Philadelphia,2538.0</div><div class='line' id='LC307'>1940,4,Los Angeles,2268.0</div><div class='line' id='LC308'>1940,5,Detroit,2041.0</div><div class='line' id='LC309'>1940,6,Boston,1746.0</div><div class='line' id='LC310'>1940,7,San Francisco,1156.0</div><div class='line' id='LC311'>1940,8,Pittsburgh,1134.0</div><div class='line' id='LC312'>1940,9,St. Louis,1102.0</div><div class='line' id='LC313'>1940,10,Cleveland,1079.0</div><div class='line' id='LC314'>1940,11,Baltimore,992.0</div><div class='line' id='LC315'>1940,12,Minneapolis,886.0</div><div class='line' id='LC316'>1940,13,Washington,800.0</div><div class='line' id='LC317'>1940,14,Buffalo,708.0</div><div class='line' id='LC318'>1940,15,Milwaukee,705.0</div><div class='line' id='LC319'>1940,16,Kansas City,632.0</div><div class='line' id='LC320'>1940,17,Cincinnati,559.0</div><div class='line' id='LC321'>1940,18,New Orleans,557.0</div><div class='line' id='LC322'>1940,19,Houston,471.0</div><div class='line' id='LC323'>1940,20,Seattle,451.0</div><div class='line' id='LC324'>1950,1,New York,12604.0</div><div class='line' id='LC325'>1950,2,Chicago,5208.0</div><div class='line' id='LC326'>1950,3,Los Angeles,4250.0</div><div class='line' id='LC327'>1950,4,Philadelphia,3297.0</div><div class='line' id='LC328'>1950,5,Detroit,2884.0</div><div class='line' id='LC329'>1950,6,Boston,2301.0</div><div class='line' id='LC330'>1950,7,San Francisco,2131.0</div><div class='line' id='LC331'>1950,8,St. Louis,1541.0</div><div class='line' id='LC332'>1950,9,Cleveland,1425.0</div><div class='line' id='LC333'>1950,10,Pittsburgh,1400.0</div><div class='line' id='LC334'>1950,11,Washington,1287.0</div><div class='line' id='LC335'>1950,12,Baltimore,1162.0</div><div class='line' id='LC336'>1950,13,Minneapolis,987.0</div><div class='line' id='LC337'>1950,14,Buffalo,895.0</div><div class='line' id='LC338'>1950,15,Dallas,855.0</div><div class='line' id='LC339'>1950,16,Milwaukee,829.0</div><div class='line' id='LC340'>1950,17,Cincinnati,813.0</div><div class='line' id='LC341'>1950,18,Houston,701.0</div><div class='line' id='LC342'>1950,19,Kansas City,698.0</div><div class='line' id='LC343'>1950,20,New Orleans,660.0</div><div class='line' id='LC344'>1960,1,New York,14437.0</div><div class='line' id='LC345'>1960,2,Los Angeles,6805.0</div><div class='line' id='LC346'>1960,3,Chicago,6377.0</div><div class='line' id='LC347'>1960,4,Philadelphia,3989.0</div><div class='line' id='LC348'>1960,5,Detroit,3750.0</div><div class='line' id='LC349'>1960,6,San Francisco,2607.0</div><div class='line' id='LC350'>1960,7,Boston,2501.0</div><div class='line' id='LC351'>1960,8,Pittsburgh,2105.0</div><div class='line' id='LC352'>1960,9,Washington,1905.0</div><div class='line' id='LC353'>1960,10,St. Louis,1864.0</div><div class='line' id='LC354'>1960,11,Cleveland,1785.0</div><div class='line' id='LC355'>1960,12,Dallas,1435.0</div><div class='line' id='LC356'>1960,13,Baltimore,1419.0</div><div class='line' id='LC357'>1960,14,Minneapolis,1377.0</div><div class='line' id='LC358'>1960,15,Miami,1173.0</div><div class='line' id='LC359'>1960,16,Milwaukee,1150.0</div><div class='line' id='LC360'>1960,17,Houston,1140.0</div><div class='line' id='LC361'>1960,18,Buffalo,1054.0</div><div class='line' id='LC362'>1960,19,Cincinnati,994.0</div><div class='line' id='LC363'>1960,20,Kansas City,921.0</div><div class='line' id='LC364'>1970,1,New York,16193.0</div><div class='line' id='LC365'>1970,2,Los Angeles,7984.0</div><div class='line' id='LC366'>1970,3,Chicago,7164.0</div><div class='line' id='LC367'>1970,4,Philadelphia,4419.0</div><div class='line' id='LC368'>1970,5,Detroit,4085.0</div><div class='line' id='LC369'>1970,6,San Francisco,3049.0</div><div class='line' id='LC370'>1970,7,Boston,2703.0</div><div class='line' id='LC371'>1970,8,Washington,2671.0</div><div class='line' id='LC372'>1970,9,Pittsburgh,2124.0</div><div class='line' id='LC373'>1970,10,St. Louis,2123.0</div><div class='line' id='LC374'>1970,11,Dallas,2016.0</div><div class='line' id='LC375'>1970,12,Cleveland,1960.0</div><div class='line' id='LC376'>1970,13,Miami,1834.0</div><div class='line' id='LC377'>1970,14,Minneapolis,1701.0</div><div class='line' id='LC378'>1970,15,Houston,1678.0</div><div class='line' id='LC379'>1970,16,Baltimore,1580.0</div><div class='line' id='LC380'>1970,17,Milwaukee,1252.0</div><div class='line' id='LC381'>1970,18,Seattle,1238.0</div><div class='line' id='LC382'>1970,19,San Diego,1198.0</div><div class='line' id='LC383'>1970,20,Atlanta,1172.0</div><div class='line' id='LC384'>1980,1,New York,16500.0</div><div class='line' id='LC385'>1980,2,Los Angeles,10841.0</div><div class='line' id='LC386'>1980,3,Chicago,7325.0</div><div class='line' id='LC387'>1980,4,Philadelphia,4830.0</div><div class='line' id='LC388'>1980,5,Detroit,4214.0</div><div class='line' id='LC389'>1980,6,San Francisco,4185.0</div><div class='line' id='LC390'>1980,7,Boston,3064.0</div><div class='line' id='LC391'>1980,8,Washington,2912.0</div><div class='line' id='LC392'>1980,9,Houston,2757.0</div><div class='line' id='LC393'>1980,10,Dallas,2713.0</div><div class='line' id='LC394'>1980,11,Miami,2616.0</div><div class='line' id='LC395'>1980,12,St. Louis,1849.0</div><div class='line' id='LC396'>1980,13,Pittsburgh,1810.0</div><div class='line' id='LC397'>1980,14,Minneapolis,1788.0</div><div class='line' id='LC398'>1980,15,Baltimore,1755.0</div><div class='line' id='LC399'>1980,16,Cleveland,1752.0</div><div class='line' id='LC400'>1980,17,San Diego,1704.0</div><div class='line' id='LC401'>1980,18,Atlanta,1613.0</div><div class='line' id='LC402'>1980,19,Phoenix,1409.0</div><div class='line' id='LC403'>1980,20,Seattle,1392.0</div><div class='line' id='LC404'>1990,1,New York,16754.0</div><div class='line' id='LC405'>1990,2,Los Angeles,13522.0</div><div class='line' id='LC406'>1990,3,Chicago,7373.0</div><div class='line' id='LC407'>1990,4,San Francisco,5386.0</div><div class='line' id='LC408'>1990,5,Philadelphia,4970.0</div><div class='line' id='LC409'>1990,6,Miami,3948.0</div><div class='line' id='LC410'>1990,7,Detroit,3698.0</div><div class='line' id='LC411'>1990,8,Washington,3363.0</div><div class='line' id='LC412'>1990,9,Boston,3355.0</div><div class='line' id='LC413'>1990,10,Dallas,3265.0</div><div class='line' id='LC414'>1990,11,Houston,3088.0</div><div class='line' id='LC415'>1990,12,Seattle,2354.0</div><div class='line' id='LC416'>1990,13,San Diego,2348.0</div><div class='line' id='LC417'>1990,14,Atlanta,2158.0</div><div class='line' id='LC418'>1990,15,Minneapolis,2080.0</div><div class='line' id='LC419'>1990,16,Phoenix,2006.0</div><div class='line' id='LC420'>1990,17,St. Louis,1947.0</div><div class='line' id='LC421'>1990,18,Baltimore,1890.0</div><div class='line' id='LC422'>1990,19,Pittsburgh,1744.0</div><div class='line' id='LC423'>1990,20,Tampa,1709.0</div><div class='line' id='LC424'>2000,1,New York,18689.0</div><div class='line' id='LC425'>2000,2,Los Angeles,14661.0</div><div class='line' id='LC426'>2000,3,Chicago,8419.0</div><div class='line' id='LC427'>2000,4,San Francisco,5973.0</div><div class='line' id='LC428'>2000,5,Philadelphia,5418.0</div><div class='line' id='LC429'>2000,6,Miami,4919.0</div><div class='line' id='LC430'>2000,7,Dallas,4445.0</div><div class='line' id='LC431'>2000,8,Houston,4063.0</div><div class='line' id='LC432'>2000,9,Boston,4032.0</div><div class='line' id='LC433'>2000,10,Washington,3934.0</div><div class='line' id='LC434'>2000,11,Detroit,3903.0</div><div class='line' id='LC435'>2000,12,Atlanta,3500.0</div><div class='line' id='LC436'>2000,13,Seattle,3018.0</div><div class='line' id='LC437'>2000,14,Phoenix,2975.0</div><div class='line' id='LC438'>2000,15,San Diego,2674.0</div><div class='line' id='LC439'>2000,16,Minneapolis,2389.0</div><div class='line' id='LC440'>2000,17,Baltimore,2251.0</div><div class='line' id='LC441'>2000,18,Denver,2231.0</div><div class='line' id='LC442'>2000,19,St. Louis,2078.0</div><div class='line' id='LC443'>2000,20,Tampa,2062.0</div><div class='line' id='LC444'>2010,1,New York,20009.0</div><div class='line' id='LC445'>2010,2,Los Angeles,15750.0</div><div class='line' id='LC446'>2010,3,Chicago,9023.0</div><div class='line' id='LC447'>2010,4,San Francisco,6828.0</div><div class='line' id='LC448'>2010,5,Philadelphia,6003.0</div><div class='line' id='LC449'>2010,6,Dallas,5685.0</div><div class='line' id='LC450'>2010,7,Miami,5513.0</div><div class='line' id='LC451'>2010,8,Houston,5382.0</div><div class='line' id='LC452'>2010,9,Atlanta,4743.0</div><div class='line' id='LC453'>2010,10,Washington,4697.0</div><div class='line' id='LC454'>2010,11,Boston,4407.0</div><div class='line' id='LC455'>2010,12,Detroit,4160.0</div><div class='line' id='LC456'>2010,13,Phoenix,3863.0</div><div class='line' id='LC457'>2010,14,Seattle,3446.0</div><div class='line' id='LC458'>2010,15,San Diego,2985.0</div><div class='line' id='LC459'>2010,16,Denver,2716.0</div><div class='line' id='LC460'>2010,17,Minneapolis,2651.0</div><div class='line' id='LC461'>2010,18,Baltimore,2497.0</div><div class='line' id='LC462'>2010,19,Tampa,2442.0</div><div class='line' id='LC463'>2010,20,St. Louis,2246.0</div><div class='line' id='LC464'>=======</div><div class='line' id='LC465'>year,rank,city,pop</div><div class='line' id='LC466'>1790,1,Philadelphia,44.1</div><div class='line' id='LC467'>1790,2,New York,33.1</div><div class='line' id='LC468'>1790,3,Boston,18.3</div><div class='line' id='LC469'>1790,4,Charleston,16.4</div><div class='line' id='LC470'>1790,5,&quot;Salem, MA&quot;,13.6</div><div class='line' id='LC471'>1790,6,Baltimore,13.5</div><div class='line' id='LC472'>1790,7,&quot;Newport, RI&quot;,6.7</div><div class='line' id='LC473'>1790,8,Providence,6.4</div><div class='line' id='LC474'>1790,9,&quot;Gloucester, MA&quot;,5.3</div><div class='line' id='LC475'>1790,10,&quot;Newburyport, MA&quot;,4.8</div><div class='line' id='LC476'>1790,11,&quot;Portsmouth, NH&quot;,4.7</div><div class='line' id='LC477'>1790,12,Nantucket,4.6</div><div class='line' id='LC478'>1790,13,&quot;Middleborough, MA&quot;,4.5</div><div class='line' id='LC479'>1790,14,New Haven,4.5</div><div class='line' id='LC480'>1790,15,Richmond,3.8</div><div class='line' id='LC481'>1790,16,Albany,3.5</div><div class='line' id='LC482'>1790,17,Norfolk,3.0</div><div class='line' id='LC483'>1790,18,&quot;Petersburg, VA&quot;,2.8</div><div class='line' id='LC484'>1790,19,&quot;Alexandria, VA&quot;,2.8</div><div class='line' id='LC485'>1790,20,Hartford,2.7</div><div class='line' id='LC486'>1800,1,Philadelphia,61.6</div><div class='line' id='LC487'>1800,2,New York,60.5</div><div class='line' id='LC488'>1800,3,Baltimore,26.5</div><div class='line' id='LC489'>1800,4,Boston,24.9</div><div class='line' id='LC490'>1800,5,Charleston,18.8</div><div class='line' id='LC491'>1800,6,&quot;Salem, MA&quot;,14.7</div><div class='line' id='LC492'>1800,7,Washington,11.2</div><div class='line' id='LC493'>1800,8,Providence,7.6</div><div class='line' id='LC494'>1800,9,Norfolk,6.9</div><div class='line' id='LC495'>1800,10,&quot;Newport, RI&quot;,6.7</div><div class='line' id='LC496'>1800,11,&quot;Newburyport, MA&quot;,6.0</div><div class='line' id='LC497'>1800,12,Richmond,5.7</div><div class='line' id='LC498'>1800,13,Nantucket,5.6</div><div class='line' id='LC499'>1800,14,&quot;Portsmouth, NH&quot;,5.3</div><div class='line' id='LC500'>1800,15,&quot;Gloucester, MA&quot;,5.3</div><div class='line' id='LC501'>1800,16,&quot;Schenectady, NY&quot;,5.3</div><div class='line' id='LC502'>1800,17,Albany,5.3</div><div class='line' id='LC503'>1800,18,&quot;New London, CT&quot;,5.2</div><div class='line' id='LC504'>1800,19,Savannah,5.2</div><div class='line' id='LC505'>1800,20,&quot;Middleborough, MA&quot;,4.5</div><div class='line' id='LC506'>1810,1,New York,101.0</div><div class='line' id='LC507'>1810,2,Philadelphia,87.3</div><div class='line' id='LC508'>1810,3,Baltimore,46.6</div><div class='line' id='LC509'>1810,4,Boston,38.7</div><div class='line' id='LC510'>1810,5,Charleston,24.7</div><div class='line' id='LC511'>1810,6,&quot;Salem, MA&quot;,23.1</div><div class='line' id='LC512'>1810,7,Washington,20.4</div><div class='line' id='LC513'>1810,8,New Orleans,17.2</div><div class='line' id='LC514'>1810,9,Albany,10.8</div><div class='line' id='LC515'>1810,10,Providence,10.1</div><div class='line' id='LC516'>1810,11,Richmond,9.7</div><div class='line' id='LC517'>1810,12,Norfolk,9.2</div><div class='line' id='LC518'>1810,13,&quot;Newport, RI&quot;,7.9</div><div class='line' id='LC519'>1810,14,&quot;Newburyport, MA&quot;,7.6</div><div class='line' id='LC520'>1810,15,&quot;Portland, ME&quot;,7.2</div><div class='line' id='LC521'>1810,16,&quot;Portsmouth, NH&quot;,6.9</div><div class='line' id='LC522'>1810,17,Nantucket,6.8</div><div class='line' id='LC523'>1810,18,&quot;Gloucester, MA&quot;,5.9</div><div class='line' id='LC524'>1810,19,&quot;Schenectady, NY&quot;,5.9</div><div class='line' id='LC525'>1810,20,New Haven,5.8</div><div class='line' id='LC526'>1820,1,New York,131.0</div><div class='line' id='LC527'>1820,2,Philadelphia,109.0</div><div class='line' id='LC528'>1820,3,Baltimore,62.7</div><div class='line' id='LC529'>1820,4,Boston,54.0</div><div class='line' id='LC530'>1820,5,Washington,28.8</div><div class='line' id='LC531'>1820,6,New Orleans,27.2</div><div class='line' id='LC532'>1820,7,Charleston,24.8</div><div class='line' id='LC533'>1820,8,&quot;Salem, MA&quot;,22.6</div><div class='line' id='LC534'>1820,9,Albany,17.9</div><div class='line' id='LC535'>1820,10,Richmond,12.1</div><div class='line' id='LC536'>1820,11,Providence,11.8</div><div class='line' id='LC537'>1820,12,Cincinnati,9.6</div><div class='line' id='LC538'>1820,13,&quot;Portland, ME&quot;,8.6</div><div class='line' id='LC539'>1820,14,Norfolk,8.5</div><div class='line' id='LC540'>1820,15,Savannah,7.5</div><div class='line' id='LC541'>1820,16,&quot;Portsmouth, NH&quot;,7.3</div><div class='line' id='LC542'>1820,17,&quot;Newport, RI&quot;,7.3</div><div class='line' id='LC543'>1820,18,Nantucket,7.3</div><div class='line' id='LC544'>1820,19,Pittsburgh,7.3</div><div class='line' id='LC545'>1820,20,New Haven,7.2</div><div class='line' id='LC546'>1830,1,New York,215.0</div><div class='line' id='LC547'>1830,2,Philadelphia,161.0</div><div class='line' id='LC548'>1830,3,Boston,85.6</div><div class='line' id='LC549'>1830,4,Baltimore,80.6</div><div class='line' id='LC550'>1830,5,New Orleans,46.1</div><div class='line' id='LC551'>1830,6,Albany,35.8</div><div class='line' id='LC552'>1830,7,Washington,35.5</div><div class='line' id='LC553'>1830,8,Charleston,30.3</div><div class='line' id='LC554'>1830,9,&quot;Salem, MA&quot;,27.3</div><div class='line' id='LC555'>1830,10,Cincinnati,24.8</div><div class='line' id='LC556'>1830,11,Providence,22.4</div><div class='line' id='LC557'>1830,12,Richmond,16.1</div><div class='line' id='LC558'>1830,13,Pittsburgh,15.4</div><div class='line' id='LC559'>1830,14,Newark,14.4</div><div class='line' id='LC560'>1830,15,&quot;Portland, ME&quot;,12.6</div><div class='line' id='LC561'>1830,16,Louisville,10.3</div><div class='line' id='LC562'>1830,17,New Haven,10.2</div><div class='line' id='LC563'>1830,18,Norfolk,9.8</div><div class='line' id='LC564'>1830,19,Rochester,9.2</div><div class='line' id='LC565'>1830,20,Buffalo,8.7</div><div class='line' id='LC566'>1840,1,New York,374.0</div><div class='line' id='LC567'>1840,2,Philadelphia,259.0</div><div class='line' id='LC568'>1840,3,Boston,183.0</div><div class='line' id='LC569'>1840,4,Baltimore,110.0</div><div class='line' id='LC570'>1840,5,New Orleans,105.0</div><div class='line' id='LC571'>1840,6,Albany,72.0</div><div class='line' id='LC572'>1840,7,Cincinnati,54.8</div><div class='line' id='LC573'>1840,8,Washington,50.2</div><div class='line' id='LC574'>1840,9,Pittsburgh,43.7</div><div class='line' id='LC575'>1840,10,Charleston,42.6</div><div class='line' id='LC576'>1840,11,Providence,40.9</div><div class='line' id='LC577'>1840,12,Louisville,34.2</div><div class='line' id='LC578'>1840,13,Rochester,31.4</div><div class='line' id='LC579'>1840,14,Newark,29.8</div><div class='line' id='LC580'>1840,15,Buffalo,29.3</div><div class='line' id='LC581'>1840,16,&quot;Portland, ME&quot;,28.6</div><div class='line' id='LC582'>1840,17,St. Louis,28.4</div><div class='line' id='LC583'>1840,18,New Bedford,24.1</div><div class='line' id='LC584'>1840,19,New Haven,21.9</div><div class='line' id='LC585'>1840,20,Detroit,21.2</div><div class='line' id='LC586'>1850,1,New York,650.0</div><div class='line' id='LC587'>1850,2,Philadelphia,405.0</div><div class='line' id='LC588'>1850,3,Boston,308.0</div><div class='line' id='LC589'>1850,4,Baltimore,179.0</div><div class='line' id='LC590'>1850,5,Cincinnati,133.0</div><div class='line' id='LC591'>1850,6,New Orleans,123.0</div><div class='line' id='LC592'>1850,7,Albany,107.0</div><div class='line' id='LC593'>1850,8,St. Louis,95.0</div><div class='line' id='LC594'>1850,9,Pittsburgh,86.0</div><div class='line' id='LC595'>1850,10,Buffalo,80.0</div><div class='line' id='LC596'>1850,11,Washington,67.0</div><div class='line' id='LC597'>1850,12,Providence,65.0</div><div class='line' id='LC598'>1850,13,Louisville,61.0</div><div class='line' id='LC599'>1850,14,Newark,57.0</div><div class='line' id='LC600'>1850,15,Charleston,50.0</div><div class='line' id='LC601'>1850,16,Rochester,49.0</div><div class='line' id='LC602'>1850,17,Chicago,40.0</div><div class='line' id='LC603'>1850,18,Syracuse,38.0</div><div class='line' id='LC604'>1850,19,Detroit,38.0</div><div class='line' id='LC605'>1850,20,&quot;Portland, ME&quot;,36.0</div><div class='line' id='LC606'>1860,1,New York,1143.0</div><div class='line' id='LC607'>1860,2,Philadelphia,608.0</div><div class='line' id='LC608'>1860,3,Boston,374.0</div><div class='line' id='LC609'>1860,4,Baltimore,221.0</div><div class='line' id='LC610'>1860,5,Cincinnati,192.0</div><div class='line' id='LC611'>1860,6,St. Louis,176.0</div><div class='line' id='LC612'>1860,7,New Orleans,172.0</div><div class='line' id='LC613'>1860,8,Chicago,123.0</div><div class='line' id='LC614'>1860,9,Albany,116.0</div><div class='line' id='LC615'>1860,10,Newark,103.0</div><div class='line' id='LC616'>1860,11,Pittsburgh,93.0</div><div class='line' id='LC617'>1860,12,Buffalo,90.0</div><div class='line' id='LC618'>1860,13,Louisville,88.0</div><div class='line' id='LC619'>1860,14,Washington,80.0</div><div class='line' id='LC620'>1860,15,Providence,69.0</div><div class='line' id='LC621'>1860,16,Detroit,59.0</div><div class='line' id='LC622'>1860,17,San Francisco,57.0</div><div class='line' id='LC623'>1860,18,Rochester,56.0</div><div class='line' id='LC624'>1860,19,Cleveland,49.0</div><div class='line' id='LC625'>1860,20,Milwaukee,48.0</div><div class='line' id='LC626'>1870,1,New York,1687.0</div><div class='line' id='LC627'>1870,2,Philadelphia,747.0</div><div class='line' id='LC628'>1870,3,Boston,501.0</div><div class='line' id='LC629'>1870,4,St. Louis,345.0</div><div class='line' id='LC630'>1870,5,Chicago,324.0</div><div class='line' id='LC631'>1870,6,Baltimore,283.0</div><div class='line' id='LC632'>1870,7,Cincinnati,257.0</div><div class='line' id='LC633'>1870,8,New Orleans,196.0</div><div class='line' id='LC634'>1870,9,Pittsburgh,170.0</div><div class='line' id='LC635'>1870,10,Albany,157.0</div><div class='line' id='LC636'>1870,11,San Francisco,151.0</div><div class='line' id='LC637'>1870,12,Buffalo,133.0</div><div class='line' id='LC638'>1870,13,Louisville,129.0</div><div class='line' id='LC639'>1870,14,Washington,123.0</div><div class='line' id='LC640'>1870,15,Providence,101.0</div><div class='line' id='LC641'>1870,16,Detroit,101.0</div><div class='line' id='LC642'>1870,17,Cleveland,101.0</div><div class='line' id='LC643'>1870,18,Milwaukee,75.0</div><div class='line' id='LC644'>1870,19,Rochester,73.0</div><div class='line' id='LC645'>1870,20,New Haven,65.0</div><div class='line' id='LC646'>1880,1,New York,2234.0</div><div class='line' id='LC647'>1880,2,Philadelphia,949.0</div><div class='line' id='LC648'>1880,3,Boston,658.0</div><div class='line' id='LC649'>1880,4,Chicago,543.0</div><div class='line' id='LC650'>1880,5,St. Louis,386.0</div><div class='line' id='LC651'>1880,6,Baltimore,353.0</div><div class='line' id='LC652'>1880,7,Cincinnati,307.0</div><div class='line' id='LC653'>1880,8,Pittsburgh,265.0</div><div class='line' id='LC654'>1880,9,San Francisco,236.0</div><div class='line' id='LC655'>1880,10,New Orleans,219.0</div><div class='line' id='LC656'>1880,11,Albany,178.0</div><div class='line' id='LC657'>1880,12,Buffalo,171.0</div><div class='line' id='LC658'>1880,13,Cleveland,169.0</div><div class='line' id='LC659'>1880,14,Washington,164.0</div><div class='line' id='LC660'>1880,15,Detroit,147.0</div><div class='line' id='LC661'>1880,16,Louisville,143.0</div><div class='line' id='LC662'>1880,17,Providence,128.0</div><div class='line' id='LC663'>1880,18,Milwaukee,121.0</div><div class='line' id='LC664'>1880,19,Rochester,103.0</div><div class='line' id='LC665'>1880,20,Minneapolis,94.0</div><div class='line' id='LC666'>1890,1,New York,2977.0</div><div class='line' id='LC667'>1890,2,Philadelphia,1180.0</div><div class='line' id='LC668'>1890,3,Chicago,1141.0</div><div class='line' id='LC669'>1890,4,Boston,818.0</div><div class='line' id='LC670'>1890,5,St. Louis,490.0</div><div class='line' id='LC671'>1890,6,Baltimore,453.0</div><div class='line' id='LC672'>1890,7,Pittsburgh,396.0</div><div class='line' id='LC673'>1890,8,Cincinnati,344.0</div><div class='line' id='LC674'>1890,9,Minneapolis,305.0</div><div class='line' id='LC675'>1890,10,San Francisco,302.0</div><div class='line' id='LC676'>1890,11,Cleveland,274.0</div><div class='line' id='LC677'>1890,12,Buffalo,272.0</div><div class='line' id='LC678'>1890,13,Washington,253.0</div><div class='line' id='LC679'>1890,14,New Orleans,245.0</div><div class='line' id='LC680'>1890,15,Detroit,237.0</div><div class='line' id='LC681'>1890,16,Milwaukee,212.0</div><div class='line' id='LC682'>1890,17,Albany,189.0</div><div class='line' id='LC683'>1890,18,Louisville,183.0</div><div class='line' id='LC684'>1890,19,Kansas City,165.0</div><div class='line' id='LC685'>1890,20,Providence,163.0</div><div class='line' id='LC686'>1900,1,New York,4266.0</div><div class='line' id='LC687'>1900,2,Chicago,1759.0</div><div class='line' id='LC688'>1900,3,Philadelphia,1454.0</div><div class='line' id='LC689'>1900,4,Boston,1009.0</div><div class='line' id='LC690'>1900,5,St. Louis,626.0</div><div class='line' id='LC691'>1900,6,Pittsburgh,532.0</div><div class='line' id='LC692'>1900,7,Baltimore,532.0</div><div class='line' id='LC693'>1900,8,Cleveland,396.0</div><div class='line' id='LC694'>1900,9,Cincinnati,379.0</div><div class='line' id='LC695'>1900,10,San Francisco,375.0</div><div class='line' id='LC696'>1900,11,Minneapolis,374.0</div><div class='line' id='LC697'>1900,12,Buffalo,373.0</div><div class='line' id='LC698'>1900,13,Detroit,321.0</div><div class='line' id='LC699'>1900,14,Washington,302.0</div><div class='line' id='LC700'>1900,15,Milwaukee,296.0</div><div class='line' id='LC701'>1900,16,New Orleans,291.0</div><div class='line' id='LC702'>1900,17,Providence,243.0</div><div class='line' id='LC703'>1900,18,Kansas City,242.0</div><div class='line' id='LC704'>1900,19,Louisville,227.0</div><div class='line' id='LC705'>1900,20,Albany,188.0</div><div class='line' id='LC706'>1910,1,New York,6021.0</div><div class='line' id='LC707'>1910,2,Chicago,2283.0</div><div class='line' id='LC708'>1910,3,Philadelphia,1746.0</div><div class='line' id='LC709'>1910,4,Boston,1213.0</div><div class='line' id='LC710'>1910,5,St. Louis,760.0</div><div class='line' id='LC711'>1910,6,Pittsburgh,655.0</div><div class='line' id='LC712'>1910,7,San Francisco,604.0</div><div class='line' id='LC713'>1910,8,Baltimore,589.0</div><div class='line' id='LC714'>1910,9,Cleveland,580.0</div><div class='line' id='LC715'>1910,10,Minneapolis,526.0</div><div class='line' id='LC716'>1910,11,Detroit,503.0</div><div class='line' id='LC717'>1910,12,Cincinnati,425.0</div><div class='line' id='LC718'>1910,13,Buffalo,420.0</div><div class='line' id='LC719'>1910,14,Milwaukee,389.0</div><div class='line' id='LC720'>1910,15,Los Angeles,374.0</div><div class='line' id='LC721'>1910,16,Kansas City,357.0</div><div class='line' id='LC722'>1910,17,Washington,357.0</div><div class='line' id='LC723'>1910,18,New Orleans,344.0</div><div class='line' id='LC724'>1910,19,Albany,283.0</div><div class='line' id='LC725'>1910,20,Providence,274.0</div><div class='line' id='LC726'>1920,1,New York,7041.0</div><div class='line' id='LC727'>1920,2,Chicago,2859.0</div><div class='line' id='LC728'>1920,3,Philadelphia,2072.0</div><div class='line' id='LC729'>1920,4,Boston,1366.0</div><div class='line' id='LC730'>1920,5,Detroit,1071.0</div><div class='line' id='LC731'>1920,6,St. Louis,859.0</div><div class='line' id='LC732'>1920,7,Cleveland,834.0</div><div class='line' id='LC733'>1920,8,Pittsburgh,775.0</div><div class='line' id='LC734'>1920,9,San Francisco,771.0</div><div class='line' id='LC735'>1920,10,Baltimore,753.0</div><div class='line' id='LC736'>1920,11,Los Angeles,682.0</div><div class='line' id='LC737'>1920,12,Minneapolis,626.0</div><div class='line' id='LC738'>1920,13,Buffalo,539.0</div><div class='line' id='LC739'>1920,14,Milwaukee,478.0</div><div class='line' id='LC740'>1920,15,Cincinnati,470.0</div><div class='line' id='LC741'>1920,16,Washington,467.0</div><div class='line' id='LC742'>1920,17,Kansas City,455.0</div><div class='line' id='LC743'>1920,18,New Orleans,393.0</div><div class='line' id='LC744'>1920,19,Seattle,334.0</div><div class='line' id='LC745'>1920,20,Indianapolis,323.0</div><div class='line' id='LC746'>1930,1,New York,8667.0</div><div class='line' id='LC747'>1930,2,Chicago,3718.0</div><div class='line' id='LC748'>1930,3,Philadelphia,2264.0</div><div class='line' id='LC749'>1930,4,Detroit,1721.0</div><div class='line' id='LC750'>1930,5,Los Angeles,1617.0</div><div class='line' id='LC751'>1930,6,Boston,1479.0</div><div class='line' id='LC752'>1930,7,San Francisco,996.0</div><div class='line' id='LC753'>1930,8,Cleveland,976.0</div><div class='line' id='LC754'>1930,9,Pittsburgh,960.0</div><div class='line' id='LC755'>1930,10,St. Louis,950.0</div><div class='line' id='LC756'>1930,11,Baltimore,836.0</div><div class='line' id='LC757'>1930,12,Minneapolis,753.0</div><div class='line' id='LC758'>1930,13,Buffalo,620.0</div><div class='line' id='LC759'>1930,14,Milwaukee,615.0</div><div class='line' id='LC760'>1930,15,Cincinnati,580.0</div><div class='line' id='LC761'>1930,16,Kansas City,561.0</div><div class='line' id='LC762'>1930,17,Washington,527.0</div><div class='line' id='LC763'>1930,18,New Orleans,469.0</div><div class='line' id='LC764'>1930,19,Seattle,390.0</div><div class='line' id='LC765'>1930,20,Indianapolis,379.0</div><div class='line' id='LC766'>1940,1,New York,10135.0</div><div class='line' id='LC767'>1940,2,Chicago,4210.0</div><div class='line' id='LC768'>1940,3,Philadelphia,2538.0</div><div class='line' id='LC769'>1940,4,Los Angeles,2268.0</div><div class='line' id='LC770'>1940,5,Detroit,2041.0</div><div class='line' id='LC771'>1940,6,Boston,1746.0</div><div class='line' id='LC772'>1940,7,San Francisco,1156.0</div><div class='line' id='LC773'>1940,8,Pittsburgh,1134.0</div><div class='line' id='LC774'>1940,9,St. Louis,1102.0</div><div class='line' id='LC775'>1940,10,Cleveland,1079.0</div><div class='line' id='LC776'>1940,11,Baltimore,992.0</div><div class='line' id='LC777'>1940,12,Minneapolis,886.0</div><div class='line' id='LC778'>1940,13,Washington,800.0</div><div class='line' id='LC779'>1940,14,Buffalo,708.0</div><div class='line' id='LC780'>1940,15,Milwaukee,705.0</div><div class='line' id='LC781'>1940,16,Kansas City,632.0</div><div class='line' id='LC782'>1940,17,Cincinnati,559.0</div><div class='line' id='LC783'>1940,18,New Orleans,557.0</div><div class='line' id='LC784'>1940,19,Houston,471.0</div><div class='line' id='LC785'>1940,20,Seattle,451.0</div><div class='line' id='LC786'>1950,1,New York,12604.0</div><div class='line' id='LC787'>1950,2,Chicago,5208.0</div><div class='line' id='LC788'>1950,3,Los Angeles,4250.0</div><div class='line' id='LC789'>1950,4,Philadelphia,3297.0</div><div class='line' id='LC790'>1950,5,Detroit,2884.0</div><div class='line' id='LC791'>1950,6,Boston,2301.0</div><div class='line' id='LC792'>1950,7,San Francisco,2131.0</div><div class='line' id='LC793'>1950,8,St. Louis,1541.0</div><div class='line' id='LC794'>1950,9,Cleveland,1425.0</div><div class='line' id='LC795'>1950,10,Pittsburgh,1400.0</div><div class='line' id='LC796'>1950,11,Washington,1287.0</div><div class='line' id='LC797'>1950,12,Baltimore,1162.0</div><div class='line' id='LC798'>1950,13,Minneapolis,987.0</div><div class='line' id='LC799'>1950,14,Buffalo,895.0</div><div class='line' id='LC800'>1950,15,Dallas,855.0</div><div class='line' id='LC801'>1950,16,Milwaukee,829.0</div><div class='line' id='LC802'>1950,17,Cincinnati,813.0</div><div class='line' id='LC803'>1950,18,Houston,701.0</div><div class='line' id='LC804'>1950,19,Kansas City,698.0</div><div class='line' id='LC805'>1950,20,New Orleans,660.0</div><div class='line' id='LC806'>1960,1,New York,14437.0</div><div class='line' id='LC807'>1960,2,Los Angeles,6805.0</div><div class='line' id='LC808'>1960,3,Chicago,6377.0</div><div class='line' id='LC809'>1960,4,Philadelphia,3989.0</div><div class='line' id='LC810'>1960,5,Detroit,3750.0</div><div class='line' id='LC811'>1960,6,San Francisco,2607.0</div><div class='line' id='LC812'>1960,7,Boston,2501.0</div><div class='line' id='LC813'>1960,8,Pittsburgh,2105.0</div><div class='line' id='LC814'>1960,9,Washington,1905.0</div><div class='line' id='LC815'>1960,10,St. Louis,1864.0</div><div class='line' id='LC816'>1960,11,Cleveland,1785.0</div><div class='line' id='LC817'>1960,12,Dallas,1435.0</div><div class='line' id='LC818'>1960,13,Baltimore,1419.0</div><div class='line' id='LC819'>1960,14,Minneapolis,1377.0</div><div class='line' id='LC820'>1960,15,Miami,1173.0</div><div class='line' id='LC821'>1960,16,Milwaukee,1150.0</div><div class='line' id='LC822'>1960,17,Houston,1140.0</div><div class='line' id='LC823'>1960,18,Buffalo,1054.0</div><div class='line' id='LC824'>1960,19,Cincinnati,994.0</div><div class='line' id='LC825'>1960,20,Kansas City,921.0</div><div class='line' id='LC826'>1970,1,New York,16193.0</div><div class='line' id='LC827'>1970,2,Los Angeles,7984.0</div><div class='line' id='LC828'>1970,3,Chicago,7164.0</div><div class='line' id='LC829'>1970,4,Philadelphia,4419.0</div><div class='line' id='LC830'>1970,5,Detroit,4085.0</div><div class='line' id='LC831'>1970,6,San Francisco,3049.0</div><div class='line' id='LC832'>1970,7,Boston,2703.0</div><div class='line' id='LC833'>1970,8,Washington,2671.0</div><div class='line' id='LC834'>1970,9,Pittsburgh,2124.0</div><div class='line' id='LC835'>1970,10,St. Louis,2123.0</div><div class='line' id='LC836'>1970,11,Dallas,2016.0</div><div class='line' id='LC837'>1970,12,Cleveland,1960.0</div><div class='line' id='LC838'>1970,13,Miami,1834.0</div><div class='line' id='LC839'>1970,14,Minneapolis,1701.0</div><div class='line' id='LC840'>1970,15,Houston,1678.0</div><div class='line' id='LC841'>1970,16,Baltimore,1580.0</div><div class='line' id='LC842'>1970,17,Milwaukee,1252.0</div><div class='line' id='LC843'>1970,18,Seattle,1238.0</div><div class='line' id='LC844'>1970,19,San Diego,1198.0</div><div class='line' id='LC845'>1970,20,Atlanta,1172.0</div><div class='line' id='LC846'>1980,1,New York,16500.0</div><div class='line' id='LC847'>1980,2,Los Angeles,10841.0</div><div class='line' id='LC848'>1980,3,Chicago,7325.0</div><div class='line' id='LC849'>1980,4,Philadelphia,4830.0</div><div class='line' id='LC850'>1980,5,Detroit,4214.0</div><div class='line' id='LC851'>1980,6,San Francisco,4185.0</div><div class='line' id='LC852'>1980,7,Boston,3064.0</div><div class='line' id='LC853'>1980,8,Washington,2912.0</div><div class='line' id='LC854'>1980,9,Houston,2757.0</div><div class='line' id='LC855'>1980,10,Dallas,2713.0</div><div class='line' id='LC856'>1980,11,Miami,2616.0</div><div class='line' id='LC857'>1980,12,St. Louis,1849.0</div><div class='line' id='LC858'>1980,13,Pittsburgh,1810.0</div><div class='line' id='LC859'>1980,14,Minneapolis,1788.0</div><div class='line' id='LC860'>1980,15,Baltimore,1755.0</div><div class='line' id='LC861'>1980,16,Cleveland,1752.0</div><div class='line' id='LC862'>1980,17,San Diego,1704.0</div><div class='line' id='LC863'>1980,18,Atlanta,1613.0</div><div class='line' id='LC864'>1980,19,Phoenix,1409.0</div><div class='line' id='LC865'>1980,20,Seattle,1392.0</div><div class='line' id='LC866'>1990,1,New York,16754.0</div><div class='line' id='LC867'>1990,2,Los Angeles,13522.0</div><div class='line' id='LC868'>1990,3,Chicago,7373.0</div><div class='line' id='LC869'>1990,4,San Francisco,5386.0</div><div class='line' id='LC870'>1990,5,Philadelphia,4970.0</div><div class='line' id='LC871'>1990,6,Miami,3948.0</div><div class='line' id='LC872'>1990,7,Detroit,3698.0</div><div class='line' id='LC873'>1990,8,Washington,3363.0</div><div class='line' id='LC874'>1990,9,Boston,3355.0</div><div class='line' id='LC875'>1990,10,Dallas,3265.0</div><div class='line' id='LC876'>1990,11,Houston,3088.0</div><div class='line' id='LC877'>1990,12,Seattle,2354.0</div><div class='line' id='LC878'>1990,13,San Diego,2348.0</div><div class='line' id='LC879'>1990,14,Atlanta,2158.0</div><div class='line' id='LC880'>1990,15,Minneapolis,2080.0</div><div class='line' id='LC881'>1990,16,Phoenix,2006.0</div><div class='line' id='LC882'>1990,17,St. Louis,1947.0</div><div class='line' id='LC883'>1990,18,Baltimore,1890.0</div><div class='line' id='LC884'>1990,19,Pittsburgh,1744.0</div><div class='line' id='LC885'>1990,20,Tampa,1709.0</div><div class='line' id='LC886'>2000,1,New York,18689.0</div><div class='line' id='LC887'>2000,2,Los Angeles,14661.0</div><div class='line' id='LC888'>2000,3,Chicago,8419.0</div><div class='line' id='LC889'>2000,4,San Francisco,5973.0</div><div class='line' id='LC890'>2000,5,Philadelphia,5418.0</div><div class='line' id='LC891'>2000,6,Miami,4919.0</div><div class='line' id='LC892'>2000,7,Dallas,4445.0</div><div class='line' id='LC893'>2000,8,Houston,4063.0</div><div class='line' id='LC894'>2000,9,Boston,4032.0</div><div class='line' id='LC895'>2000,10,Washington,3934.0</div><div class='line' id='LC896'>2000,11,Detroit,3903.0</div><div class='line' id='LC897'>2000,12,Atlanta,3500.0</div><div class='line' id='LC898'>2000,13,Seattle,3018.0</div><div class='line' id='LC899'>2000,14,Phoenix,2975.0</div><div class='line' id='LC900'>2000,15,San Diego,2674.0</div><div class='line' id='LC901'>2000,16,Minneapolis,2389.0</div><div class='line' id='LC902'>2000,17,Baltimore,2251.0</div><div class='line' id='LC903'>2000,18,Denver,2231.0</div><div class='line' id='LC904'>2000,19,St. Louis,2078.0</div><div class='line' id='LC905'>2000,20,Tampa,2062.0</div><div class='line' id='LC906'>2010,1,New York,20009.0</div><div class='line' id='LC907'>2010,2,Los Angeles,15750.0</div><div class='line' id='LC908'>2010,3,Chicago,9023.0</div><div class='line' id='LC909'>2010,4,San Francisco,6828.0</div><div class='line' id='LC910'>2010,5,Philadelphia,6003.0</div><div class='line' id='LC911'>2010,6,Dallas,5685.0</div><div class='line' id='LC912'>2010,7,Miami,5513.0</div><div class='line' id='LC913'>2010,8,Houston,5382.0</div><div class='line' id='LC914'>2010,9,Atlanta,4743.0</div><div class='line' id='LC915'>2010,10,Washington,4697.0</div><div class='line' id='LC916'>2010,11,Boston,4407.0</div><div class='line' id='LC917'>2010,12,Detroit,4160.0</div><div class='line' id='LC918'>2010,13,Phoenix,3863.0</div><div class='line' id='LC919'>2010,14,Seattle,3446.0</div><div class='line' id='LC920'>2010,15,San Diego,2985.0</div><div class='line' id='LC921'>2010,16,Denver,2716.0</div><div class='line' id='LC922'>2010,17,Minneapolis,2651.0</div><div class='line' id='LC923'>2010,18,Baltimore,2497.0</div><div class='line' id='LC924'>2010,19,Tampa,2442.0</div><div class='line' id='LC925'>2010,20,St. Louis,2246.0</div><div class='line' id='LC926'>&gt;&gt;&gt;&gt;&gt;&gt;&gt; d476869157f958f43fb96d517c0ba0120fec6a25</div><div class='line' id='LC927'>=======</div><div class='line' id='LC928'>year,rank,city,pop</div><div class='line' id='LC929'>1790,1,Philadelphia,44.1</div><div class='line' id='LC930'>1790,2,New York,33.1</div><div class='line' id='LC931'>1790,3,Boston,18.3</div><div class='line' id='LC932'>1790,4,Charleston,16.4</div><div class='line' id='LC933'>1790,5,&quot;Salem, MA&quot;,13.6</div><div class='line' id='LC934'>1790,6,Baltimore,13.5</div><div class='line' id='LC935'>1790,7,&quot;Newport, RI&quot;,6.7</div><div class='line' id='LC936'>1790,8,Providence,6.4</div><div class='line' id='LC937'>1790,9,&quot;Gloucester, MA&quot;,5.3</div><div class='line' id='LC938'>1790,10,&quot;Newburyport, MA&quot;,4.8</div><div class='line' id='LC939'>1790,11,&quot;Portsmouth, NH&quot;,4.7</div><div class='line' id='LC940'>1790,12,Nantucket,4.6</div><div class='line' id='LC941'>1790,13,&quot;Middleborough, MA&quot;,4.5</div><div class='line' id='LC942'>1790,14,New Haven,4.5</div><div class='line' id='LC943'>1790,15,Richmond,3.8</div><div class='line' id='LC944'>1790,16,Albany,3.5</div><div class='line' id='LC945'>1790,17,Norfolk,3.0</div><div class='line' id='LC946'>1790,18,&quot;Petersburg, VA&quot;,2.8</div><div class='line' id='LC947'>1790,19,&quot;Alexandria, VA&quot;,2.8</div><div class='line' id='LC948'>1790,20,Hartford,2.7</div><div class='line' id='LC949'>1800,1,Philadelphia,61.6</div><div class='line' id='LC950'>1800,2,New York,60.5</div><div class='line' id='LC951'>1800,3,Baltimore,26.5</div><div class='line' id='LC952'>1800,4,Boston,24.9</div><div class='line' id='LC953'>1800,5,Charleston,18.8</div><div class='line' id='LC954'>1800,6,&quot;Salem, MA&quot;,14.7</div><div class='line' id='LC955'>1800,7,Washington,11.2</div><div class='line' id='LC956'>1800,8,Providence,7.6</div><div class='line' id='LC957'>1800,9,Norfolk,6.9</div><div class='line' id='LC958'>1800,10,&quot;Newport, RI&quot;,6.7</div><div class='line' id='LC959'>1800,11,&quot;Newburyport, MA&quot;,6.0</div><div class='line' id='LC960'>1800,12,Richmond,5.7</div><div class='line' id='LC961'>1800,13,Nantucket,5.6</div><div class='line' id='LC962'>1800,14,&quot;Portsmouth, NH&quot;,5.3</div><div class='line' id='LC963'>1800,15,&quot;Gloucester, MA&quot;,5.3</div><div class='line' id='LC964'>1800,16,&quot;Schenectady, NY&quot;,5.3</div><div class='line' id='LC965'>1800,17,Albany,5.3</div><div class='line' id='LC966'>1800,18,&quot;New London, CT&quot;,5.2</div><div class='line' id='LC967'>1800,19,Savannah,5.2</div><div class='line' id='LC968'>1800,20,&quot;Middleborough, MA&quot;,4.5</div><div class='line' id='LC969'>1810,1,New York,101.0</div><div class='line' id='LC970'>1810,2,Philadelphia,87.3</div><div class='line' id='LC971'>1810,3,Baltimore,46.6</div><div class='line' id='LC972'>1810,4,Boston,38.7</div><div class='line' id='LC973'>1810,5,Charleston,24.7</div><div class='line' id='LC974'>1810,6,&quot;Salem, MA&quot;,23.1</div><div class='line' id='LC975'>1810,7,Washington,20.4</div><div class='line' id='LC976'>1810,8,New Orleans,17.2</div><div class='line' id='LC977'>1810,9,Albany,10.8</div><div class='line' id='LC978'>1810,10,Providence,10.1</div><div class='line' id='LC979'>1810,11,Richmond,9.7</div><div class='line' id='LC980'>1810,12,Norfolk,9.2</div><div class='line' id='LC981'>1810,13,&quot;Newport, RI&quot;,7.9</div><div class='line' id='LC982'>1810,14,&quot;Newburyport, MA&quot;,7.6</div><div class='line' id='LC983'>1810,15,&quot;Portland, ME&quot;,7.2</div><div class='line' id='LC984'>1810,16,&quot;Portsmouth, NH&quot;,6.9</div><div class='line' id='LC985'>1810,17,Nantucket,6.8</div><div class='line' id='LC986'>1810,18,&quot;Gloucester, MA&quot;,5.9</div><div class='line' id='LC987'>1810,19,&quot;Schenectady, NY&quot;,5.9</div><div class='line' id='LC988'>1810,20,New Haven,5.8</div><div class='line' id='LC989'>1820,1,New York,131.0</div><div class='line' id='LC990'>1820,2,Philadelphia,109.0</div><div class='line' id='LC991'>1820,3,Baltimore,62.7</div><div class='line' id='LC992'>1820,4,Boston,54.0</div><div class='line' id='LC993'>1820,5,Washington,28.8</div><div class='line' id='LC994'>1820,6,New Orleans,27.2</div><div class='line' id='LC995'>1820,7,Charleston,24.8</div><div class='line' id='LC996'>1820,8,&quot;Salem, MA&quot;,22.6</div><div class='line' id='LC997'>1820,9,Albany,17.9</div><div class='line' id='LC998'>1820,10,Richmond,12.1</div><div class='line' id='LC999'>1820,11,Providence,11.8</div><div class='line' id='LC1000'>1820,12,Cincinnati,9.6</div><div class='line' id='LC1001'>1820,13,&quot;Portland, ME&quot;,8.6</div><div class='line' id='LC1002'>1820,14,Norfolk,8.5</div><div class='line' id='LC1003'>1820,15,Savannah,7.5</div><div class='line' id='LC1004'>1820,16,&quot;Portsmouth, NH&quot;,7.3</div><div class='line' id='LC1005'>1820,17,&quot;Newport, RI&quot;,7.3</div><div class='line' id='LC1006'>1820,18,Nantucket,7.3</div><div class='line' id='LC1007'>1820,19,Pittsburgh,7.3</div><div class='line' id='LC1008'>1820,20,New Haven,7.2</div><div class='line' id='LC1009'>1830,1,New York,215.0</div><div class='line' id='LC1010'>1830,2,Philadelphia,161.0</div><div class='line' id='LC1011'>1830,3,Boston,85.6</div><div class='line' id='LC1012'>1830,4,Baltimore,80.6</div><div class='line' id='LC1013'>1830,5,New Orleans,46.1</div><div class='line' id='LC1014'>1830,6,Albany,35.8</div><div class='line' id='LC1015'>1830,7,Washington,35.5</div><div class='line' id='LC1016'>1830,8,Charleston,30.3</div><div class='line' id='LC1017'>1830,9,&quot;Salem, MA&quot;,27.3</div><div class='line' id='LC1018'>1830,10,Cincinnati,24.8</div><div class='line' id='LC1019'>1830,11,Providence,22.4</div><div class='line' id='LC1020'>1830,12,Richmond,16.1</div><div class='line' id='LC1021'>1830,13,Pittsburgh,15.4</div><div class='line' id='LC1022'>1830,14,Newark,14.4</div><div class='line' id='LC1023'>1830,15,&quot;Portland, ME&quot;,12.6</div><div class='line' id='LC1024'>1830,16,Louisville,10.3</div><div class='line' id='LC1025'>1830,17,New Haven,10.2</div><div class='line' id='LC1026'>1830,18,Norfolk,9.8</div><div class='line' id='LC1027'>1830,19,Rochester,9.2</div><div class='line' id='LC1028'>1830,20,Buffalo,8.7</div><div class='line' id='LC1029'>1840,1,New York,374.0</div><div class='line' id='LC1030'>1840,2,Philadelphia,259.0</div><div class='line' id='LC1031'>1840,3,Boston,183.0</div><div class='line' id='LC1032'>1840,4,Baltimore,110.0</div><div class='line' id='LC1033'>1840,5,New Orleans,105.0</div><div class='line' id='LC1034'>1840,6,Albany,72.0</div><div class='line' id='LC1035'>1840,7,Cincinnati,54.8</div><div class='line' id='LC1036'>1840,8,Washington,50.2</div><div class='line' id='LC1037'>1840,9,Pittsburgh,43.7</div><div class='line' id='LC1038'>1840,10,Charleston,42.6</div><div class='line' id='LC1039'>1840,11,Providence,40.9</div><div class='line' id='LC1040'>1840,12,Louisville,34.2</div><div class='line' id='LC1041'>1840,13,Rochester,31.4</div><div class='line' id='LC1042'>1840,14,Newark,29.8</div><div class='line' id='LC1043'>1840,15,Buffalo,29.3</div><div class='line' id='LC1044'>1840,16,&quot;Portland, ME&quot;,28.6</div><div class='line' id='LC1045'>1840,17,St. Louis,28.4</div><div class='line' id='LC1046'>1840,18,New Bedford,24.1</div><div class='line' id='LC1047'>1840,19,New Haven,21.9</div><div class='line' id='LC1048'>1840,20,Detroit,21.2</div><div class='line' id='LC1049'>1850,1,New York,650.0</div><div class='line' id='LC1050'>1850,2,Philadelphia,405.0</div><div class='line' id='LC1051'>1850,3,Boston,308.0</div><div class='line' id='LC1052'>1850,4,Baltimore,179.0</div><div class='line' id='LC1053'>1850,5,Cincinnati,133.0</div><div class='line' id='LC1054'>1850,6,New Orleans,123.0</div><div class='line' id='LC1055'>1850,7,Albany,107.0</div><div class='line' id='LC1056'>1850,8,St. Louis,95.0</div><div class='line' id='LC1057'>1850,9,Pittsburgh,86.0</div><div class='line' id='LC1058'>1850,10,Buffalo,80.0</div><div class='line' id='LC1059'>1850,11,Washington,67.0</div><div class='line' id='LC1060'>1850,12,Providence,65.0</div><div class='line' id='LC1061'>1850,13,Louisville,61.0</div><div class='line' id='LC1062'>1850,14,Newark,57.0</div><div class='line' id='LC1063'>1850,15,Charleston,50.0</div><div class='line' id='LC1064'>1850,16,Rochester,49.0</div><div class='line' id='LC1065'>1850,17,Chicago,40.0</div><div class='line' id='LC1066'>1850,18,Syracuse,38.0</div><div class='line' id='LC1067'>1850,19,Detroit,38.0</div><div class='line' id='LC1068'>1850,20,&quot;Portland, ME&quot;,36.0</div><div class='line' id='LC1069'>1860,1,New York,1143.0</div><div class='line' id='LC1070'>1860,2,Philadelphia,608.0</div><div class='line' id='LC1071'>1860,3,Boston,374.0</div><div class='line' id='LC1072'>1860,4,Baltimore,221.0</div><div class='line' id='LC1073'>1860,5,Cincinnati,192.0</div><div class='line' id='LC1074'>1860,6,St. Louis,176.0</div><div class='line' id='LC1075'>1860,7,New Orleans,172.0</div><div class='line' id='LC1076'>1860,8,Chicago,123.0</div><div class='line' id='LC1077'>1860,9,Albany,116.0</div><div class='line' id='LC1078'>1860,10,Newark,103.0</div><div class='line' id='LC1079'>1860,11,Pittsburgh,93.0</div><div class='line' id='LC1080'>1860,12,Buffalo,90.0</div><div class='line' id='LC1081'>1860,13,Louisville,88.0</div><div class='line' id='LC1082'>1860,14,Washington,80.0</div><div class='line' id='LC1083'>1860,15,Providence,69.0</div><div class='line' id='LC1084'>1860,16,Detroit,59.0</div><div class='line' id='LC1085'>1860,17,San Francisco,57.0</div><div class='line' id='LC1086'>1860,18,Rochester,56.0</div><div class='line' id='LC1087'>1860,19,Cleveland,49.0</div><div class='line' id='LC1088'>1860,20,Milwaukee,48.0</div><div class='line' id='LC1089'>1870,1,New York,1687.0</div><div class='line' id='LC1090'>1870,2,Philadelphia,747.0</div><div class='line' id='LC1091'>1870,3,Boston,501.0</div><div class='line' id='LC1092'>1870,4,St. Louis,345.0</div><div class='line' id='LC1093'>1870,5,Chicago,324.0</div><div class='line' id='LC1094'>1870,6,Baltimore,283.0</div><div class='line' id='LC1095'>1870,7,Cincinnati,257.0</div><div class='line' id='LC1096'>1870,8,New Orleans,196.0</div><div class='line' id='LC1097'>1870,9,Pittsburgh,170.0</div><div class='line' id='LC1098'>1870,10,Albany,157.0</div><div class='line' id='LC1099'>1870,11,San Francisco,151.0</div><div class='line' id='LC1100'>1870,12,Buffalo,133.0</div><div class='line' id='LC1101'>1870,13,Louisville,129.0</div><div class='line' id='LC1102'>1870,14,Washington,123.0</div><div class='line' id='LC1103'>1870,15,Providence,101.0</div><div class='line' id='LC1104'>1870,16,Detroit,101.0</div><div class='line' id='LC1105'>1870,17,Cleveland,101.0</div><div class='line' id='LC1106'>1870,18,Milwaukee,75.0</div><div class='line' id='LC1107'>1870,19,Rochester,73.0</div><div class='line' id='LC1108'>1870,20,New Haven,65.0</div><div class='line' id='LC1109'>1880,1,New York,2234.0</div><div class='line' id='LC1110'>1880,2,Philadelphia,949.0</div><div class='line' id='LC1111'>1880,3,Boston,658.0</div><div class='line' id='LC1112'>1880,4,Chicago,543.0</div><div class='line' id='LC1113'>1880,5,St. Louis,386.0</div><div class='line' id='LC1114'>1880,6,Baltimore,353.0</div><div class='line' id='LC1115'>1880,7,Cincinnati,307.0</div><div class='line' id='LC1116'>1880,8,Pittsburgh,265.0</div><div class='line' id='LC1117'>1880,9,San Francisco,236.0</div><div class='line' id='LC1118'>1880,10,New Orleans,219.0</div><div class='line' id='LC1119'>1880,11,Albany,178.0</div><div class='line' id='LC1120'>1880,12,Buffalo,171.0</div><div class='line' id='LC1121'>1880,13,Cleveland,169.0</div><div class='line' id='LC1122'>1880,14,Washington,164.0</div><div class='line' id='LC1123'>1880,15,Detroit,147.0</div><div class='line' id='LC1124'>1880,16,Louisville,143.0</div><div class='line' id='LC1125'>1880,17,Providence,128.0</div><div class='line' id='LC1126'>1880,18,Milwaukee,121.0</div><div class='line' id='LC1127'>1880,19,Rochester,103.0</div><div class='line' id='LC1128'>1880,20,Minneapolis,94.0</div><div class='line' id='LC1129'>1890,1,New York,2977.0</div><div class='line' id='LC1130'>1890,2,Philadelphia,1180.0</div><div class='line' id='LC1131'>1890,3,Chicago,1141.0</div><div class='line' id='LC1132'>1890,4,Boston,818.0</div><div class='line' id='LC1133'>1890,5,St. Louis,490.0</div><div class='line' id='LC1134'>1890,6,Baltimore,453.0</div><div class='line' id='LC1135'>1890,7,Pittsburgh,396.0</div><div class='line' id='LC1136'>1890,8,Cincinnati,344.0</div><div class='line' id='LC1137'>1890,9,Minneapolis,305.0</div><div class='line' id='LC1138'>1890,10,San Francisco,302.0</div><div class='line' id='LC1139'>1890,11,Cleveland,274.0</div><div class='line' id='LC1140'>1890,12,Buffalo,272.0</div><div class='line' id='LC1141'>1890,13,Washington,253.0</div><div class='line' id='LC1142'>1890,14,New Orleans,245.0</div><div class='line' id='LC1143'>1890,15,Detroit,237.0</div><div class='line' id='LC1144'>1890,16,Milwaukee,212.0</div><div class='line' id='LC1145'>1890,17,Albany,189.0</div><div class='line' id='LC1146'>1890,18,Louisville,183.0</div><div class='line' id='LC1147'>1890,19,Kansas City,165.0</div><div class='line' id='LC1148'>1890,20,Providence,163.0</div><div class='line' id='LC1149'>1900,1,New York,4266.0</div><div class='line' id='LC1150'>1900,2,Chicago,1759.0</div><div class='line' id='LC1151'>1900,3,Philadelphia,1454.0</div><div class='line' id='LC1152'>1900,4,Boston,1009.0</div><div class='line' id='LC1153'>1900,5,St. Louis,626.0</div><div class='line' id='LC1154'>1900,6,Pittsburgh,532.0</div><div class='line' id='LC1155'>1900,7,Baltimore,532.0</div><div class='line' id='LC1156'>1900,8,Cleveland,396.0</div><div class='line' id='LC1157'>1900,9,Cincinnati,379.0</div><div class='line' id='LC1158'>1900,10,San Francisco,375.0</div><div class='line' id='LC1159'>1900,11,Minneapolis,374.0</div><div class='line' id='LC1160'>1900,12,Buffalo,373.0</div><div class='line' id='LC1161'>1900,13,Detroit,321.0</div><div class='line' id='LC1162'>1900,14,Washington,302.0</div><div class='line' id='LC1163'>1900,15,Milwaukee,296.0</div><div class='line' id='LC1164'>1900,16,New Orleans,291.0</div><div class='line' id='LC1165'>1900,17,Providence,243.0</div><div class='line' id='LC1166'>1900,18,Kansas City,242.0</div><div class='line' id='LC1167'>1900,19,Louisville,227.0</div><div class='line' id='LC1168'>1900,20,Albany,188.0</div><div class='line' id='LC1169'>1910,1,New York,6021.0</div><div class='line' id='LC1170'>1910,2,Chicago,2283.0</div><div class='line' id='LC1171'>1910,3,Philadelphia,1746.0</div><div class='line' id='LC1172'>1910,4,Boston,1213.0</div><div class='line' id='LC1173'>1910,5,St. Louis,760.0</div><div class='line' id='LC1174'>1910,6,Pittsburgh,655.0</div><div class='line' id='LC1175'>1910,7,San Francisco,604.0</div><div class='line' id='LC1176'>1910,8,Baltimore,589.0</div><div class='line' id='LC1177'>1910,9,Cleveland,580.0</div><div class='line' id='LC1178'>1910,10,Minneapolis,526.0</div><div class='line' id='LC1179'>1910,11,Detroit,503.0</div><div class='line' id='LC1180'>1910,12,Cincinnati,425.0</div><div class='line' id='LC1181'>1910,13,Buffalo,420.0</div><div class='line' id='LC1182'>1910,14,Milwaukee,389.0</div><div class='line' id='LC1183'>1910,15,Los Angeles,374.0</div><div class='line' id='LC1184'>1910,16,Kansas City,357.0</div><div class='line' id='LC1185'>1910,17,Washington,357.0</div><div class='line' id='LC1186'>1910,18,New Orleans,344.0</div><div class='line' id='LC1187'>1910,19,Albany,283.0</div><div class='line' id='LC1188'>1910,20,Providence,274.0</div><div class='line' id='LC1189'>1920,1,New York,7041.0</div><div class='line' id='LC1190'>1920,2,Chicago,2859.0</div><div class='line' id='LC1191'>1920,3,Philadelphia,2072.0</div><div class='line' id='LC1192'>1920,4,Boston,1366.0</div><div class='line' id='LC1193'>1920,5,Detroit,1071.0</div><div class='line' id='LC1194'>1920,6,St. Louis,859.0</div><div class='line' id='LC1195'>1920,7,Cleveland,834.0</div><div class='line' id='LC1196'>1920,8,Pittsburgh,775.0</div><div class='line' id='LC1197'>1920,9,San Francisco,771.0</div><div class='line' id='LC1198'>1920,10,Baltimore,753.0</div><div class='line' id='LC1199'>1920,11,Los Angeles,682.0</div><div class='line' id='LC1200'>1920,12,Minneapolis,626.0</div><div class='line' id='LC1201'>1920,13,Buffalo,539.0</div><div class='line' id='LC1202'>1920,14,Milwaukee,478.0</div><div class='line' id='LC1203'>1920,15,Cincinnati,470.0</div><div class='line' id='LC1204'>1920,16,Washington,467.0</div><div class='line' id='LC1205'>1920,17,Kansas City,455.0</div><div class='line' id='LC1206'>1920,18,New Orleans,393.0</div><div class='line' id='LC1207'>1920,19,Seattle,334.0</div><div class='line' id='LC1208'>1920,20,Indianapolis,323.0</div><div class='line' id='LC1209'>1930,1,New York,8667.0</div><div class='line' id='LC1210'>1930,2,Chicago,3718.0</div><div class='line' id='LC1211'>1930,3,Philadelphia,2264.0</div><div class='line' id='LC1212'>1930,4,Detroit,1721.0</div><div class='line' id='LC1213'>1930,5,Los Angeles,1617.0</div><div class='line' id='LC1214'>1930,6,Boston,1479.0</div><div class='line' id='LC1215'>1930,7,San Francisco,996.0</div><div class='line' id='LC1216'>1930,8,Cleveland,976.0</div><div class='line' id='LC1217'>1930,9,Pittsburgh,960.0</div><div class='line' id='LC1218'>1930,10,St. Louis,950.0</div><div class='line' id='LC1219'>1930,11,Baltimore,836.0</div><div class='line' id='LC1220'>1930,12,Minneapolis,753.0</div><div class='line' id='LC1221'>1930,13,Buffalo,620.0</div><div class='line' id='LC1222'>1930,14,Milwaukee,615.0</div><div class='line' id='LC1223'>1930,15,Cincinnati,580.0</div><div class='line' id='LC1224'>1930,16,Kansas City,561.0</div><div class='line' id='LC1225'>1930,17,Washington,527.0</div><div class='line' id='LC1226'>1930,18,New Orleans,469.0</div><div class='line' id='LC1227'>1930,19,Seattle,390.0</div><div class='line' id='LC1228'>1930,20,Indianapolis,379.0</div><div class='line' id='LC1229'>1940,1,New York,10135.0</div><div class='line' id='LC1230'>1940,2,Chicago,4210.0</div><div class='line' id='LC1231'>1940,3,Philadelphia,2538.0</div><div class='line' id='LC1232'>1940,4,Los Angeles,2268.0</div><div class='line' id='LC1233'>1940,5,Detroit,2041.0</div><div class='line' id='LC1234'>1940,6,Boston,1746.0</div><div class='line' id='LC1235'>1940,7,San Francisco,1156.0</div><div class='line' id='LC1236'>1940,8,Pittsburgh,1134.0</div><div class='line' id='LC1237'>1940,9,St. Louis,1102.0</div><div class='line' id='LC1238'>1940,10,Cleveland,1079.0</div><div class='line' id='LC1239'>1940,11,Baltimore,992.0</div><div class='line' id='LC1240'>1940,12,Minneapolis,886.0</div><div class='line' id='LC1241'>1940,13,Washington,800.0</div><div class='line' id='LC1242'>1940,14,Buffalo,708.0</div><div class='line' id='LC1243'>1940,15,Milwaukee,705.0</div><div class='line' id='LC1244'>1940,16,Kansas City,632.0</div><div class='line' id='LC1245'>1940,17,Cincinnati,559.0</div><div class='line' id='LC1246'>1940,18,New Orleans,557.0</div><div class='line' id='LC1247'>1940,19,Houston,471.0</div><div class='line' id='LC1248'>1940,20,Seattle,451.0</div><div class='line' id='LC1249'>1950,1,New York,12604.0</div><div class='line' id='LC1250'>1950,2,Chicago,5208.0</div><div class='line' id='LC1251'>1950,3,Los Angeles,4250.0</div><div class='line' id='LC1252'>1950,4,Philadelphia,3297.0</div><div class='line' id='LC1253'>1950,5,Detroit,2884.0</div><div class='line' id='LC1254'>1950,6,Boston,2301.0</div><div class='line' id='LC1255'>1950,7,San Francisco,2131.0</div><div class='line' id='LC1256'>1950,8,St. Louis,1541.0</div><div class='line' id='LC1257'>1950,9,Cleveland,1425.0</div><div class='line' id='LC1258'>1950,10,Pittsburgh,1400.0</div><div class='line' id='LC1259'>1950,11,Washington,1287.0</div><div class='line' id='LC1260'>1950,12,Baltimore,1162.0</div><div class='line' id='LC1261'>1950,13,Minneapolis,987.0</div><div class='line' id='LC1262'>1950,14,Buffalo,895.0</div><div class='line' id='LC1263'>1950,15,Dallas,855.0</div><div class='line' id='LC1264'>1950,16,Milwaukee,829.0</div><div class='line' id='LC1265'>1950,17,Cincinnati,813.0</div><div class='line' id='LC1266'>1950,18,Houston,701.0</div><div class='line' id='LC1267'>1950,19,Kansas City,698.0</div><div class='line' id='LC1268'>1950,20,New Orleans,660.0</div><div class='line' id='LC1269'>1960,1,New York,14437.0</div><div class='line' id='LC1270'>1960,2,Los Angeles,6805.0</div><div class='line' id='LC1271'>1960,3,Chicago,6377.0</div><div class='line' id='LC1272'>1960,4,Philadelphia,3989.0</div><div class='line' id='LC1273'>1960,5,Detroit,3750.0</div><div class='line' id='LC1274'>1960,6,San Francisco,2607.0</div><div class='line' id='LC1275'>1960,7,Boston,2501.0</div><div class='line' id='LC1276'>1960,8,Pittsburgh,2105.0</div><div class='line' id='LC1277'>1960,9,Washington,1905.0</div><div class='line' id='LC1278'>1960,10,St. Louis,1864.0</div><div class='line' id='LC1279'>1960,11,Cleveland,1785.0</div><div class='line' id='LC1280'>1960,12,Dallas,1435.0</div><div class='line' id='LC1281'>1960,13,Baltimore,1419.0</div><div class='line' id='LC1282'>1960,14,Minneapolis,1377.0</div><div class='line' id='LC1283'>1960,15,Miami,1173.0</div><div class='line' id='LC1284'>1960,16,Milwaukee,1150.0</div><div class='line' id='LC1285'>1960,17,Houston,1140.0</div><div class='line' id='LC1286'>1960,18,Buffalo,1054.0</div><div class='line' id='LC1287'>1960,19,Cincinnati,994.0</div><div class='line' id='LC1288'>1960,20,Kansas City,921.0</div><div class='line' id='LC1289'>1970,1,New York,16193.0</div><div class='line' id='LC1290'>1970,2,Los Angeles,7984.0</div><div class='line' id='LC1291'>1970,3,Chicago,7164.0</div><div class='line' id='LC1292'>1970,4,Philadelphia,4419.0</div><div class='line' id='LC1293'>1970,5,Detroit,4085.0</div><div class='line' id='LC1294'>1970,6,San Francisco,3049.0</div><div class='line' id='LC1295'>1970,7,Boston,2703.0</div><div class='line' id='LC1296'>1970,8,Washington,2671.0</div><div class='line' id='LC1297'>1970,9,Pittsburgh,2124.0</div><div class='line' id='LC1298'>1970,10,St. Louis,2123.0</div><div class='line' id='LC1299'>1970,11,Dallas,2016.0</div><div class='line' id='LC1300'>1970,12,Cleveland,1960.0</div><div class='line' id='LC1301'>1970,13,Miami,1834.0</div><div class='line' id='LC1302'>1970,14,Minneapolis,1701.0</div><div class='line' id='LC1303'>1970,15,Houston,1678.0</div><div class='line' id='LC1304'>1970,16,Baltimore,1580.0</div><div class='line' id='LC1305'>1970,17,Milwaukee,1252.0</div><div class='line' id='LC1306'>1970,18,Seattle,1238.0</div><div class='line' id='LC1307'>1970,19,San Diego,1198.0</div><div class='line' id='LC1308'>1970,20,Atlanta,1172.0</div><div class='line' id='LC1309'>1980,1,New York,16500.0</div><div class='line' id='LC1310'>1980,2,Los Angeles,10841.0</div><div class='line' id='LC1311'>1980,3,Chicago,7325.0</div><div class='line' id='LC1312'>1980,4,Philadelphia,4830.0</div><div class='line' id='LC1313'>1980,5,Detroit,4214.0</div><div class='line' id='LC1314'>1980,6,San Francisco,4185.0</div><div class='line' id='LC1315'>1980,7,Boston,3064.0</div><div class='line' id='LC1316'>1980,8,Washington,2912.0</div><div class='line' id='LC1317'>1980,9,Houston,2757.0</div><div class='line' id='LC1318'>1980,10,Dallas,2713.0</div><div class='line' id='LC1319'>1980,11,Miami,2616.0</div><div class='line' id='LC1320'>1980,12,St. Louis,1849.0</div><div class='line' id='LC1321'>1980,13,Pittsburgh,1810.0</div><div class='line' id='LC1322'>1980,14,Minneapolis,1788.0</div><div class='line' id='LC1323'>1980,15,Baltimore,1755.0</div><div class='line' id='LC1324'>1980,16,Cleveland,1752.0</div><div class='line' id='LC1325'>1980,17,San Diego,1704.0</div><div class='line' id='LC1326'>1980,18,Atlanta,1613.0</div><div class='line' id='LC1327'>1980,19,Phoenix,1409.0</div><div class='line' id='LC1328'>1980,20,Seattle,1392.0</div><div class='line' id='LC1329'>1990,1,New York,16754.0</div><div class='line' id='LC1330'>1990,2,Los Angeles,13522.0</div><div class='line' id='LC1331'>1990,3,Chicago,7373.0</div><div class='line' id='LC1332'>1990,4,San Francisco,5386.0</div><div class='line' id='LC1333'>1990,5,Philadelphia,4970.0</div><div class='line' id='LC1334'>1990,6,Miami,3948.0</div><div class='line' id='LC1335'>1990,7,Detroit,3698.0</div><div class='line' id='LC1336'>1990,8,Washington,3363.0</div><div class='line' id='LC1337'>1990,9,Boston,3355.0</div><div class='line' id='LC1338'>1990,10,Dallas,3265.0</div><div class='line' id='LC1339'>1990,11,Houston,3088.0</div><div class='line' id='LC1340'>1990,12,Seattle,2354.0</div><div class='line' id='LC1341'>1990,13,San Diego,2348.0</div><div class='line' id='LC1342'>1990,14,Atlanta,2158.0</div><div class='line' id='LC1343'>1990,15,Minneapolis,2080.0</div><div class='line' id='LC1344'>1990,16,Phoenix,2006.0</div><div class='line' id='LC1345'>1990,17,St. Louis,1947.0</div><div class='line' id='LC1346'>1990,18,Baltimore,1890.0</div><div class='line' id='LC1347'>1990,19,Pittsburgh,1744.0</div><div class='line' id='LC1348'>1990,20,Tampa,1709.0</div><div class='line' id='LC1349'>2000,1,New York,18689.0</div><div class='line' id='LC1350'>2000,2,Los Angeles,14661.0</div><div class='line' id='LC1351'>2000,3,Chicago,8419.0</div><div class='line' id='LC1352'>2000,4,San Francisco,5973.0</div><div class='line' id='LC1353'>2000,5,Philadelphia,5418.0</div><div class='line' id='LC1354'>2000,6,Miami,4919.0</div><div class='line' id='LC1355'>2000,7,Dallas,4445.0</div><div class='line' id='LC1356'>2000,8,Houston,4063.0</div><div class='line' id='LC1357'>2000,9,Boston,4032.0</div><div class='line' id='LC1358'>2000,10,Washington,3934.0</div><div class='line' id='LC1359'>2000,11,Detroit,3903.0</div><div class='line' id='LC1360'>2000,12,Atlanta,3500.0</div><div class='line' id='LC1361'>2000,13,Seattle,3018.0</div><div class='line' id='LC1362'>2000,14,Phoenix,2975.0</div><div class='line' id='LC1363'>2000,15,San Diego,2674.0</div><div class='line' id='LC1364'>2000,16,Minneapolis,2389.0</div><div class='line' id='LC1365'>2000,17,Baltimore,2251.0</div><div class='line' id='LC1366'>2000,18,Denver,2231.0</div><div class='line' id='LC1367'>2000,19,St. Louis,2078.0</div><div class='line' id='LC1368'>2000,20,Tampa,2062.0</div><div class='line' id='LC1369'>2010,1,New York,20009.0</div><div class='line' id='LC1370'>2010,2,Los Angeles,15750.0</div><div class='line' id='LC1371'>2010,3,Chicago,9023.0</div><div class='line' id='LC1372'>2010,4,San Francisco,6828.0</div><div class='line' id='LC1373'>2010,5,Philadelphia,6003.0</div><div class='line' id='LC1374'>2010,6,Dallas,5685.0</div><div class='line' id='LC1375'>2010,7,Miami,5513.0</div><div class='line' id='LC1376'>2010,8,Houston,5382.0</div><div class='line' id='LC1377'>2010,9,Atlanta,4743.0</div><div class='line' id='LC1378'>2010,10,Washington,4697.0</div><div class='line' id='LC1379'>2010,11,Boston,4407.0</div><div class='line' id='LC1380'>2010,12,Detroit,4160.0</div><div class='line' id='LC1381'>2010,13,Phoenix,3863.0</div><div class='line' id='LC1382'>2010,14,Seattle,3446.0</div><div class='line' id='LC1383'>2010,15,San Diego,2985.0</div><div class='line' id='LC1384'>2010,16,Denver,2716.0</div><div class='line' id='LC1385'>2010,17,Minneapolis,2651.0</div><div class='line' id='LC1386'>2010,18,Baltimore,2497.0</div><div class='line' id='LC1387'>2010,19,Tampa,2442.0</div><div class='line' id='LC1388'>2010,20,St. Louis,2246.0</div><div class='line' id='LC1389'>&gt;&gt;&gt;&gt;&gt;&gt;&gt; d476869157f958f43fb96d517c0ba0120fec6a25</div></pre></div></td>
-          </tr>
-        </table>
-  </div>
-
-  </div>
-</div>
-
-<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" class="js-jump-to-line" style="display:none">Jump to Line</a>
-<div id="jump-to-line" style="display:none">
-  <form accept-charset="UTF-8" class="js-jump-to-line-form">
-    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
-    <button type="submit" class="button">Go</button>
-  </form>
-</div>
-
-        </div>
-
-      </div><!-- /.repo-container -->
-      <div class="modal-backdrop"></div>
-    </div><!-- /.container -->
-  </div><!-- /.site -->
-
-
-    </div><!-- /.wrapper -->
-
-      <div class="container">
-  <div class="site-footer">
-    <ul class="site-footer-links right">
-      <li><a href="https://status.github.com/">Status</a></li>
-      <li><a href="http://developer.github.com">API</a></li>
-      <li><a href="http://training.github.com">Training</a></li>
-      <li><a href="http://shop.github.com">Shop</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/about">About</a></li>
-
-    </ul>
-
-    <a href="/">
-      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
-    </a>
-
-    <ul class="site-footer-links">
-      <li>&copy; 2014 <span title="0.08375s from github-fe130-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
-        <li><a href="/site/terms">Terms</a></li>
-        <li><a href="/site/privacy">Privacy</a></li>
-        <li><a href="/security">Security</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-  </div><!-- /.site-footer -->
-</div><!-- /.container -->
-
-
-    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
-  <div class="fullscreen-container js-fullscreen-container">
-    <div class="textarea-wrap">
-      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
-          <div class="suggester-container">
-              <div class="suggester fullscreen-suggester js-navigation-container" id="fullscreen_suggester"
-                 data-url="/andrewyuan/edav/suggestions/commit">
-              </div>
-          </div>
-    </div>
-  </div>
-  <div class="fullscreen-sidebar">
-    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped leftwards" title="Exit Zen Mode">
-      <span class="mega-octicon octicon-screen-normal"></span>
-    </a>
-    <a href="#" class="theme-switcher js-theme-switcher tooltipped leftwards"
-      title="Switch themes">
-      <span class="octicon octicon-color-mode"></span>
-    </a>
-  </div>
-</div>
-
-
-
-    <div id="ajax-error-message" class="flash flash-error">
-      <span class="octicon octicon-alert"></span>
-      <a href="#" class="octicon octicon-remove-close close js-ajax-error-dismiss"></a>
-      Something went wrong with that request. Please try again.
-    </div>
-
-  </body>
-</html>
-
+year,rank,city,pop
+1790,1,Philadelphia,44.1
+1790,2,New York,33.1
+1790,3,Boston,18.3
+1790,4,Charleston,16.4
+1790,5,"Salem, MA",13.6
+1790,6,Baltimore,13.5
+1790,7,"Newport, RI",6.7
+1790,8,Providence,6.4
+1790,9,"Gloucester, MA",5.3
+1790,10,"Newburyport, MA",4.8
+1790,11,"Portsmouth, NH",4.7
+1790,12,Nantucket,4.6
+1790,13,"Middleborough, MA",4.5
+1790,14,New Haven,4.5
+1790,15,Richmond,3.8
+1790,16,Albany,3.5
+1790,17,Norfolk,3.0
+1790,18,"Petersburg, VA",2.8
+1790,19,"Alexandria, VA",2.8
+1790,20,Hartford,2.7
+1800,1,Philadelphia,61.6
+1800,2,New York,60.5
+1800,3,Baltimore,26.5
+1800,4,Boston,24.9
+1800,5,Charleston,18.8
+1800,6,"Salem, MA",14.7
+1800,7,Washington,11.2
+1800,8,Providence,7.6
+1800,9,Norfolk,6.9
+1800,10,"Newport, RI",6.7
+1800,11,"Newburyport, MA",6.0
+1800,12,Richmond,5.7
+1800,13,Nantucket,5.6
+1800,14,"Portsmouth, NH",5.3
+1800,15,"Gloucester, MA",5.3
+1800,16,"Schenectady, NY",5.3
+1800,17,Albany,5.3
+1800,18,"New London, CT",5.2
+1800,19,Savannah,5.2
+1800,20,"Middleborough, MA",4.5
+1810,1,New York,101.0
+1810,2,Philadelphia,87.3
+1810,3,Baltimore,46.6
+1810,4,Boston,38.7
+1810,5,Charleston,24.7
+1810,6,"Salem, MA",23.1
+1810,7,Washington,20.4
+1810,8,New Orleans,17.2
+1810,9,Albany,10.8
+1810,10,Providence,10.1
+1810,11,Richmond,9.7
+1810,12,Norfolk,9.2
+1810,13,"Newport, RI",7.9
+1810,14,"Newburyport, MA",7.6
+1810,15,"Portland, ME",7.2
+1810,16,"Portsmouth, NH",6.9
+1810,17,Nantucket,6.8
+1810,18,"Gloucester, MA",5.9
+1810,19,"Schenectady, NY",5.9
+1810,20,New Haven,5.8
+1820,1,New York,131.0
+1820,2,Philadelphia,109.0
+1820,3,Baltimore,62.7
+1820,4,Boston,54.0
+1820,5,Washington,28.8
+1820,6,New Orleans,27.2
+1820,7,Charleston,24.8
+1820,8,"Salem, MA",22.6
+1820,9,Albany,17.9
+1820,10,Richmond,12.1
+1820,11,Providence,11.8
+1820,12,Cincinnati,9.6
+1820,13,"Portland, ME",8.6
+1820,14,Norfolk,8.5
+1820,15,Savannah,7.5
+1820,16,"Portsmouth, NH",7.3
+1820,17,"Newport, RI",7.3
+1820,18,Nantucket,7.3
+1820,19,Pittsburgh,7.3
+1820,20,New Haven,7.2
+1830,1,New York,215.0
+1830,2,Philadelphia,161.0
+1830,3,Boston,85.6
+1830,4,Baltimore,80.6
+1830,5,New Orleans,46.1
+1830,6,Albany,35.8
+1830,7,Washington,35.5
+1830,8,Charleston,30.3
+1830,9,"Salem, MA",27.3
+1830,10,Cincinnati,24.8
+1830,11,Providence,22.4
+1830,12,Richmond,16.1
+1830,13,Pittsburgh,15.4
+1830,14,Newark,14.4
+1830,15,"Portland, ME",12.6
+1830,16,Louisville,10.3
+1830,17,New Haven,10.2
+1830,18,Norfolk,9.8
+1830,19,Rochester,9.2
+1830,20,Buffalo,8.7
+1840,1,New York,374.0
+1840,2,Philadelphia,259.0
+1840,3,Boston,183.0
+1840,4,Baltimore,110.0
+1840,5,New Orleans,105.0
+1840,6,Albany,72.0
+1840,7,Cincinnati,54.8
+1840,8,Washington,50.2
+1840,9,Pittsburgh,43.7
+1840,10,Charleston,42.6
+1840,11,Providence,40.9
+1840,12,Louisville,34.2
+1840,13,Rochester,31.4
+1840,14,Newark,29.8
+1840,15,Buffalo,29.3
+1840,16,"Portland, ME",28.6
+1840,17,St. Louis,28.4
+1840,18,New Bedford,24.1
+1840,19,New Haven,21.9
+1840,20,Detroit,21.2
+1850,1,New York,650.0
+1850,2,Philadelphia,405.0
+1850,3,Boston,308.0
+1850,4,Baltimore,179.0
+1850,5,Cincinnati,133.0
+1850,6,New Orleans,123.0
+1850,7,Albany,107.0
+1850,8,St. Louis,95.0
+1850,9,Pittsburgh,86.0
+1850,10,Buffalo,80.0
+1850,11,Washington,67.0
+1850,12,Providence,65.0
+1850,13,Louisville,61.0
+1850,14,Newark,57.0
+1850,15,Charleston,50.0
+1850,16,Rochester,49.0
+1850,17,Chicago,40.0
+1850,18,Syracuse,38.0
+1850,19,Detroit,38.0
+1850,20,"Portland, ME",36.0
+1860,1,New York,1143.0
+1860,2,Philadelphia,608.0
+1860,3,Boston,374.0
+1860,4,Baltimore,221.0
+1860,5,Cincinnati,192.0
+1860,6,St. Louis,176.0
+1860,7,New Orleans,172.0
+1860,8,Chicago,123.0
+1860,9,Albany,116.0
+1860,10,Newark,103.0
+1860,11,Pittsburgh,93.0
+1860,12,Buffalo,90.0
+1860,13,Louisville,88.0
+1860,14,Washington,80.0
+1860,15,Providence,69.0
+1860,16,Detroit,59.0
+1860,17,San Francisco,57.0
+1860,18,Rochester,56.0
+1860,19,Cleveland,49.0
+1860,20,Milwaukee,48.0
+1870,1,New York,1687.0
+1870,2,Philadelphia,747.0
+1870,3,Boston,501.0
+1870,4,St. Louis,345.0
+1870,5,Chicago,324.0
+1870,6,Baltimore,283.0
+1870,7,Cincinnati,257.0
+1870,8,New Orleans,196.0
+1870,9,Pittsburgh,170.0
+1870,10,Albany,157.0
+1870,11,San Francisco,151.0
+1870,12,Buffalo,133.0
+1870,13,Louisville,129.0
+1870,14,Washington,123.0
+1870,15,Providence,101.0
+1870,16,Detroit,101.0
+1870,17,Cleveland,101.0
+1870,18,Milwaukee,75.0
+1870,19,Rochester,73.0
+1870,20,New Haven,65.0
+1880,1,New York,2234.0
+1880,2,Philadelphia,949.0
+1880,3,Boston,658.0
+1880,4,Chicago,543.0
+1880,5,St. Louis,386.0
+1880,6,Baltimore,353.0
+1880,7,Cincinnati,307.0
+1880,8,Pittsburgh,265.0
+1880,9,San Francisco,236.0
+1880,10,New Orleans,219.0
+1880,11,Albany,178.0
+1880,12,Buffalo,171.0
+1880,13,Cleveland,169.0
+1880,14,Washington,164.0
+1880,15,Detroit,147.0
+1880,16,Louisville,143.0
+1880,17,Providence,128.0
+1880,18,Milwaukee,121.0
+1880,19,Rochester,103.0
+1880,20,Minneapolis,94.0
+1890,1,New York,2977.0
+1890,2,Philadelphia,1180.0
+1890,3,Chicago,1141.0
+1890,4,Boston,818.0
+1890,5,St. Louis,490.0
+1890,6,Baltimore,453.0
+1890,7,Pittsburgh,396.0
+1890,8,Cincinnati,344.0
+1890,9,Minneapolis,305.0
+1890,10,San Francisco,302.0
+1890,11,Cleveland,274.0
+1890,12,Buffalo,272.0
+1890,13,Washington,253.0
+1890,14,New Orleans,245.0
+1890,15,Detroit,237.0
+1890,16,Milwaukee,212.0
+1890,17,Albany,189.0
+1890,18,Louisville,183.0
+1890,19,Kansas City,165.0
+1890,20,Providence,163.0
+1900,1,New York,4266.0
+1900,2,Chicago,1759.0
+1900,3,Philadelphia,1454.0
+1900,4,Boston,1009.0
+1900,5,St. Louis,626.0
+1900,6,Pittsburgh,532.0
+1900,7,Baltimore,532.0
+1900,8,Cleveland,396.0
+1900,9,Cincinnati,379.0
+1900,10,San Francisco,375.0
+1900,11,Minneapolis,374.0
+1900,12,Buffalo,373.0
+1900,13,Detroit,321.0
+1900,14,Washington,302.0
+1900,15,Milwaukee,296.0
+1900,16,New Orleans,291.0
+1900,17,Providence,243.0
+1900,18,Kansas City,242.0
+1900,19,Louisville,227.0
+1900,20,Albany,188.0
+1910,1,New York,6021.0
+1910,2,Chicago,2283.0
+1910,3,Philadelphia,1746.0
+1910,4,Boston,1213.0
+1910,5,St. Louis,760.0
+1910,6,Pittsburgh,655.0
+1910,7,San Francisco,604.0
+1910,8,Baltimore,589.0
+1910,9,Cleveland,580.0
+1910,10,Minneapolis,526.0
+1910,11,Detroit,503.0
+1910,12,Cincinnati,425.0
+1910,13,Buffalo,420.0
+1910,14,Milwaukee,389.0
+1910,15,Los Angeles,374.0
+1910,16,Kansas City,357.0
+1910,17,Washington,357.0
+1910,18,New Orleans,344.0
+1910,19,Albany,283.0
+1910,20,Providence,274.0
+1920,1,New York,7041.0
+1920,2,Chicago,2859.0
+1920,3,Philadelphia,2072.0
+1920,4,Boston,1366.0
+1920,5,Detroit,1071.0
+1920,6,St. Louis,859.0
+1920,7,Cleveland,834.0
+1920,8,Pittsburgh,775.0
+1920,9,San Francisco,771.0
+1920,10,Baltimore,753.0
+1920,11,Los Angeles,682.0
+1920,12,Minneapolis,626.0
+1920,13,Buffalo,539.0
+1920,14,Milwaukee,478.0
+1920,15,Cincinnati,470.0
+1920,16,Washington,467.0
+1920,17,Kansas City,455.0
+1920,18,New Orleans,393.0
+1920,19,Seattle,334.0
+1920,20,Indianapolis,323.0
+1930,1,New York,8667.0
+1930,2,Chicago,3718.0
+1930,3,Philadelphia,2264.0
+1930,4,Detroit,1721.0
+1930,5,Los Angeles,1617.0
+1930,6,Boston,1479.0
+1930,7,San Francisco,996.0
+1930,8,Cleveland,976.0
+1930,9,Pittsburgh,960.0
+1930,10,St. Louis,950.0
+1930,11,Baltimore,836.0
+1930,12,Minneapolis,753.0
+1930,13,Buffalo,620.0
+1930,14,Milwaukee,615.0
+1930,15,Cincinnati,580.0
+1930,16,Kansas City,561.0
+1930,17,Washington,527.0
+1930,18,New Orleans,469.0
+1930,19,Seattle,390.0
+1930,20,Indianapolis,379.0
+1940,1,New York,10135.0
+1940,2,Chicago,4210.0
+1940,3,Philadelphia,2538.0
+1940,4,Los Angeles,2268.0
+1940,5,Detroit,2041.0
+1940,6,Boston,1746.0
+1940,7,San Francisco,1156.0
+1940,8,Pittsburgh,1134.0
+1940,9,St. Louis,1102.0
+1940,10,Cleveland,1079.0
+1940,11,Baltimore,992.0
+1940,12,Minneapolis,886.0
+1940,13,Washington,800.0
+1940,14,Buffalo,708.0
+1940,15,Milwaukee,705.0
+1940,16,Kansas City,632.0
+1940,17,Cincinnati,559.0
+1940,18,New Orleans,557.0
+1940,19,Houston,471.0
+1940,20,Seattle,451.0
+1950,1,New York,12604.0
+1950,2,Chicago,5208.0
+1950,3,Los Angeles,4250.0
+1950,4,Philadelphia,3297.0
+1950,5,Detroit,2884.0
+1950,6,Boston,2301.0
+1950,7,San Francisco,2131.0
+1950,8,St. Louis,1541.0
+1950,9,Cleveland,1425.0
+1950,10,Pittsburgh,1400.0
+1950,11,Washington,1287.0
+1950,12,Baltimore,1162.0
+1950,13,Minneapolis,987.0
+1950,14,Buffalo,895.0
+1950,15,Dallas,855.0
+1950,16,Milwaukee,829.0
+1950,17,Cincinnati,813.0
+1950,18,Houston,701.0
+1950,19,Kansas City,698.0
+1950,20,New Orleans,660.0
+1960,1,New York,14437.0
+1960,2,Los Angeles,6805.0
+1960,3,Chicago,6377.0
+1960,4,Philadelphia,3989.0
+1960,5,Detroit,3750.0
+1960,6,San Francisco,2607.0
+1960,7,Boston,2501.0
+1960,8,Pittsburgh,2105.0
+1960,9,Washington,1905.0
+1960,10,St. Louis,1864.0
+1960,11,Cleveland,1785.0
+1960,12,Dallas,1435.0
+1960,13,Baltimore,1419.0
+1960,14,Minneapolis,1377.0
+1960,15,Miami,1173.0
+1960,16,Milwaukee,1150.0
+1960,17,Houston,1140.0
+1960,18,Buffalo,1054.0
+1960,19,Cincinnati,994.0
+1960,20,Kansas City,921.0
+1970,1,New York,16193.0
+1970,2,Los Angeles,7984.0
+1970,3,Chicago,7164.0
+1970,4,Philadelphia,4419.0
+1970,5,Detroit,4085.0
+1970,6,San Francisco,3049.0
+1970,7,Boston,2703.0
+1970,8,Washington,2671.0
+1970,9,Pittsburgh,2124.0
+1970,10,St. Louis,2123.0
+1970,11,Dallas,2016.0
+1970,12,Cleveland,1960.0
+1970,13,Miami,1834.0
+1970,14,Minneapolis,1701.0
+1970,15,Houston,1678.0
+1970,16,Baltimore,1580.0
+1970,17,Milwaukee,1252.0
+1970,18,Seattle,1238.0
+1970,19,San Diego,1198.0
+1970,20,Atlanta,1172.0
+1980,1,New York,16500.0
+1980,2,Los Angeles,10841.0
+1980,3,Chicago,7325.0
+1980,4,Philadelphia,4830.0
+1980,5,Detroit,4214.0
+1980,6,San Francisco,4185.0
+1980,7,Boston,3064.0
+1980,8,Washington,2912.0
+1980,9,Houston,2757.0
+1980,10,Dallas,2713.0
+1980,11,Miami,2616.0
+1980,12,St. Louis,1849.0
+1980,13,Pittsburgh,1810.0
+1980,14,Minneapolis,1788.0
+1980,15,Baltimore,1755.0
+1980,16,Cleveland,1752.0
+1980,17,San Diego,1704.0
+1980,18,Atlanta,1613.0
+1980,19,Phoenix,1409.0
+1980,20,Seattle,1392.0
+1990,1,New York,16754.0
+1990,2,Los Angeles,13522.0
+1990,3,Chicago,7373.0
+1990,4,San Francisco,5386.0
+1990,5,Philadelphia,4970.0
+1990,6,Miami,3948.0
+1990,7,Detroit,3698.0
+1990,8,Washington,3363.0
+1990,9,Boston,3355.0
+1990,10,Dallas,3265.0
+1990,11,Houston,3088.0
+1990,12,Seattle,2354.0
+1990,13,San Diego,2348.0
+1990,14,Atlanta,2158.0
+1990,15,Minneapolis,2080.0
+1990,16,Phoenix,2006.0
+1990,17,St. Louis,1947.0
+1990,18,Baltimore,1890.0
+1990,19,Pittsburgh,1744.0
+1990,20,Tampa,1709.0
+2000,1,New York,18689.0
+2000,2,Los Angeles,14661.0
+2000,3,Chicago,8419.0
+2000,4,San Francisco,5973.0
+2000,5,Philadelphia,5418.0
+2000,6,Miami,4919.0
+2000,7,Dallas,4445.0
+2000,8,Houston,4063.0
+2000,9,Boston,4032.0
+2000,10,Washington,3934.0
+2000,11,Detroit,3903.0
+2000,12,Atlanta,3500.0
+2000,13,Seattle,3018.0
+2000,14,Phoenix,2975.0
+2000,15,San Diego,2674.0
+2000,16,Minneapolis,2389.0
+2000,17,Baltimore,2251.0
+2000,18,Denver,2231.0
+2000,19,St. Louis,2078.0
+2000,20,Tampa,2062.0
+2010,1,New York,20009.0
+2010,2,Los Angeles,15750.0
+2010,3,Chicago,9023.0
+2010,4,San Francisco,6828.0
+2010,5,Philadelphia,6003.0
+2010,6,Dallas,5685.0
+2010,7,Miami,5513.0
+2010,8,Houston,5382.0
+2010,9,Atlanta,4743.0
+2010,10,Washington,4697.0
+2010,11,Boston,4407.0
+2010,12,Detroit,4160.0
+2010,13,Phoenix,3863.0
+2010,14,Seattle,3446.0
+2010,15,San Diego,2985.0
+2010,16,Denver,2716.0
+2010,17,Minneapolis,2651.0
+2010,18,Baltimore,2497.0
+2010,19,Tampa,2442.0
+2010,20,St. Louis,2246.0
