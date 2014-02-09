@@ -68,7 +68,6 @@ class PopulationTableGrabber(object):
         
         f = open(filename, 'wb')
         f.write (json.dumps(dicts, indent=4))
-		
         f.close()
         
 
