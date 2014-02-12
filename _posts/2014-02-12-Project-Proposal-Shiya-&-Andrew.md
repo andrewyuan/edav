@@ -10,6 +10,7 @@ tags: assignments
 **Method:** We will extract the rankings of all FIFA teams and the scores of all the past games from the official FIFA website. There are a number of ways that we will play with and analyze the data. For instance, we will investigate the relationship between two teams’ rankings and the likelihood of one team eliminating/being eliminated by the other. We will take each team’s historical score in consideration as well, with more weight associated with the games that took place closer to 2014. We are also interested in learning and visualizing the relationship between a team’s score and its ranking with respect to another team. 
 
 **Timeline:** Our project is divided into 4 sprints. The dates, duration, and responsibilities for each sprint are indicated in the following graph.  
+
 ![Project Timeline]({{ site.baseurl }}/assets/EDAV-FWC-Timeline.png =100x20)
 
 
