@@ -11,7 +11,7 @@ tags: assignments
 
 **Timeline:** Our project is divided into 4 sprints. The dates, duration, and responsibilities for each sprint are indicated in the following graph. 
 
-![Project Timeline](/EDAV-FWC-Timeline.jpg)
+![Project Timeline]({{ site.baseurl }}/assets/EDAV-FWC-Timeline.png)
 
 
 
