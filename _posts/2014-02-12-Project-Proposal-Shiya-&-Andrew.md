@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 2014 Brazil FIFA World Cup Predictions: And the Winner is…
+title: Project Proposal - Shiya Wang and Andrew Yuan
 description: Project Proposal
 tags: assignments
 ---
+
+##2014 Brazil FIFA World Cup Predictions: And the Winner is…##
 
 **Abstract:** With the kickoff of the 2014 Brazil World Cup fast approaching, soccer fans Shiya and Andrew are obsessed with same question to which every **soccer fan on the planet is dying to find out the answer: Who will capture the coveted trophy? What makes the waiting less unbearable for Shiya and Andrew is their scheme to use the tools that they are learning in the data sciences program at Columbia to answer the million-dollar question before the games even start. Shiya and Andrew are going to build a mathematical model that predicts each team’s likelihood of advancing into the next phase and eventually capturing the championship. Sounds ambitious? Yes, and below is how Shiya and Andrew are going to break down this daunting goal into manageable bits and pieces. 
 
