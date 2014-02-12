@@ -11,6 +11,10 @@ tags: assignments
 
 **Timeline:** Our project is divided into 4 sprints. The dates, duration, and responsibilities for each sprint are indicated in the following graph.  
 
+
+![Project Timeline]({{ site.baseurl }}\centerline{\includegraphics[height=2in]{/assets/EDAV-FWC-Timeline.png}})
+
+\centerline{\includegraphics[height=2in]{myimage.png}}
 ![Project Timeline]({{ site.baseurl }}/assets/EDAV-FWC-Timeline.png)
 
 
