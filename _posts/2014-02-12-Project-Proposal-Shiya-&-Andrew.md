@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Proposal - Shiya Wang and Andrew Yuan
+title: 2014 Brazil FIFA World Cup Predictions: And the Winner is...
 description: Project Proposal
 tags: assignments
 ---
