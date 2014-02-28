@@ -5,10 +5,6 @@ description: Blogpost 1 - World Cup scored goals
 tags: assignments
 ---
 
-**Team Members:** Andrew Yuan (agy2108)
-
-![Project Timeline]({{ site.baseurl }}/assets/EDAV-FWC-Timeline.png)
-
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
@@ -38,11 +34,18 @@ form {
 }
 
 </style>
+
+**Team Members:** Andrew Yuan (agy2108)
+
+![Project Timeline]({{ site.baseurl }}/assets/EDAV-FWC-Timeline.png)
+
+
 <form>
   <label><input type="radio" name="mode" value="grouped"> Grouped</label>
   <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
 </form>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js">
+</script>
 <script>
 
 var n = 4, // number of layers
