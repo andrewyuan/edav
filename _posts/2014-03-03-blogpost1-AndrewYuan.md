@@ -5,7 +5,6 @@ description: Blogpost 1 - World Cup scored goals
 tags: assignments
 ---
 
-<!DOCTYPE html>
 <meta charset="utf-8">
 <style>
 
@@ -35,6 +34,7 @@ form {
 
 </style>
 
+<body>
 **Team Members:** Andrew Yuan (agy2108)
 
 ![Project Timeline]({{ site.baseurl }}/assets/EDAV-FWC-Timeline.png)
@@ -166,4 +166,5 @@ function bumpLayer(n, o) {
 
 </script>
 
+</body>
 
