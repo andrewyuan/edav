@@ -45,6 +45,9 @@ form {
   <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
 </form>
 <script src="http://d3js.org/d3.v3.min.js">
+
+<svg></svg>
+
 </script>
 <script>
 
@@ -77,7 +80,7 @@ var xAxis = d3.svg.axis()
     .tickPadding(6)
     .orient("bottom");
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
