@@ -45,10 +45,11 @@ form {
   <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
 </form>
 <script src="http://d3js.org/d3.v3.min.js">
+</script>
 
 <svg></svg>
 
-</script>
+
 <script>
 
 var n = 4, // number of layers
