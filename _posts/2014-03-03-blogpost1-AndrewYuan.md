@@ -11,7 +11,7 @@ tags: assignments
 	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  margin: auto;
 	  position: relative;
-	  width: 960px;
+	  width: 1200px;
 	}
 	
 	text {
@@ -724,6 +724,70 @@ svg.selectAll(".labeltext2")
       .style("font-weight", "bold")
       .style("fill", "#ddd")
       .attr("text-anchor", "left");
+
+
+var legend = svg.selectAll(".legend")
+    .data(["1st Round", "2nd Round", "Finals"])
+  	.enter().append("g")
+    .attr("class", "legend");
+//    .style("fill", function(d, i) { return color[i+1]; });
+
+legend.selectAll("rect")
+    .data(["1st Round", "2nd Round", "Finals", "border"])
+  	.enter().append("rect")
+    .attr("y", function(d, i) {
+    	if (d!="border"){
+    		return yScale(2);
+    	}    	
+    	else {
+    		return yScale(0);
+    	}})
+	.attr("x", function(d, i) { 
+		if (d!="border"){
+			return xScale(18+(i*3));
+		}
+		else {
+			return xScale(17.5);
+		}})
+    .attr("height", function(d, i){
+    	if (d!="border"){
+    		return 10;
+    	}
+    	else {
+			return 20;
+    	}})
+    .attr("width", function(d, i) {
+    	if (d!="border"){
+    		return 10;
+    	}
+    	else {
+			return 250;
+    	}})
+    .style("fill", function(d, i) { 
+    	if (d!="border"){
+    		return color[i+1]; 
+    	}
+    	else {
+    		return "none";
+    	}})
+	.style("stroke", "#aaa")
+	  .style("stroke-width", "0.3px")
+;
+
+
+legend.selectAll("text")
+    .data(["1st Round", "2nd Round", "Finals"])
+  	.enter().append("text")
+  	.text(function(d) { return d; })
+    .attr("y", function(d, i) { return yScale(5); })
+	.attr("x", function(d, i) { 
+		console.log(d);
+		return xScale(18.5+(i*3)); });
+//	.style("font-size", "25px")
+//    .style("font-style", "italic")
+//    .style("font-weight", "bold")
+//    .style("fill", "#ddd")
+//    .attr("text-anchor", "left");   
 
 
 
