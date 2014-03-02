@@ -69,6 +69,7 @@ tags: assignments
 <script>
 /*modified from Mike Bostock at http://bl.ocks.org/3943967 */
 
+
 var data = [
 {"year":2010, "team":"Germany", "round1":5, "round2":4, "round3":7},
 {"year":2010, "team":"Netherlands", "round1":5, "round2":2, "round3":5},
@@ -548,7 +549,7 @@ var x = d3.max(layers, function(layer) {
     //the largest stack
     yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
 
-var margin = {top: 15, right: 10, bottom: 5, left: 200},
+var margin = {top: 10, right: 10, bottom: 5, left: 100},
     width = 1000 - margin.left - margin.right,
     height = 1200 - margin.top - margin.bottom;
 //    height = 533 - margin.top - margin.bottom;
@@ -612,7 +613,7 @@ layer.selectAll("rect")
 
                d3.select("#tooltip")
 //                 .style("left", (d3.event.pageX+10) + "px")
-                 .style("left", 200 + "px")
+                 .style("left", (0) + "px")
                  .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
@@ -692,7 +693,7 @@ svg.selectAll(".labeltext")
       .data(editionsData)
       .enter().append("text")
       .text(function(d) { return d.year; })
-      .attr("x", xScale(0)-margin.left/2.5)
+      .attr("x", xScale(0)-margin.left)
       .attr("y", function(d, i) { 
       	console.log((d.GridStart));
       	console.log(yScale(d.GridStart + 5));
@@ -710,13 +711,6 @@ svg.selectAll(".labeltext2")
       	console.log((d.GridStart));
       	console.log(yScale(d.GridEnd));
       	return yScale(d.GridEnd); })
-/*
-      .attr("x", xScale(0)-margin.left/2)
-      .attr("y", function(d, i) { 
-      	console.log((d.GridStart));
-      	console.log(yScale(Math.round((d.GridStart + d.GridEnd)/2)));
-      	return yScale(d.GridEnd-1); })
-*/
       .style("font-size", "25px")
       .style("font-style", "italic")
       .style("font-weight", "bold")
@@ -742,17 +736,17 @@ legend.selectAll("rect")
     	}})
 	.attr("x", function(d, i) { 
 		if (d!="border"){
-			return xScale(18+(i*3));
+			return xScale(20.1+(i*3));
 		}
 		else {
-			return xScale(17.5);
+			return xScale(20);
 		}})
     .attr("height", function(d, i){
     	if (d!="border"){
     		return 10;
     	}
     	else {
-			return 20;
+			return 21;
     	}})
     .attr("width", function(d, i) {
     	if (d!="border"){
@@ -768,9 +762,11 @@ legend.selectAll("rect")
     	else {
     		return "none";
     	}})
-	.style("stroke", "#aaa")
+	.style("stroke", "#555")
 	  .style("stroke-width", "0.3px")
 ;
+    	
+console.log(legend);
 
 
 legend.selectAll("text")
@@ -780,15 +776,8 @@ legend.selectAll("text")
     .attr("y", function(d, i) { return yScale(5); })
 	.attr("x", function(d, i) { 
 		console.log(d);
-		return xScale(18.5+(i*3)); })
+		return xScale(20.5+(i*3)); })
     .style("font-size", "9px");
-//	.style("font-size", "25px")
-//    .style("font-style", "italic")
-//    .style("font-weight", "bold")
-//    .style("fill", "#ddd")
-//    .attr("text-anchor", "left");   
-
-
 
 </script>
 
