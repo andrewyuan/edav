@@ -614,7 +614,7 @@ layer.selectAll("rect")
 
                d3.select("#tooltip")
 //                 .style("left", (d3.event.pageX+10) + "px")
-                 .style("left", xScale(1) + "px")
+                 .style("left", 200 + "px")
                  .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
