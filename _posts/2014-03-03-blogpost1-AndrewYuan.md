@@ -11,7 +11,6 @@ tags: assignments
 	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  margin: auto;
 	  position: relative;
-	  width: 1500px;
 	}
 	
 	text {
