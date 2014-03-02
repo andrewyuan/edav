@@ -11,7 +11,7 @@ tags: assignments
 	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  margin: auto;
 	  position: relative;
-	  width: 1200px;
+	  width: 1500px;
 	}
 	
 	text {
@@ -782,7 +782,8 @@ legend.selectAll("text")
     .attr("y", function(d, i) { return yScale(5); })
 	.attr("x", function(d, i) { 
 		console.log(d);
-		return xScale(18.5+(i*3)); });
+		return xScale(18.5+(i*3)); })
+    .style("font-size", "9px");
 //	.style("font-size", "25px")
 //    .style("font-style", "italic")
 //    .style("font-weight", "bold")
