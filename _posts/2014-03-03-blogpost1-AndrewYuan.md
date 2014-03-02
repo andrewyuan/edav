@@ -10,7 +10,6 @@ tags: assignments
 	body {
 	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  margin: auto;
-	  position: relative;
 	}
 	
 	text {
