@@ -549,7 +549,7 @@ var x = d3.max(layers, function(layer) {
     //the largest stack
     yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
 
-var margin = {top: 20, right: 10, bottom: 5, left: 200},
+var margin = {top: 15, right: 10, bottom: 5, left: 200},
     width = 1000 - margin.left - margin.right,
     height = 1200 - margin.top - margin.bottom;
 //    height = 533 - margin.top - margin.bottom;
