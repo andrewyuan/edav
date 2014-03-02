@@ -63,12 +63,11 @@ tags: assignments
 <body>
 **Team Members:** Andrew Yuan (agy2108)
 
-![Project Timeline]({{ site.baseurl }}/assets/EDAV-FWC-Timeline.png)
-
-
 <script src="http://d3js.org/d3.v3.min.js">
 </script>
-
+<p>
+<p>
+<br>
 <svg></svg>
 <div id="tooltip" class="hidden">
         <p><span id="value"></p>
