@@ -69,7 +69,6 @@ tags: assignments
 <script>
 /*modified from Mike Bostock at http://bl.ocks.org/3943967 */
 
-
 var data = [
 {"year":2010, "team":"Germany", "round1":5, "round2":4, "round3":7},
 {"year":2010, "team":"Netherlands", "round1":5, "round2":2, "round3":5},
@@ -491,19 +490,7 @@ var n = 4, // number of layers
     m = data.length, // number of samples per layer
     stack = d3.layout.stack();
 
-/*console.log(d3.range(n).map(function(d) { 
-                var a = [];
-      			for (var i = 0; i < m; ++i) {
-        			a[i] = {x: i, y: data[i]['pop' + (d+1)]};
-      			}
-      			//console.log('hello');
-  				//console.log(a);
-  				return a;
-             }));
-*/    
 var labels = data.map(function(d) {return d.team;});
-
-console.log(labels);
     
     //go through each layer (pop1, pop2 etc, that's the range(n) part)
     //then go through each object in data and pull out that objects's population data
@@ -511,7 +498,6 @@ console.log(labels);
 
 var gapSize = 0.5;
 var layers = stack(d3.range(n).map(function(d) { 
-				console.log(d);
                 var a = [];
       			for (var i = 0; i < m; ++i) {
       				if (d == 0) {
@@ -533,12 +519,8 @@ var layers = stack(d3.range(n).map(function(d) {
         					};	
       				}
       			}
-      			//console.log('hello');
-  				//console.log(a);
   				return a;
              }));
-    //console.log('layers');
-    //console.log(layers);
 	//the largest single layer
 var x = d3.max(layers, function(layer) {
     		 
@@ -563,16 +545,6 @@ var xScale = d3.scale.linear()
     .domain([0, yStackMax])
     .range([0, width]);
 
-//var color = d3.scale.linear()
-//    .domain([0, n - 1])
-//    .range(["#BDAEE5", "#A15D76"]);
-//    .range(["#5F5572", "#CB6C69"]);
-//    .range(["#aad", "#556"]);
-//var color = ["#465971", "#728DB3", "#A3C6FA"];
-//var color = ["#6982A5", "#B67FAA", "#FD897B"];
-//var color = ["#46475F", "#757297", "#C7B7F1"];
-//var color = ["black", "#969AC9", "#D6AA4B", "#C76A77"];
-//var color = ["black", "#614DC4", "#659FE0", "#54EBB6"];
 var color = ["#ddd", "#4C374C", "#967AA4", "#CCAFE8"];
 
 var svg = d3.select("svg")
@@ -595,13 +567,8 @@ layer.selectAll("rect")
     .attr("height", 0)
     .attr("width", 0)
     .on("mouseover", function(d){
-               //highlight text
-               //d3.select(this).classed("cell-hover",true);
-               //d3.selectAll(".rowLabel").classed("text-highlight",function(r,ri){ return ri==(d.row-1);});
-               //d3.selectAll(".colLabel").classed("text-highlight",function(c,ci){ return ci==(d.col-1);});
-        
                //Update the tooltip position and value
-               console.log(this);
+               //console.log(this);
                d3.select(this).attr("fill", "red");
 
                if(d.round != 0) {
@@ -613,7 +580,7 @@ layer.selectAll("rect")
 
                d3.select("#tooltip")
 //                 .style("left", (d3.event.pageX+10) + "px")
-                 .style("left", xScale(0) + "px")
+                 .style("left", (d3.event.pageX-400) + "px")
                  .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
@@ -695,8 +662,6 @@ svg.selectAll(".labeltext")
       .text(function(d) { return d.year; })
       .attr("x", xScale(0)-margin.left)
       .attr("y", function(d, i) { 
-      	console.log((d.GridStart));
-      	console.log(yScale(d.GridStart + 5));
       	return yScale(Math.round((d.GridStart + d.GridEnd)/2)); })
       .style("font-size", "16px")
       .style("font-weight", "bold")
@@ -708,8 +673,6 @@ svg.selectAll(".labeltext2")
       .text(function(d) { return d.host; })
       .attr("x", xScale(20))
       .attr("y", function(d, i) { 
-      	console.log((d.GridStart));
-      	console.log(yScale(d.GridEnd));
       	return yScale(d.GridEnd); })
       .style("font-size", "25px")
       .style("font-style", "italic")
@@ -766,16 +729,12 @@ legend.selectAll("rect")
 	  .style("stroke-width", "0.3px")
 ;
     	
-console.log(legend);
-
-
 legend.selectAll("text")
     .data(["1st Round", "2nd Round", "Finals"])
   	.enter().append("text")
   	.text(function(d) { return d; })
     .attr("y", function(d, i) { return yScale(5); })
 	.attr("x", function(d, i) { 
-		console.log(d);
 		return xScale(20.5+(i*3)); })
     .style("font-size", "9px");
 
