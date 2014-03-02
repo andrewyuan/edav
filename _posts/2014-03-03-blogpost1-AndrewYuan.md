@@ -11,6 +11,7 @@ tags: assignments
 	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  margin: auto;
 	  position: relative;
+	  width: 960px;
 	}
 	
 	text {
@@ -613,7 +614,7 @@ layer.selectAll("rect")
 
                d3.select("#tooltip")
 //                 .style("left", (d3.event.pageX+10) + "px")
-                 .style("left", xScale(0) + "px")
+                 .style("left", xScale(1) + "px")
                  .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
