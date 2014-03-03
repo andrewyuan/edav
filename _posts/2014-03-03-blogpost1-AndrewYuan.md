@@ -615,7 +615,7 @@ layer.selectAll("rect")
 
                d3.select("#tooltip")
 //                 .style("left", (d3.event.pageX+10) + "px")
-                 .style("left", (d3.event.pageX-400) + "px")
+                 .style("left", (d3.event.pageX) + "px")
                  .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
@@ -785,7 +785,7 @@ champions.selectAll("circle")
             d3.select(this).attr("fill", "red");
             tooltip = d.year + " - " + d.champion + " - " + d.champGoals + " goals";
             d3.select("#tooltip")
-                 .style("left", (d3.event.pageX-400) + "px")
+                 .style("left", (d3.event.pageX) + "px")
                  .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
