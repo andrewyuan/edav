@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blogpost 1 - World Cup goal production per edition
+title: Blogpost 1 - Fifa World Cup teams goal scoring performance
 description: Blogpost 1 - World Cup scored goals
 tags: assignments
 ---
