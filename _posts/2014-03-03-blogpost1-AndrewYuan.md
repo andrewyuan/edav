@@ -722,7 +722,7 @@ svg.selectAll(".vline").data([0, 5, 10, 15, 20, 25]).enter()
 	})
     .attr("y1", 0)
     .attr("y2", height)
-	.style("stroke", "#eee");
+	.style("stroke", "#ccc");
 
 //horizontal lines
 svg.selectAll(".hline").data([32, 64, 96, 128, 152, 176, 200, 224, 240, 256, 272, 288, 304, 320, 336, 349, 363, 379, 392]).enter()
