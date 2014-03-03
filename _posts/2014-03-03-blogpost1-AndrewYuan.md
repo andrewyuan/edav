@@ -107,6 +107,9 @@ Also, the Hungarian team of 1954 was the one with the largest amount of goals, a
 
 <script>
 
+//==========================================================================================================//
+//= Data Load                                                                                              =//
+//==========================================================================================================//
 
 var data = [
 {"year":2010, "team":"Germany", "round1":5, "round2":4, "round3":7},
@@ -561,6 +564,7 @@ var margin = {top: 15, right: 10, bottom: 5, left: 100},
 
 var color = ["#ddd", "#4C374C", "#967AA4", "#CCAFE8"];
 var lineColor = "#59DDAF";
+var posAdjust = +10;
 
 var n = 4, // number of layers
     m = data.length, // number of samples per layer
@@ -654,7 +658,7 @@ layer.selectAll("rect")
 
                d3.select("#tooltip")
 //                 .style("left", (d3.event.pageX+10) + "px")
-                 .style("left", (d3.event.pageX+10) + "px")
+                 .style("left", (d3.event.pageX+posAdjust) + "px")
                  .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
@@ -824,7 +828,7 @@ champions.selectAll("circle")
             d3.select(this).attr("fill", "red");
             tooltip = d.year + " - " + d.champion + " - " + d.champGoals + " goals";
             d3.select("#tooltip")
-                 .style("left", (d3.event.pageX+10) + "px")
+                 .style("left", (d3.event.pageX+posAdjust) + "px")
                  .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
@@ -910,22 +914,36 @@ legend.selectAll(".line").data(["champions"]).enter()
 //horizont
     	
 legend.selectAll("text")
-    .data(["1st Round", "2nd Round", "Finals", "Champions"])
+    .data(["1st Round", "2nd Round", "Finals", "Champions", "Competition Host"])
   	.enter().append("text")
   	.text(function(d) { return d; })
     .attr("y", function(d, i) {
-    	if (d != "Champions")
+    	if (d != "Champions" && d!= "Competition Host")
     		return yScale(5);
     	else
-    		return yScale(11)})
+    		return yScale(11);})
 	.attr("x", function(d, i) { 
 		return xScale(20.5+((i%3)*3)); })
-    .style("font-size", "9px");
-
+    .style("font-size", "11px")
+    .style("font-style", function(d, i) {    
+    	if (d== "Competition Host")
+    		return "italic";
+    	else
+    		return "normal";})
+    .style("font-weight", function(d, i) {    
+    	if (d== "Competition Host")
+    		return "bold";
+    	else
+    		return "normal";})
+    .style("fill", function(d, i) {    
+    	if (d== "Competition Host")
+    		return "#ccc";
+    	else
+    		return "black";})
+	;
 
 
 
 </script>
-
 </body>
 
