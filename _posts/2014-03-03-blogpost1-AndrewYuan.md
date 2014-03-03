@@ -53,20 +53,20 @@ tags: assignments
 </style>
 
 <body>
-The blogpost entitled [_"World Cup Goal Production"_](http://www.soccerbythenumbers.com/2010/07/world-cup-goal-production.html) published in May 11th, 2010 at soccerbythenumbers.com presents the quantity of teams to score different amounts of goals in a single World Cup edition. It attempts to compare the performance of different teams and also the performance variation over time.
+
+## The Post
+
+The blog post entitled [_"World Cup Goal Production"_](http://www.soccerbythenumbers.com/2010/07/world-cup-goal-production.html) published in May 11th, 2010 at soccerbythenumbers.com presents the quantity of teams to score different amounts of goals in a single World Cup edition. It attempts to illustrate the proportion of teams with better and worse performances, as well as performance variation over time.
 
 ![Number of goals scored by teams in a World Cup](http://3.bp.blogspot.com/_pMRjCwGDjRY/TFsf3XE8xKI/AAAAAAAAAJs/VZ5uRmQeg_U/s400/World+Cup+Goals+graph.png)
 
-The issue with this comparison is that teams that advance into the competition play more games than others, consequently having the chance of scoring more goals than teams that did not advance, hence not being a completely fair team performance indicator.
+The issue with this comparison is that it omits important information to allow a fair analysis. For instance, teams that advance into further rounds of the competition get to play more matches than the ones that do not, consequently having the opportunity to score more goals. Let us take the Fifa World Cup of 2010 as an example. It took place in South Africa, and the competition champion was the Spanish team. It scored a total of 8 goals in the competition, while the almighty Brazilian team scored a total of 9 goals! Practically the same performance, right? Wrong! Most sadly, the Brazilian team was eliminated in quarterfinals, playing a total of 5 matches, while the champion Spanish team played a total of 7 matches, 2 more than the Brazilian team.
+In addition, it compares side by side the teams from different editions of the competition. Each edition has very particular characteristics. Some have 3 phases, others 2, others do not have an eliminatory phase, some had stronger teams, other weaker or even less teams. Considering that, it might not make sense to compare and sum all of them together. It is like summing up apples and bananas.
+To finalize, the summarization of the numbers in the graph hides important information to every big soccer fan (as I am!), such as the performance individual teams in each competition. Which soccer fan wouldn’t like to know how many goals his/her team scored in that particular edition?
+To mitigate these issues, the graph presents the amount of goals scored per round of the competition, each edition of the competition is illustrated as a different section of the graph, and each individual team is represented as an individual line.
+With all that detailed information, the first question that comes to mind is what the performance of the competition champion was, and for that, I added a path line highlighting the champions of each edition. Having that information, we can get to interesting insights, such as the Spanish team in 2010, which was the team to be champion with the least amount of goals of all time, with only 8 goals in 7 matches, an average of 1.14 goals per game!
 
-To eliminate this issue, the same graph could present the amount of goals socred per round of the competition. That way we can compare the amount of gols scored in a similar amount of games.
-
-Also, the summarization of the numbers in the graph hides important information to every big soccer fan (as I am!), such as the performance of each team in each competition.
-
-Having that detailed information, the first question that comes to mind is what was the performance of the competition champion, and for that I added a path line highlighting the champions of each edition. With that, we can observe that the spanish team champion in 2010 was actually the team to be champion with the least amount of total goals, with only 8 goals in 7 matches, an average of 1.14 goals per game!
-
-The hungarian team of 1954 was the one with the largest amount of goals, a total of 27 in 5 matches, an average of 5.4 goals per match, but they were not the champions. In the first round, they beat the german team by 8x3, which ended up as the competition champion!
-
+Also, the Hungarian team of 1954 was the one with the largest amount of goals, a total of 27 in 5 matches, an average of 5.4 goals per match, even though they were not the champions. In the first round, they beat the German team by 8x3, and faced again the same team in the finals, where they lost by 2x3, pronouncing the German team the competition champions!
 
 <script src="http://d3js.org/d3.v3.min.js">
 </script>
@@ -74,9 +74,28 @@ The hungarian team of 1954 was the one with the largest amount of goals, a total
 <p>
 <br>
 <svg></svg>
+
 <div id="tooltip" class="hidden">
         <p><span id="value"></p>
 </div>
+
+
+## The Process
+
+* **Data Extraction:** The data presented in the graph was scrapped from www.fifa.com through a python script. That script automatically browsed hundreds of pages with matches’ results and saved the data in csv and json formats. It extracted data from every competition officially supported by Fifa, such as world cups, qualifying matches, friendly matches, beach soccer and futsal. For this work, we are only going to use the world cup matches data. 
+
+* **Data analysis and design:** Since the volume of data isn't large (1.638 games in Fifa World Cups), the data was imported by an Microsoft Excel spreadsheet, where the data was munged and analyzed through pivot tables and countless formulas such as vlookups and countifs. Then, numerous graphs were also designed with Microsoft Excel graphs and pivot graphs until I found an exciting model to code.
+
+* **Data export:** The munged data required for the graph was then exported in a JSON format through excel text formatting formulas.
+
+
+* **Graph coding:** The graph was coded using D3.js, where each graph component I wanted to build had to be learned in real time, since I had no previous D3.js experience.
+
+
+## The Author
+
+[Andrew Yuan](andrew.gk.yuan@gmail.com), fellow student at the Data Science program in Columbia University and Brazilian soccer fan! Had no previous D3.js experience, but very excited about its graphical capabilities and ease of use!
+
 
 
 <script>
