@@ -54,7 +54,7 @@ tags: assignments
 
 <body>
 
-# The Post
+### The Post
 
 The blog post entitled [_"World Cup Goal Production"_](http://www.soccerbythenumbers.com/2010/07/world-cup-goal-production.html) published in May 11th, 2010 at soccerbythenumbers.com presents the quantity of teams to score different amounts of goals in a single World Cup edition. It attempts to illustrate the proportion of teams with better and worse performances, as well as performance variation over time.
 
@@ -87,7 +87,7 @@ Also, the Hungarian team of 1954 was the one with the largest amount of goals, a
 </div>
 
 
-# The Process
+### The Process
 
 * **Data Extraction:** The data presented in the graph was scrapped from www.fifa.com through a python script. That script automatically browsed hundreds of pages with matches’ results and saved the data in csv and json formats. It extracted data from every competition officially supported by Fifa, such as world cups, qualifying matches, friendly matches, beach soccer and futsal. For this work, we are only going to use the world cup matches data. 
 
@@ -99,7 +99,7 @@ Also, the Hungarian team of 1954 was the one with the largest amount of goals, a
 * **Graph coding:** The graph was coded using D3.js, where each graph component I wanted to build had to be learned in real time, since I had no previous D3.js experience.
 
 
-# The Author
+### The Author
 
 [Andrew Yuan](andrew.gk.yuan@gmail.com), fellow student at the Data Science program in Columbia University and Brazilian soccer fan! Had no previous D3.js experience, but very excited about its graphical capabilities and ease of use!
 
