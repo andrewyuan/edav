@@ -67,7 +67,7 @@ tags: assignments
 
 
 <script>
-/*modified from Mike Bostock at http://bl.ocks.org/3943967 */
+
 
 var data = [
 {"year":2010, "team":"Germany", "round1":5, "round2":4, "round3":7},
@@ -485,7 +485,44 @@ var editionsData = [
 {"year":1934, "host":"Italy", "1st":"Italy", "2nd":"Czechoslovakia", "3rd":"Germany", "4th":"Austria", "Games":16, "GridStart":363, "GridEnd":378},
 {"year":1930, "host":"Uruguay", "1st":"Uruguay", "2nd":"Argentina", "3rd":"United States", "4th":"Yugoslavia", "Games":13, "GridStart":379, "GridEnd":391}
 ];
- 
+
+var lineData = [
+{"year":2010, "champion":"Spain", "champGoals":8, "champPos":5, "host":"South Africa", "hostGoals":3, "hostPos":15},
+{"year":2006, "champion":"Italy", "champGoals":12, "champPos":33, "host":"Germany", "hostGoals":14, "hostPos":32},
+{"year":2002, "champion":"Brazil", "champGoals":18, "champPos":64, "host":"Korea Republic", "hostGoals":8, "hostPos":68},
+{"year":2002, "champion":"Brazil", "champGoals":18, "champPos":64, "host":"Japan", "hostGoals":5, "hostPos":80},
+{"year":1998, "champion":"France", "champGoals":15, "champPos":96, "host":"France", "hostGoals":15, "hostPos":96},
+{"year":1994, "champion":"Brazil", "champGoals":11, "champPos":129, "host":"USA", "hostGoals":3, "hostPos":145},
+{"year":1990, "champion":"Germany FR", "champGoals":15, "champPos":152, "host":"Italy", "hostGoals":10, "hostPos":154},
+{"year":1986, "champion":"Argentina", "champGoals":14, "champPos":176, "host":"Mexico", "hostGoals":6, "hostPos":185},
+{"year":1982, "champion":"Italy", "champGoals":12, "champPos":203, "host":"Spain", "hostGoals":4, "hostPos":213},
+{"year":1978, "champion":"Argentina", "champGoals":15, "champPos":224, "host":"Argentina", "hostGoals":15, "hostPos":224},
+{"year":1974, "champion":"Germany FR", "champGoals":13, "champPos":242, "host":"Germany FR", "hostGoals":13, "hostPos":242},
+{"year":1970, "champion":"Brazil", "champGoals":19, "champPos":256, "host":"Mexico", "hostGoals":6, "hostPos":260},
+{"year":1966, "champion":"England", "champGoals":11, "champPos":274, "host":"England", "hostGoals":11, "hostPos":274},
+{"year":1962, "champion":"Brazil", "champGoals":14, "champPos":288, "host":"Chile", "hostGoals":10, "hostPos":290},
+{"year":1958, "champion":"Brazil", "champGoals":16, "champPos":305, "host":"Sweden", "hostGoals":12, "hostPos":307},
+{"year":1954, "champion":"Germany FR", "champGoals":25, "champPos":321, "host":"Switzerland", "hostGoals":11, "hostPos":324},
+{"year":1950, "champion":"Uruguay", "champGoals":15, "champPos":337, "host":"Brazil", "hostGoals":22, "hostPos":336},
+{"year":1938, "champion":"Italy", "champGoals":11, "champPos":350, "host":"France", "hostGoals":4, "hostPos":358},
+{"year":1934, "champion":"Italy", "champGoals":12, "champPos":363, "host":"Italy", "hostGoals":12, "hostPos":363},
+{"year":1930, "champion":"Uruguay", "champGoals":15, "champPos":380, "host":"Uruguay", "hostGoals":15, "hostPos":380}
+];
+
+
+
+//==========================================================================================================//
+//= Setup                                                                                                  =//
+//==========================================================================================================//
+
+var margin = {top: 15, right: 10, bottom: 5, left: 100},
+    width = 1000 - margin.left - margin.right,
+    height = 1200 - margin.top - margin.bottom;
+//    height = 533 - margin.top - margin.bottom;
+
+var color = ["#ddd", "#4C374C", "#967AA4", "#CCAFE8"];
+var lineColor = "#59DDAF";
+
 var n = 4, // number of layers
     m = data.length, // number of samples per layer
     stack = d3.layout.stack();
@@ -531,12 +568,6 @@ var x = d3.max(layers, function(layer) {
     //the largest stack
     yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
 
-var margin = {top: 15, right: 10, bottom: 5, left: 100},
-    width = 1000 - margin.left - margin.right,
-    height = 1200 - margin.top - margin.bottom;
-//    height = 533 - margin.top - margin.bottom;
-
-
 var yScale = d3.scale.ordinal()
     .domain(d3.range(m))
     .rangeRoundBands([0, height], .3);
@@ -545,7 +576,11 @@ var xScale = d3.scale.linear()
     .domain([0, yStackMax])
     .range([0, width]);
 
-var color = ["#ddd", "#4C374C", "#967AA4", "#CCAFE8"];
+
+//==========================================================================================================//
+//= Bar chart                                                                                              =//
+//==========================================================================================================//
+
 
 var svg = d3.select("svg")
     .attr("width", width + margin.left + margin.right)
@@ -580,8 +615,8 @@ layer.selectAll("rect")
 
                d3.select("#tooltip")
 //                 .style("left", (d3.event.pageX+10) + "px")
-                 .style("left", (d3.event.pageX) + "px")
-                 .style("top", (d3.event.pageY) + "px")
+                 .style("left", (d3.event.pageX-400) + "px")
+                 .style("top", (d3.event.pageY-10) + "px")
                  .select("#value")
                  .text(tooltip);  
   //                 .text(d.team + " - " + d.goals + " goals (" + d.y + " in round)");  
@@ -604,6 +639,11 @@ layer.selectAll("rect")
     .attr("height", yScale.rangeBand())
     .attr("width", function(d) { return xScale(d.y); })
      ;
+
+
+//==========================================================================================================//
+//= Bar chart Axis and Grid                                                                                =//
+//==========================================================================================================//
 
 var yAxis = d3.svg.axis()
     .scale(yScale)
@@ -654,8 +694,14 @@ svg.selectAll(".hline").data([32, 64, 96, 128, 152, 176, 200, 224, 240, 256, 272
     .attr("x2", width)
 	.style("stroke", "#ccc");
 
-// Add label
 
+
+
+//==========================================================================================================//
+//= Bar chart Lables                                                                                       =//
+//==========================================================================================================//
+
+// Add label
 svg.selectAll(".labeltext")
       .data(editionsData)
       .enter().append("text")
@@ -680,6 +726,88 @@ svg.selectAll(".labeltext2")
       .style("fill", "#ddd")
       .attr("text-anchor", "left");
 
+
+
+//==========================================================================================================//
+//= Line path                                                                                              =//
+//==========================================================================================================//
+
+/*var lineData = [ { "x": 1,   "y": 5},  { "x": 20,  "y": 20},
+                 { "x": 40,  "y": 10}, { "x": 60,  "y": 40},
+                 { "x": 80,  "y": 5},  { "x": 100, "y": 60}];
+                 
+{"year":2010, "champion":"Spain", "champGoals":8, "champPos":5, "host":"South Africa", "hostGoals":3, "hostPos":15}
+*/
+
+var lineFunction = d3.svg.line()
+                         .x(function(d) { return xScale(d.champGoals); })
+                         .y(function(d) { return yScale(d.champPos); })
+                         .interpolate("linear");
+
+var lineStartFunction = d3.svg.line()
+                         .x(function(d) { return xScale(0); })
+                         .y(function(d) { return yScale(d.champPos); })
+                         .interpolate("linear");
+
+
+console.log(lineFunction(lineData));
+
+svg.append("svg:path")
+//            .attr("d","M 0 60 L 50 110 L 90 70 L 140 100")
+		    .attr("d",lineStartFunction(lineData))
+            .transition()
+//            .delay(function(d, i) { return (i * 10);})
+			.duration(2500)
+            .attr("d",lineFunction(lineData))
+            .style("stroke-width", 2)
+            .style("stroke", lineColor)
+            .style("fill", "none");
+
+
+var champions = svg.selectAll(".champions")
+    .data(lineData)
+  	.enter().append("g")
+    .attr("class", "champions")
+    .style("fill", function(d, i) { return "white";});
+
+
+champions.selectAll("circle")
+    .data(lineData)
+  	.enter().append("circle")
+    .attr("cx", function(d, i) { return xScale(d.champGoals);})
+	.attr("cy", function(d, i) { return yScale(d.champPos);})
+    .attr("r", 5)
+	.style("stroke", lineColor)
+	.style("stroke-width", "1px")
+    .on("mouseover", function(d){
+               //Update the tooltip position and value
+               //console.log(this);
+            d3.select(this).attr("fill", "red");
+            tooltip = d.year + " - " + d.champion + " - " + d.champGoals + " goals";
+            d3.select("#tooltip")
+                 .style("left", (d3.event.pageX-400) + "px")
+                 .style("top", (d3.event.pageY-10) + "px")
+                 .select("#value")
+                 .text(tooltip);  
+  //                 .text(d.team + " - " + d.goals + " goals (" + d.y + " in round)");  
+                 //.text("team:"+rowLabel[d.row-1]+","+colLabel[d.col-1]+"\ndata:"+d.value+"\nrow-col-idx:"+d.col+","+d.row+"\ncell-xy "+this.x.baseVal.value+", "+this.y.baseVal.value);  
+               //Show the tooltip
+               d3.select("#tooltip").classed("hidden", false);
+       })
+    .on("mouseout", function(d){
+//               d3.select(this).classed("cell-hover",false);
+//               d3.selectAll(".rowLabel").classed("text-highlight",false);
+//               d3.selectAll(".colLabel").classed("text-highlight",false);
+               d3.select(this).attr("fill", "white");
+               d3.select("#tooltip").classed("hidden", true);
+        })
+
+;
+
+
+//==========================================================================================================//
+//= Chart Legend                                                                                           =//
+//==========================================================================================================//
 
 var legend = svg.selectAll(".legend")
     .data(["1st Round", "2nd Round", "Finals"])
@@ -709,7 +837,7 @@ legend.selectAll("rect")
     		return 10;
     	}
     	else {
-			return 21;
+			return 40;
     	}})
     .attr("width", function(d, i) {
     	if (d!="border"){
@@ -726,17 +854,37 @@ legend.selectAll("rect")
     		return "none";
     	}})
 	.style("stroke", "#555")
-	  .style("stroke-width", "0.3px")
+	.style("stroke-width", "0.3px")
+	.attr("rx", 6)
+    .attr("ry", 6)
 ;
+
+//vertical lines
+legend.selectAll(".line").data(["champions"]).enter()
+    .append("line")
+    .attr("x1", xScale(20.1))
+    .attr("x2", xScale(20.1)+10)
+    .attr("y1", yScale(10))
+    .attr("y2", yScale(10))
+	.style("stroke", lineColor);
+
+//horizont
     	
 legend.selectAll("text")
-    .data(["1st Round", "2nd Round", "Finals"])
+    .data(["1st Round", "2nd Round", "Finals", "Champions"])
   	.enter().append("text")
   	.text(function(d) { return d; })
-    .attr("y", function(d, i) { return yScale(5); })
+    .attr("y", function(d, i) {
+    	if (d != "Champions")
+    		return yScale(5);
+    	else
+    		return yScale(11)})
 	.attr("x", function(d, i) { 
-		return xScale(20.5+(i*3)); })
+		return xScale(20.5+((i%3)*3)); })
     .style("font-size", "9px");
+
+
+
 
 </script>
 
