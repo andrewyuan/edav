@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blogpost 1 - Andrew Yuan
+title: Blogpost 1 - World Cup goal production per edition
 description: Blogpost 1 - World Cup scored goals
 tags: assignments
 ---
@@ -53,7 +53,18 @@ tags: assignments
 </style>
 
 <body>
-**Team Members:** Andrew Yuan (agy2108)
+The blogpost entitled [_"World Cup Goal Production"_](http://www.soccerbythenumbers.com/2010/07/world-cup-goal-production.html) published in May 11th, 2010 at soccerbythenumbers.com presents the quantity of teams to score different amounts of goals in a single World Cup edition. It attempts to compare the performance of different teams and also the performance variation over time.
+
+![Number of goals scored by teams in a World Cup](http://3.bp.blogspot.com/_pMRjCwGDjRY/TFsf3XE8xKI/AAAAAAAAAJs/VZ5uRmQeg_U/s400/World+Cup+Goals+graph.png)
+
+The issue with this comparison is that teams that advance into the competition play more games than others, consequently having the chance of scoring more goals than teams that did not advance, hence not being a completely fair team performance indicator.
+
+To eliminate this issue, the same graph could present the amount of goals socred per round of the competition. That way we can compare the amount of gols scored in a similar amount of games.
+
+Also, the summarization of the numbers in the graph hides important information to every big soccer fan (as I am!), such as the performance of each team in each competition.
+
+Having that detailed information, the first question that comes to mind is what was the performance of the competition champion, and for that I added a path line highlighting the champions of each edition. With that, we can observe that the spanish team champion in 2010 was actually the team to be champion with the least amount of total goals!
+
 
 <script src="http://d3js.org/d3.v3.min.js">
 </script>
