@@ -63,7 +63,9 @@ To eliminate this issue, the same graph could present the amount of goals socred
 
 Also, the summarization of the numbers in the graph hides important information to every big soccer fan (as I am!), such as the performance of each team in each competition.
 
-Having that detailed information, the first question that comes to mind is what was the performance of the competition champion, and for that I added a path line highlighting the champions of each edition. With that, we can observe that the spanish team champion in 2010 was actually the team to be champion with the least amount of total goals!
+Having that detailed information, the first question that comes to mind is what was the performance of the competition champion, and for that I added a path line highlighting the champions of each edition. With that, we can observe that the spanish team champion in 2010 was actually the team to be champion with the least amount of total goals, with only 8 goals in 7 matches, an average of 1.14 goals per game!
+
+The hungarian team of 1954 was the one with the largest amount of goals, a total of 27 in 5 matches, an average of 5.4 goals per match, but they were not the champions. In the first round, they beat the german team by 8x3, which ended up as the competition champion!
 
 
 <script src="http://d3js.org/d3.v3.min.js">
