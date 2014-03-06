@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 2014 Brazil FIFA World Cup Predictions - And the Winner is...
-description: Project Proposal
-tags: assignments
+title: FWC Project - sprint 2
+description: Project status
+tags: iter2
 ---
 
 **Team Members:** Shiya Wang (sw2876) and Andrew Yuan (agy2108)
