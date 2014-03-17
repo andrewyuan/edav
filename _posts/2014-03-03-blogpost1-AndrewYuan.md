@@ -104,7 +104,7 @@ Also, the Hungarian team of 1954 was the one with the largest amount of goals, a
 
 ### The Author
 
-[Andrew Yuan](andrew.gk.yuan@gmail.com), fellow student at the Data Science program in Columbia University and Brazilian soccer fan! Had no previous D3.js experience, but very excited about its graphical capabilities and ease of use!
+[Andrew Yuan](andrew.gk.yuan@gmail.com), fellow student at the Data Science program in Columbia University and Brazilian soccer fan! Fairly new to D3.js experience, but very excited about its graphical capabilities and ease of use!
 
 
 
