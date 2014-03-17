@@ -61,7 +61,6 @@ d3.sankey = function() {
           x3 = xi(1 - curvature),
           y0 = d.source.y + d.sy + d.dy / 2,
           y1 = d.target.y + d.ty + d.dy / 2;
-		  y2 = 100
       return "M" + x0 + "," + y0
            + "C" + x2 + "," + y0
            + " " + x3 + "," + y1
@@ -95,14 +94,29 @@ d3.sankey = function() {
   }
 
   // Compute the value (size) of each node by summing the associated links.
+/* AY - modified to distribute input and output flows through the node extension, instead of piling them up
   function computeNodeValues() {
     nodes.forEach(function(node) {
       node.value = Math.max(
         d3.sum(node.sourceLinks, value),
         d3.sum(node.targetLinks, value)
+
       );
     });
   }
+*/
+  function computeNodeValues() {
+    nodes.forEach(function(node) {
+      node.inValue = d3.sum(node.targetLinks, value);
+      node.outValue = d3.sum(node.sourceLinks, value);
+      
+      node.value = Math.max(
+        node.inValue,
+        node.outValue
+      );
+    });
+  }
+
 
   // Iteratively assign the breadth (x-position) for each node.
   // Nodes are assigned the maximum breadth of incoming neighbors plus one;
@@ -177,8 +191,11 @@ d3.sankey = function() {
 
       nodesByBreadth.forEach(function(nodes) {
         nodes.forEach(function(node, i) {
-          node.y = i*20;
+          node.y = i;
           node.dy = node.value * ky;
+		  // AY - modified to distribute input and output flows through the node extension, instead of piling them up
+          node.inDy = node.inValue * ky;
+          node.outDy = node.outValue * ky;
         });
       });
 
@@ -262,13 +279,25 @@ d3.sankey = function() {
     });
     nodes.forEach(function(node) {
       var sy = 0, ty = 0;
+      // AY - modified to distribute input and output flows through the node extension, instead of piling them up
+      var inPadding = 0, outPadding = 0;
+      numInLinks = node.targetLinks.length;
+      numOutLinks = node.sourceLinks.length;
+      if (numInLinks > 1) inPadding = (node.dy - node.inDy)/(numInLinks-1);
+      if (numOutLinks > 1) outPadding = (node.dy - node.outDy)/(numOutLinks-1);
+      //AY
+      
       node.sourceLinks.forEach(function(link) {
         link.sy = sy;
-        sy += link.dy;
+        // AY - modified to distribute input and output flows through the node extension, instead of piling them up
+        //sy += link.dy;
+        sy += (link.dy + outPadding);
       });
       node.targetLinks.forEach(function(link) {
         link.ty = ty;
-        ty += link.dy;
+        // AY - modified to distribute input and output flows through the node extension, instead of piling them up
+        //ty += link.dy;
+        ty += (link.dy + inPadding);
       });
     });
 
