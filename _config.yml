@@ -14,10 +14,9 @@ baseurl: http://andrewyuan.github.io/edav
 title : EDAV
 tagline: Exploratory Data Analysis and Visualization
 author :
-  name : Michael andrewyuan
-  email : andrewyuan@gmail.com
+  name : Andrew Yuan
+  email : andrew.gk.yuan@gmail.com
   github : andrewyuan
-  twitter : mike_andrewyuan
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
