@@ -3139,8 +3139,8 @@ var gamesData = [
 //==========================================================================================================//
 
       var margin = {top: 15, right: 10, bottom: 5, left: 10},
-          width = 900 - margin.left,
-          height = 600 - margin.top,
+          width = 1200 - margin.left,
+          height = 800 - margin.top,
           padding = 80;
       var posAdjust = 10;
       var minRankDiff = 0, maxRankDiff = 0;
