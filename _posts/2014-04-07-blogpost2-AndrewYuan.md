@@ -149,12 +149,14 @@ For instance, of the 48 matches played at home where a team challenged an oppone
 * Considering half of the draws as positive results and half as negative, it sums up to <b>68.75% of positive results</b>.
 
 For the exact same ranking distance, of the 44 matches played at the opponents home where the opponent was 10 positions below in the ranking table: 
+
 * 9 (20.45%) were won by the home team
 * 22 (50%) ended up with a draw
 * 13 (29.55%) were lost.
 * Considering half of the draws as positive results and half as negative, it sums up to *45.45% of positive results*.
 
 Just to show a final example, of the 5 matches played at the opponents home where the opponent was 100 positions below in the ranking table, 100% of them were won by the away team. The matches for this case were:
+
 * (1)Brazil 3 x 0 Wales(101) - 05/23/2000 – Cardiff
 * (7)Spain 2 x 0 Latvia(107) - 06/02/2007 - Riga
 * (21)USA 1 x 0 Barbados(121) - 06/22/2008 - Bridgetown
