@@ -164,7 +164,7 @@ Just to show a final example, of the 5 matches played at the opponents home wher
 * (35)Algeria 1 x 0 Rwanda(135) - 06/16/2013 - Kigali
 
 <div class="buttonContainer" align="center">
-      <a class="button" target="_blank" rel="nofollow" id="aggregated" style="opacity:1"><span class="a-btn-text">Aggregated</span></a>   
+      <a class="button" target="_blank" rel="nofollow" id="aggregated" style="opacity:1"><span class="a-btn-text">Averaged</span></a>   
       <a class="button" target="_blank" rel="nofollow" id="perLocation" style="opacity:0.4"><span class="a-btn-text">Detail Home/Away</span></a>    
       <a class="button" target="_blank" rel="nofollow" id="perGame" style="opacity:0.4"><span class="a-btn-text">Detail Matches</span></a>
 </div>
@@ -3441,10 +3441,10 @@ var gamesData = [
 
   legend.append("rect")
       .attr({
-        "x": xScale(120),
+        "x": xScale(100),
         "y": height-padding/2,
         "height": 30,
-        "width": 200,
+        "width": 250,
         "rx": 6,
         "ry": 6,
         "fill": "none",
@@ -3453,21 +3453,21 @@ var gamesData = [
       });
         
   legend.selectAll("text")
-      .data(["Home", "Away"])
+      .data(["Averaged", "Home", "Away"])
       .enter().append("text")
       .text(function(d) { return d; })
       .attr({
-        "x": function(d, i) {return xScale(100+(i+1)*40);},
+        "x": function(d, i) {return xScale(80+(i+1)*34);},
         "y": height-padding/4,
         "font-size": "11px",
         "fill": color.axis
       });
 
   legend.selectAll(".circle")
-      .data(["Home", "Away"])
+      .data(["Averaged", "Home", "Away"])
       .enter().append("circle")
       .attr({
-        "cx": function(d, i) {return xScale(100+(i+1)*40)-20;},
+        "cx": function(d, i) {return xScale(80+(i+1)*34)-15;},
         "cy": height-padding/4 - 4,
         "r": 3,
         "stroke": function(d, i) {
@@ -3547,7 +3547,6 @@ var gamesData = [
           d3.select("#aggregated").style("opacity", .4)
           d3.select("#perLocation").style("opacity", .4)
         });
-
 
 
 </script>
