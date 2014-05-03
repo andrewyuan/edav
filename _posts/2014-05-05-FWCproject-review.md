@@ -18,14 +18,14 @@ The competition is divided in two main stages, the **Group Stage** and the **Kno
 
 ### The Group Stage
 
-![Group Stage](FWC/GroupPlayGrid630_original.jpg)
+![Group Stage]({{ site.baseurl }}/assets/FWC/GroupPlayGrid630_original.jpg)
 
 The 32 qualified teams were divided in 8 groups through a random draw that happened on 2013, January 6th. During this stage, the teams of each group will play agains each other, and the top 2 teams of each group will advance to the next round. 
 
 
 ### The Knockout Stage
 
-![Group Stage](FWC/KnockoutRoundBracket_original.jpg)
+![Group Stage]({{ site.baseurl }}/assets/FWC/KnockoutRoundBracket_original.jpg)
 
 16 teams out of the 32 advance to this stage, which is divided in 4 rounds of matches:
 * Round of 16
@@ -40,6 +40,6 @@ The winners of each match advance to the next round, and losers go home. The ult
 
 Based on historical matches results data and the Fifa Ranking table, we estimated the probability of each team advancing through the different stages and rounds of the competition, and ultimately becoming the champion. We modeled the probability estimate of a match result, and then simulated the entire World Cup. 
 
-[![FWC Project](FWC/datavis3.png)](http://andrewyuan.github.io/EDAV-project.html)
+[![FWC Project]({{ site.baseurl }}/assets/FWC/datavis3.png)](http://andrewyuan.github.io/EDAV-project.html)
 
 
