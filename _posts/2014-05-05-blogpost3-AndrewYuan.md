@@ -54,11 +54,12 @@ text {
 <body>
 
 
-### Oil Reserves and the Conflicts Death Rate 
+Oil Reserves and the Conflicts Death Rate 
+=========================================
 
 <p id="chart"></p>
 
-* Visualization based on Michael Bostock's [_The Wealth & Health of Nations_](http://bost.ocks.org/mike/nations/) article.
+<sub><sup>Visualization based on Michael Bostock's [_The Wealth & Health of Nations_](http://bost.ocks.org/mike/nations/) article.</sup></sub>
 
 <p>
 
