@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blogpost 3 - Oil Conflicts
+title: Blogpost 3 - Oil Reserves and the Conflicts Death Rate 
 description: Analysis of corretion between countries oil reserves and mortality from internal conflicts
 tags: blog
 ---
@@ -54,10 +54,13 @@ text {
 <body>
 
 
-### Oil Conflicts
-###### Visualization based on Michael Bostock's [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/) article.
+### Oil Reserves and the Conflicts Death Rate 
 
 <p id="chart"></p>
+
+* Visualization based on Michael Bostock's [_The Wealth & Health of Nations_](http://bost.ocks.org/mike/nations/) article.
+
+<p>
 
 This chart presents the evolution of oil reserves from producing countries (X axis), a cumulative estimate of deaths caused by internal conflicts (Y axis) and their GDPs per capita (bubble area). Analyzing the relationship between those factors, we can observe that countries with lower GDP per capita are more susceptible to internal conflicts, and that the size of the oil reserves has a slight correlation to the intensity of those conflicts, presenting a higher mortality rate than countries with smaller oil reserves.
 
